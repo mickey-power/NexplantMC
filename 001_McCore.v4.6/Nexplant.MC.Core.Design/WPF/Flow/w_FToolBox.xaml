@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="Nexplant.MC.Core.FaUIs.WPF.FToolBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Nexplant.MC.Core.FaUIs.WPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="900" d:DesignWidth="300">
+    <UserControl.Resources>
+        <local:FToolboxItems x:Key="fToolboxItems"/>
+    </UserControl.Resources>
+    
+    <Grid Margin="0,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+            <ListBox x:Name="toolBox"    
+                     AllowDrop="True"
+                     ItemsSource="{Binding Source={StaticResource fToolboxItems}}"
+                     Margin="0,0,0,0" BorderBrush="#CECECE">
+                
+                <ListBox.Resources>
+                    <Style TargetType="ListBoxItem" BasedOn="{StaticResource {x:Type ListBoxItem}}">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsMouseOver,RelativeSource={RelativeSource Self}}" Value="True">
+                                <Setter Property="IsSelected" Value="True" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </ListBox.Resources>
+               
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{Binding Path=imageSource}" Margin="7" VerticalAlignment="Center" />
+                            <TextBlock Text="{Binding Path=text}" Margin="5" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+                <ListBox.Background>
+                    <SolidColorBrush />
+                </ListBox.Background>
+            </ListBox>
+        <!--Expander Grid.Row="0" Header="ToolBox" IsExpanded="True" BorderBrush="#CECECE" BorderThickness="1">
+        </Expander-->            
+    </Grid>
+</UserControl>

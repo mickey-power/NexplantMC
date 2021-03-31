@@ -1,0 +1,684 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E73B2C2F-BDC6-4AB6-A4DA-763578F64D9F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nexplant.MC.Core</RootNamespace>
+    <AssemblyName>Nexplant.MC.Core.OpcDriver-x86.v4.6</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Kepware.ClientAce.OpcClient">
+      <HintPath>..\..\..\nexplant.mc-dll\Kepware.ClientAce.OpcClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Converter\c_FByteConverter.cs" />
+    <Compile Include="Common\Converter\c_FEnumConverter.cs" />
+    <Compile Include="Common\Converter\c_FMessageConverter.cs" />
+    <Compile Include="Common\Converter\c_FOpcValueConverter.cs" />
+    <Compile Include="Common\Converter\c_FValueConverter.cs" />
+    <Compile Include="Common\c_FBaseCollection.cs" />
+    <Compile Include="Common\c_FBaseCollectionEnumerator.cs" />
+    <Compile Include="Common\c_FBoolean.cs" />
+    <Compile Include="Common\c_FCommon.cs" />
+    <Compile Include="Common\c_FConstants.cs" />
+    <Compile Include="Common\d_FDelegate.cs" />
+    <Compile Include="Common\e_FEnum.cs" />
+    <Compile Include="Common\i_FIEnumerator.cs" />
+    <Compile Include="HostDriver\c_FHostDriverArgs.cs" />
+    <Compile Include="HostDriver\c_FHostDriverDataMessage.cs" />
+    <Compile Include="HostDriver\c_FHostDriverDataMessageReceivedEventArgs.cs" />
+    <Compile Include="HostDriver\c_FHostDriverDataMessageSentEventArgs.cs" />
+    <Compile Include="HostDriver\c_FHostDriverErrorRaisedEventArgs.cs" />
+    <Compile Include="HostDriver\c_FHostDriverStateChangedEventArgs.cs" />
+    <Compile Include="HostDriver\i_FIHostDriver.cs" />
+    <Compile Include="HostDriver\i_FIHostDriverOption.cs" />
+    <Compile Include="HostDriver\c_FHostDriverSpoolingMessageErrorRaisedEventArgs.cs" />
+    <Compile Include="OpcDriverLog\c_FBaseObjectLog.cs" />
+    <Compile Include="OpcDriverLog\c_FBaseObjectLogCollection.cs" />
+    <Compile Include="OpcDriverLog\c_FObjectLogCollection.cs" />
+    <Compile Include="OpcDriverLog\c_FObjectLogCollectionEnumerator.cs" />
+    <Compile Include="OpcDriverLog\c_FOcdlCore.cs" />
+    <Compile Include="OpcDriverLog\c_FOpcDriverLog.cs" />
+    <Compile Include="OpcDriverLog\c_FOpcDriverLogCommon.cs" />
+    <Compile Include="OpcDriverLog\HostDeviceLog\c_FHostDeviceDataMessageLog.cs" />
+    <Compile Include="OpcDriverLog\HostDeviceLog\c_FHostDeviceDataMessageReceivedLog.cs" />
+    <Compile Include="OpcDriverLog\HostDeviceLog\c_FHostDeviceDataMessageSentLog.cs" />
+    <Compile Include="OpcDriverLog\HostDeviceLog\c_FHostDeviceErrorRaisedLog.cs" />
+    <Compile Include="OpcDriverLog\HostDeviceLog\c_FHostDeviceLog.cs" />
+    <Compile Include="OpcDriverLog\HostDeviceLog\c_FHostDeviceStateChangedLog.cs" />
+    <Compile Include="OpcDriverLog\HostDeviceLog\c_FHostDeviceVfeiLog.cs" />
+    <Compile Include="OpcDriverLog\HostDeviceLog\c_FHostDeviceVfeiReceivedLog.cs" />
+    <Compile Include="OpcDriverLog\HostDeviceLog\c_FHostDeviceVfeiSentLog.cs" />
+    <Compile Include="OpcDriverLog\HostDeviceLog\c_FHostItemLog.cs" />
+    <Compile Include="OpcDriverLog\HostDeviceLog\c_FHostItemLogCollection.cs" />
+    <Compile Include="OpcDriverLog\HostDeviceLog\c_FHostItemLogCollectionEnumerator.cs" />
+    <Compile Include="OpcDriverLog\HostDeviceLog\c_FHostTransmitterRaisedLog.cs" />
+    <Compile Include="OpcDriverLog\HostDeviceLog\c_FHostTriggerRaisedLog.cs" />
+    <Compile Include="OpcDriverLog\Interface\i_FIMessageLog.cs" />
+    <Compile Include="OpcDriverLog\Interface\i_FIObjectLog.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcEventItemListLog.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcEventItemListLogCollection.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcEventItemListLogCollectionEnumerator.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcEventItemLog.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcEventItemLogCollection.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcEventItemLogCollectionEnumerator.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcDeviceDataMessageLog.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcDeviceDataMessageReadLog.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcDeviceDataMessageWrittenLog.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcDeviceErrorRaisedLog.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcDeviceLog.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcDeviceStateChangedLog.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcDeviceTimeoutRaisedLog.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcTransmitterRaisedLog.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcTriggerRaisedLog.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcItemListLog.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcItemListLogCollection.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcItemListLogCollectionEnumerator.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcItemLog.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcItemLogCollection.cs" />
+    <Compile Include="OpcDriverLog\OpcDeviceLog\c_FOpcItemLogCollectionEnumerator.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FApplicationWrittenLog.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FBranchRaisedLog.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FCallbackRaisedLog.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FColumnLog.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FColumnLogCollection.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FColumnLogCollectionEnumerator.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FCommentWrittenLog.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FContentLog.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FContentLogCollection.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FContentLogCollectionEnumerator.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FDataLog.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FDataLogCollection.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FDataLogCollectionEnumerator.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FDataSetLog.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FDataSetLogCollection.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FDataSetLogCollectionEnumerator.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FEntryPointCalledLog.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FEquipmentStateAltererLog.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FEquipmentStateAltererLogCollection.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FEquipmentStateAltererLogCollectionEnumerator.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FEquipmentStateSetAltererPerformedLog.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FFunctionCalledLog.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FJudgementPerformedLog.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FMapperPerformedLog.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FPauserRaisedLog.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FRepositoryLog.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FRepositoryLogCollection.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FRepositoryLogCollectionEnumerator.cs" />
+    <Compile Include="OpcDriverLog\ScenarioLog\c_FStoragePerformedLog.cs" />
+    <Compile Include="OpcDriver\Config\c_FConfig.cs" />
+    <Compile Include="OpcDriver\c_FBaseObject.cs" />
+    <Compile Include="OpcDriver\c_FBaseObjectCollection.cs" />
+    <Compile Include="OpcDriver\c_FCbObjectFormat.cs" />
+    <Compile Include="OpcDriver\c_FFlowCollection.cs" />
+    <Compile Include="OpcDriver\c_FFlowCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\c_FObjectCollection.cs" />
+    <Compile Include="OpcDriver\c_FObjectCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\c_FOcdCore.cs" />
+    <Compile Include="OpcDriver\c_FOpcDriverCommon.cs" />
+    <Compile Include="OpcDriver\c_FOpcDriver.cs" />
+    <Compile Include="OpcDriver\EquipmentStateMaterial\c_FEquipmentStateMaterial.cs" />
+    <Compile Include="OpcDriver\EquipmentStateMaterial\c_FEquipmentStateMaterialCollection.cs" />
+    <Compile Include="OpcDriver\EquipmentStateMaterial\c_FEquipmentStateMaterialCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\EquipmentStateMaterial\c_FEquipmentStateMaterialStorage.cs" />
+    <Compile Include="OpcDriver\Event\c_FEventHandler.cs" />
+    <Compile Include="OpcDriver\Event\c_FEventPusher.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FApplicationWritedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FBranchRaisedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FCallbackRaisedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FCommentWritedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FEntryPointCalledEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FEquipmentStateSetAltererPerformedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FEventArgsBase.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FFunctionCalledEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FHostDeviceDataMessageReceivedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FHostDeviceDataMessageSentEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FHostDeviceErrorRaisedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FHostDeviceStateChangedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FHostDeviceVfeiReceivedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FHostDeviceVfeiSentEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FHostTransmitterRaisedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FHostTriggerRaisedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FJudgementPerformedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FMapperPerformedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FModelingFileChangedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FModelingFileOpenCompletedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FModelingFileReopenCompletedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FModelingFileReopenFailedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FModelingFileReopenPrecompletedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FModelingFileSaveCompletedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FObjectEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FObjectMoveToCompletedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FPauserRaisedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FOpcDeviceDataMessageReadEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FOpcDeviceDataMessageWrittenEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FOpcDeviceErrorRaisedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FOpcDeviceStateChangedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FOpcDeviceTimeoutRaisedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FOpcTransmitterRaisedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FOpcTriggerRaisedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FRepositoryMaterialSavedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FStoragePerformedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\EventArgs\c_FOpcSessionItemNameRefreshedEventArgs.cs" />
+    <Compile Include="OpcDriver\Event\Pauser\c_FPauserAgent.cs" />
+    <Compile Include="OpcDriver\Event\Pauser\c_FPauserData.cs" />
+    <Compile Include="OpcDriver\Interface\i_FIDevice.cs" />
+    <Compile Include="OpcDriver\Interface\i_FIFlow.cs" />
+    <Compile Include="OpcDriver\Interface\i_FIHostOperand.cs" />
+    <Compile Include="OpcDriver\Interface\i_FILibrary.cs" />
+    <Compile Include="OpcDriver\Interface\i_FIMessage.cs" />
+    <Compile Include="OpcDriver\Interface\i_FIMessageTransfer.cs" />
+    <Compile Include="OpcDriver\Interface\i_FIObject.cs" />
+    <Compile Include="OpcDriver\Interface\i_FIOpcMessage.cs" />
+    <Compile Include="OpcDriver\Interface\i_FIOpcOperand.cs" />
+    <Compile Include="OpcDriver\Interface\i_FISession.cs" />
+    <Compile Include="OpcDriver\Interface\i_FITransfer.cs" />
+    <Compile Include="OpcDriver\LogWriter\c_FLogWriter.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FBranch.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FCallback.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FComment.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FEntryPoint.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FEquipment.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FEquipmentCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FEquipmentCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FEquipmentStateAlterer.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FEquipmentStateAltererCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FEquipmentStateAltererCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FEquipmentStateSetAlterer.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FFunction.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FFunctionCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FFunctionCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FHostCondition.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FHostConditionCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FHostConditionCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FHostExpression.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FHostExpressionCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FHostExpressionCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FHostTransfer.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FHostTransferCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FHostTransferCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FHostTransmitter.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FHostTrigger.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FJudgement.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FJudgementCondition.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FJudgementConditionCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FJudgementConditionCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FJudgementExpression.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FJudgementExpressionCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FJudgementExpressionCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FMapper.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FPauser.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FOpcCondition.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FOpcConditionCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FOpcConditionCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FOpcExpression.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FOpcExpressionCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FOpcExpressionCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FOpcTransfer.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FOpcTransferCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FOpcTransferCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FOpcTransmitter.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FOpcTrigger.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FScenario.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FScenarioCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FScenarioCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FScenarioGroup.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FScenarioGroupCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FScenarioGroupCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FStorage.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FTransfer.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FTransferCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\EquipmentModeling\c_FTransferCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostDeviceModeling\c_FHostDevice.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostDeviceModeling\c_FHostDeviceCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostDeviceModeling\c_FHostDeviceCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostDeviceModeling\c_FHostSession.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostDeviceModeling\c_FHostSessionCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostDeviceModeling\c_FHostSessionCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostItem.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostItemCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostItemCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostLibrary.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostLibraryCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostLibraryCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostLibraryGroup.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostLibraryGroupCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostLibraryGroupCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostMessage.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostMessageCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostMessageCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostMessageList.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostMessageListCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostMessageListCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostMessages.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostMessagesCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostMessagesCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\HostLibraryModeling\c_FHostMessageTransfer.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcDeviceModeling\c_FOpcDevice.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcDeviceModeling\c_FOpcDeviceCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcDeviceModeling\c_FOpcDeviceCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcDeviceModeling\c_FItemName.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcDeviceModeling\c_FItemNameCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcDeviceModeling\c_FItemNameCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcDeviceModeling\c_FOpcSession.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcDeviceModeling\c_FOpcSessionCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcDeviceModeling\c_FOpcSessionCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcEventItem.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcEventItemCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcEventItemCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcEventItemList.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcEventItemListCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcEventItemListCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcLibrary.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcLibraryCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcLibraryCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcLibraryGroup.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcLibraryGroupCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcLibraryGroupCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcMessage.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcMessageCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcMessageCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcMessageList.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcMessageListCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcMessageListCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcMessages.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcMessagesCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcMessagesCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcMessageTransfer.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcItem.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcItemCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcItemCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcItemList.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcItemListCollection.cs" />
+    <Compile Include="OpcDriver\OpcModeling\OpcLibraryModeling\c_FOpcItemListCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataConversionSetDefinition\c_FDataConversion.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataConversionSetDefinition\c_FDataConversionCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataConversionSetDefinition\c_FDataConversionCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataConversionSetDefinition\c_FDataConversionExpression.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataConversionSetDefinition\c_FDataConversionSet.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataConversionSetDefinition\c_FDataConversionSetCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataConversionSetDefinition\c_FDataConversionSetCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataConversionSetDefinition\c_FDataConversionSetList.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataConversionSetDefinition\c_FDataConversionSetListCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataConversionSetDefinition\c_FDataConversionSetListCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataSetDefinition\c_FData.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataSetDefinition\c_FDataCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataSetDefinition\c_FDataCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataSetDefinition\c_FDataSet.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataSetDefinition\c_FDataSetCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataSetDefinition\c_FDataSetCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataSetDefinition\c_FDataSetList.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataSetDefinition\c_FDataSetListCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\DataSetDefinition\c_FDataSetListCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\EnvironmentDefinition\c_FEnvironment.cs" />
+    <Compile Include="OpcDriver\OpcSetup\EnvironmentDefinition\c_FEnvironmentCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\EnvironmentDefinition\c_FEnvironmentCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\EnvironmentDefinition\c_FEnvironmentList.cs" />
+    <Compile Include="OpcDriver\OpcSetup\EnvironmentDefinition\c_FEnvironmentListCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\EnvironmentDefinition\c_FEnvironmentListCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\EquipmentStateSetDefinition\c_FEquipmentState.cs" />
+    <Compile Include="OpcDriver\OpcSetup\EquipmentStateSetDefinition\c_FEquipmentStateCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\EquipmentStateSetDefinition\c_FEquipmentStateCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\EquipmentStateSetDefinition\c_FEquipmentStateSet.cs" />
+    <Compile Include="OpcDriver\OpcSetup\EquipmentStateSetDefinition\c_FEquipmentStateSetCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\EquipmentStateSetDefinition\c_FEquipmentStateSetCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\EquipmentStateSetDefinition\c_FEquipmentStateSetList.cs" />
+    <Compile Include="OpcDriver\OpcSetup\EquipmentStateSetDefinition\c_FEquipmentStateSetListCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\EquipmentStateSetDefinition\c_FEquipmentStateSetListCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\EquipmentStateSetDefinition\c_FStateValue.cs" />
+    <Compile Include="OpcDriver\OpcSetup\EquipmentStateSetDefinition\c_FStateValueCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\EquipmentStateSetDefinition\c_FStateValueCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\FunctionNameDefinition\c_FArgument.cs" />
+    <Compile Include="OpcDriver\OpcSetup\FunctionNameDefinition\c_FArgumentCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\FunctionNameDefinition\c_FArgumentCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\FunctionNameDefinition\c_FFunctionName.cs" />
+    <Compile Include="OpcDriver\OpcSetup\FunctionNameDefinition\c_FFunctionNameCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\FunctionNameDefinition\c_FFunctionNameCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\FunctionNameDefinition\c_FFunctionNameList.cs" />
+    <Compile Include="OpcDriver\OpcSetup\FunctionNameDefinition\c_FFunctionNameListCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\FunctionNameDefinition\c_FFunctionNameListCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\FunctionNameDefinition\c_FParameterName.cs" />
+    <Compile Include="OpcDriver\OpcSetup\FunctionNameDefinition\c_FParameterNameCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\FunctionNameDefinition\c_FParameterNameCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\ObjectNameDefinition\c_FObjectName.cs" />
+    <Compile Include="OpcDriver\OpcSetup\ObjectNameDefinition\c_FObjectNameCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\ObjectNameDefinition\c_FobjectNameCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\ObjectNameDefinition\c_FObjectNameList.cs" />
+    <Compile Include="OpcDriver\OpcSetup\ObjectNameDefinition\c_FObjectNameListCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\ObjectNameDefinition\c_FObjectNameListCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\RepositoryDefinition\c_FColumn.cs" />
+    <Compile Include="OpcDriver\OpcSetup\RepositoryDefinition\c_FColumnCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\RepositoryDefinition\c_FColumnCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\RepositoryDefinition\c_FRepository.cs" />
+    <Compile Include="OpcDriver\OpcSetup\RepositoryDefinition\c_FRepositoryCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\RepositoryDefinition\c_FRepositoryCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\RepositoryDefinition\c_FRepositoryList.cs" />
+    <Compile Include="OpcDriver\OpcSetup\RepositoryDefinition\c_FRepositoryListCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\RepositoryDefinition\c_FRepositoryListCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\OpcSetup\UserTagDefinition\c_FUserTagName.cs" />
+    <Compile Include="OpcDriver\OpcSetup\UserTagDefinition\c_FUserTagNameCollection.cs" />
+    <Compile Include="OpcDriver\OpcSetup\UserTagDefinition\c_FUserTagNameCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\Protocol\AutoCycle\c_FAutoCycleAgent.cs" />
+    <Compile Include="OpcDriver\Protocol\AutoCycle\c_FAutoCycleData.cs" />
+    <Compile Include="OpcDriver\Protocol\AutoCycle\c_FAutoCycleDataCollection.cs" />
+    <Compile Include="OpcDriver\Protocol\AutoCycle\c_FAutoCycleDataCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\Protocol\AutoTrace\c_FAutoTraceAgent.cs" />
+    <Compile Include="OpcDriver\Protocol\AutoTrace\c_FAutoTraceData.cs" />
+    <Compile Include="OpcDriver\Protocol\AutoTrace\c_FAutoTraceDataCollection.cs" />
+    <Compile Include="OpcDriver\Protocol\AutoTrace\c_FAutoTraceDataCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\Protocol\c_FBaseProtocol.cs" />
+    <Compile Include="OpcDriver\Protocol\c_FDelayMessage.cs" />
+    <Compile Include="OpcDriver\Protocol\KEPWARE\c_FKepwareSubscriberData.cs" />
+    <Compile Include="OpcDriver\Protocol\KEPWARE\c_FKepwareProtocol.cs" />
+    <Compile Include="OpcDriver\Protocol\c_FProtocolAgent.cs" />
+    <Compile Include="OpcDriver\Protocol\c_FTidStorage.cs" />
+    <Compile Include="OpcDriver\Protocol\DataMapper\c_FDataMapper.cs" />
+    <Compile Include="OpcDriver\Protocol\HOST2\c_FHost2.cs" />
+    <Compile Include="OpcDriver\Protocol\HOST2\c_FHostOpenTransaction.cs" />
+    <Compile Include="OpcDriver\Protocol\HOST\c_FHost.cs" />
+    <Compile Include="OpcDriver\Protocol\HOST\c_FHostProtocol.cs" />
+    <Compile Include="OpcDriver\Protocol\JudgementParser\c_FJudgementParser.cs" />
+    <Compile Include="OpcDriver\Protocol\KEPWARE\c_FKepware.cs" />
+    <Compile Include="OpcDriver\Protocol\KEPWARE\c_FKepwareBuffer.cs" />
+    <Compile Include="OpcDriver\Protocol\KEPWARE\c_FKepwareBufferList.cs" />
+    <Compile Include="OpcDriver\Protocol\KEPWARE\c_FKepware2.cs" />
+    <Compile Include="OpcDriver\Protocol\KEPWARE\c_FKepwareSubscriber.cs" />
+    <Compile Include="OpcDriver\Protocol\KEPWARE\c_FKepwareItem.cs" />
+    <Compile Include="OpcDriver\Protocol\KEPWARE\c_FKepwareSession.cs" />
+    <Compile Include="OpcDriver\Protocol\RepositoryHandler\c_FRepositoryHandler.cs" />
+    <Compile Include="OpcDriver\Protocol\c_FDelayMessageList.cs" />
+    <Compile Include="OpcDriver\RepositoryMaterial\c_FRepositoryMaterial.cs" />
+    <Compile Include="OpcDriver\RepositoryMaterial\c_FRepositoryMaterialCollection.cs" />
+    <Compile Include="OpcDriver\RepositoryMaterial\c_FRepositoryMaterialCollectionEnumerator.cs" />
+    <Compile Include="OpcDriver\RepositoryMaterial\c_FRepositoryMaterialStorage.cs" />
+    <Compile Include="OpcDriver\Protocol\ScenarioController\c_FResourceData.cs" />
+    <Compile Include="OpcDriver\Protocol\ScenarioController\c_FScenarioController.cs" />
+    <Compile Include="OpcDriver\Protocol\ScenarioController\c_FScenarioData.cs" />
+    <Compile Include="Precondition\c_FHostItemLogPrecondition.cs" />
+    <Compile Include="Precondition\c_FHostItemPrecondition.cs" />
+    <Compile Include="Precondition\c_FHostItemPreconditionValueCollection.cs" />
+    <Compile Include="Precondition\c_FHostItemPreconditionValueCollectionEnumerator.cs" />
+    <Compile Include="Precondition\i_FIPrecondition.cs" />
+    <Compile Include="Precondition\i_FIPreconditionLog.cs" />
+    <Compile Include="Precondition\i_FIPreconditionValueCollection.cs" />
+    <Compile Include="ValueTransformer\c_FColumnLogValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FColumnValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\c_FColumnValueFormulaCollectionEnumerator.cs" />
+    <Compile Include="ValueTransformer\c_FColumnValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FDataConversionValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\c_FDataConversionValueFormulaCollectionEnumerator.cs" />
+    <Compile Include="ValueTransformer\c_FDataConversionValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FDataLogValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FDataValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\c_FDataValueFormulaCollectionEnumerator.cs" />
+    <Compile Include="ValueTransformer\c_FDataValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FHostExpressionValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\c_FHostExpressionValueFormulaCollectionEnumerator.cs" />
+    <Compile Include="ValueTransformer\c_FHostExpressionValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FHostItemLogValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FHostItemValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\c_FHostItemValueFormulaCollectionEnumerator.cs" />
+    <Compile Include="ValueTransformer\c_FHostItemValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FJudgementExpressionValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\c_FJudgementExpressionValueFormulaCollectionEnumerator.cs" />
+    <Compile Include="ValueTransformer\c_FJudgementExpressionValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FOpcExpressionValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\c_FOpcExpressionValueFormulaCollectionEnumerator.cs" />
+    <Compile Include="ValueTransformer\c_FOpcExpressionValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FOpcItemLogValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FOpcItemValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\c_FOpcItemValueFormulaCollectionEnumerator.cs" />
+    <Compile Include="ValueTransformer\c_FOpcItemValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FValueFormulaCollectionBase.cs" />
+    <Compile Include="ValueTransformer\c_FValueTransformerBase.cs" />
+    <Compile Include="ValueTransformer\c_FValueTransformerLogBase.cs" />
+    <Compile Include="ValueTransformer\i_FIValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\i_FIValueTransformer.cs" />
+    <Compile Include="ValueTransformer\i_FIValueTransformerLog.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FDecimalToHex.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FHexToDecimal.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FLength.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FStringCount.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FTrimAll.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FAdd.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FCeil.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FChoose.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FChooseIncluded.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FChooseIncludedR.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FChooseR.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FDateTime.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FDivide.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FFixLength.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FFixLengthR.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FInsert.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FInsertR.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FMod.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FMultiply.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FPadLeft.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FPadRight.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FPrefix.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FRemove.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FRemoveR.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FReplace.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FRound.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSelect.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSelectArrary.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSelectArraryR.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSelectIncluded.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSelectIncludedR.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSelectR.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSubString.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSubStringR.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSubtract.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSuffix.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FToBit.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FToLower.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FToUpper.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FTrim.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FTrimEnd.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FTrimStart.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FTrunc.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FValueFormulaBase.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\i_FIValueFormula.cs" />
+    <Compile Include="ValueTransformer\c_FOpcEventItemValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\c_FOpcEventItemValueFormulaCollectionEnumerator.cs" />
+    <Compile Include="ValueTransformer\c_FOpcEventItemValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FOpcEVentItemLogValueTransformer.cs" />
+    <Compile Include="XmlTag\c_FXmlTagCommon.cs" />
+    <Compile Include="XmlTag\c_FXmlTagFAM.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\c_FXmlTagOCDL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\HostDeviceLog\c_FXmlTagHDEL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\HostDeviceLog\c_FXmlTagHDVL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\HostDeviceLog\c_FXmlTagHITL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\HostDeviceLog\c_FXmlTagHMGL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\HostDeviceLog\c_FXmlTagVFEL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\OpcDeviceLog\c_FXmlTagODEL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\OpcDeviceLog\c_FXmlTagODTL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\OpcDeviceLog\c_FXmlTagODVL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\OpcDeviceLog\c_FXmlTagOEIL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\OpcDeviceLog\c_FXmlTagOELL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\OpcDeviceLog\c_FXmlTagOILL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\OpcDeviceLog\c_FXmlTagOITL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\OpcDeviceLog\c_FXmlTagOMGL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagAPPL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagBRNL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagCBKL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagCMTL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagCOLL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagCTTL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagDATL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagDTSL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagEATL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagESAL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagETPL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagFUNL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagHTNL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagHTRL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagJDML.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagMAPL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagOTNL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagOTRL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagPAUL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagRPSL.cs" />
+    <Compile Include="XmlTag\OpcDriverLog\ScenarioLog\c_FXmlTagSTGL.cs" />
+    <Compile Include="XmlTag\OpcDriver\c_FXmlTagOCD.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagBRN.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagCBK.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagCMT.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagEAT.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagEPT.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagEQM.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagEQP.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagESA.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagFUN.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagHCN.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagHEP.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagHTF.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagHTN.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagHTR.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagJCN.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagJDM.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagJEP.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagMAP.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagOCN.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagOEP.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagOTF.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagOTN.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagOTR.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagPAU.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagSNG.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagSNR.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\EquipmentModeling\c_FXmlTagSTG.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\HostDeviceModeling\c_FXmlTagHDM.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\HostDeviceModeling\c_FXmlTagHDV.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\HostDeviceModeling\c_FXmlTagHSN.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\HostLibraryModeling\c_FXmlTagTRS.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\HostLibraryModeling\c_FXmlTagHDMG.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\HostLibraryModeling\c_FXmlTagHIT.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\HostLibraryModeling\c_FXmlTagHLB.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\HostLibraryModeling\c_FXmlTagHLG.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\HostLibraryModeling\c_FXmlTagHLM.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\HostLibraryModeling\c_FXmlTagHMG.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\HostLibraryModeling\c_FXmlTagHML.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\HostLibraryModeling\c_FXmlTagHMS.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\HostLibraryModeling\c_FXmlTagHMT.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\OpcDeviceModeling\c_FXmlTagODM.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\OpcDeviceModeling\c_FXmlTagODV.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\OpcDeviceModeling\c_FXmlTagITN.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\OpcDeviceModeling\c_FXmlTagOSN.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\OpcLibraryModeling\c_FXmlTagOEI.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\OpcLibraryModeling\c_FXmlTagOEL.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\OpcLibraryModeling\c_FXmlTagOIL.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\OpcLibraryModeling\c_FXmlTagOIT.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\OpcLibraryModeling\c_FXmlTagOLB.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\OpcLibraryModeling\c_FXmlTagOLG.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\OpcLibraryModeling\c_FXmlTagOLM.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\OpcLibraryModeling\c_FXmlTagOMG.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\OpcLibraryModeling\c_FXmlTagOML.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\OpcLibraryModeling\c_FXmlTagOMS.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcModeling\OpcLibraryModeling\c_FXmlTagOMT.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\c_FXmlTagSET.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\DataConversionSetDefinition\c_FXmlTagDCD.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\DataConversionSetDefinition\c_FXmlTagDCL.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\DataConversionSetDefinition\c_FXmlTagDCS.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\DataConversionSetDefinition\c_FXmlTagDCV.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\DataSetDefinition\c_FXmlTagDAT.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\DataSetDefinition\c_FXmlTagDSD.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\DataSetDefinition\c_FXmlTagDSL.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\DataSetDefinition\c_FXmlTagDTS.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\EnvironmentDefinition\c_FXmlTagEND.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\EnvironmentDefinition\c_FXmlTagENL.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\EnvironmentDefinition\c_FXmlTagENV.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\EquipmentStateSetDefinition\c_FXmlTagESD.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\EquipmentStateSetDefinition\c_FXmlTagESL.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\EquipmentStateSetDefinition\c_FXmlTagESS.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\EquipmentStateSetDefinition\c_FXmlTagEST.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\EquipmentStateSetDefinition\c_FXmlTagSTV.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\FunctionNameDefinition\c_FXmlTagARG.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\FunctionNameDefinition\c_FXmlTagFNA.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\FunctionNameDefinition\c_FXmlTagFND.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\FunctionNameDefinition\c_FXmlTagFNL.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\FunctionNameDefinition\c_FXmlTagPAN.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\ObjectNameDefinition\c_FXmlTagONA.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\ObjectNameDefinition\c_FXmlTagOND.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\ObjectNameDefinition\c_FXmlTagONL.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\RepositoryDefinition\c_FXmlTagCOL.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\RepositoryDefinition\c_FXmlTagRPD.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\RepositoryDefinition\c_FXmlTagRPL.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\RepositoryDefinition\c_FXmlTagRPM.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\RepositoryDefinition\c_FXmlTagRPS.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\UserTagDefinition\c_FXmlTagUTD.cs" />
+    <Compile Include="XmlTag\OpcDriver\OpcSetup\UserTagDefinition\c_FXmlTagUTN.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nexplant.Mc.Core.Design\Nexplant.MC.Core.Design.v4.6.csproj">
+      <Project>{4ed359c3-b74b-4d5e-9d31-8c59a6733e6b}</Project>
+      <Name>Nexplant.MC.Core.Design.v4.6</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nexplant.Mc.Core\Nexplant.MC.Core.v4.6.csproj">
+      <Project>{87e1cd5d-13c7-4f9e-be21-d7ae31df80ef}</Project>
+      <Name>Nexplant.MC.Core.v4.6</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)..\..\nexplant.mc-dll\"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.Core.v4.6", "Nexplant.Mc.Core\Nexplant.MC.Core.v4.6.csproj", "{87E1CD5D-13C7-4F9E-BE21-D7AE31DF80EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.Core.OpcDriver.v4.6", "Nexplant.Mc.Core.OpcDriver\Nexplant.MC.Core.OpcDriver.v4.6.csproj", "{BF078876-C832-4F09-B345-61A52DB44904}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.Core.SecsDriver.v4.6", "Nexplant.Mc.Core.SecsDriver\Nexplant.MC.Core.SecsDriver.v4.6.csproj", "{4E866B08-16C8-4E07-BB2F-47B82BE83EB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.Core.TcpDriver.v4.6", "Nexplant.Mc.Core.TcpDriver\Nexplant.MC.Core.TcpDriver.v4.6.csproj", "{328169CF-5FAD-40C3-83A6-E6D9F44BC1E9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Nexplant.MC.Core.Securities32.v4.6", "Nexplant.Mc.Core.Securities\Nexplant.Mc.Core.Securities32.v4.6.vcxproj", "{28714DA8-A8EF-40C9-8229-C83BD1EEF8AE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Nexplant.MC.Core.Securities64.v4.6", "Nexplant.Mc.Core.Securities\Nexplant.Mc.Core.Securities64.v4.6.vcxproj", "{3618DB2C-A044-49C2-881E-7095ED6F5C49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.Core.Design.v4.6", "Nexplant.Mc.Core.Design\Nexplant.MC.Core.Design.v4.6.csproj", "{4ED359C3-B74B-4D5E-9D31-8C59A6733E6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.Core.PlcDriver.v4.6", "Nexplant.Mc.Core.PlcDriver\Nexplant.MC.Core.PlcDriver.v4.6.csproj", "{673AE301-80CB-4A93-8C8D-D9D097E71A74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.Core.Converter.v4.6", "Nexplant.MC.Core.Converter\Nexplant.MC.Core.Converter.v4.6.csproj", "{5A39B16D-F95C-4043-9D10-60F2040CE62E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.Core.OpcDriver-x86.v4.6", "Nexplant.MC.Core.OpcDriver\Nexplant.MC.Core.OpcDriver-x86.v4.6.csproj", "{E73B2C2F-BDC6-4AB6-A4DA-763578F64D9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87E1CD5D-13C7-4F9E-BE21-D7AE31DF80EF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{87E1CD5D-13C7-4F9E-BE21-D7AE31DF80EF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{87E1CD5D-13C7-4F9E-BE21-D7AE31DF80EF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{87E1CD5D-13C7-4F9E-BE21-D7AE31DF80EF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BF078876-C832-4F09-B345-61A52DB44904}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BF078876-C832-4F09-B345-61A52DB44904}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BF078876-C832-4F09-B345-61A52DB44904}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BF078876-C832-4F09-B345-61A52DB44904}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4E866B08-16C8-4E07-BB2F-47B82BE83EB4}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4E866B08-16C8-4E07-BB2F-47B82BE83EB4}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4E866B08-16C8-4E07-BB2F-47B82BE83EB4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4E866B08-16C8-4E07-BB2F-47B82BE83EB4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{328169CF-5FAD-40C3-83A6-E6D9F44BC1E9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{328169CF-5FAD-40C3-83A6-E6D9F44BC1E9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{328169CF-5FAD-40C3-83A6-E6D9F44BC1E9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{328169CF-5FAD-40C3-83A6-E6D9F44BC1E9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{28714DA8-A8EF-40C9-8229-C83BD1EEF8AE}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{28714DA8-A8EF-40C9-8229-C83BD1EEF8AE}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{28714DA8-A8EF-40C9-8229-C83BD1EEF8AE}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{28714DA8-A8EF-40C9-8229-C83BD1EEF8AE}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{3618DB2C-A044-49C2-881E-7095ED6F5C49}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{3618DB2C-A044-49C2-881E-7095ED6F5C49}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{3618DB2C-A044-49C2-881E-7095ED6F5C49}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{3618DB2C-A044-49C2-881E-7095ED6F5C49}.Release|Mixed Platforms.Build.0 = Release|x64
+		{4ED359C3-B74B-4D5E-9D31-8C59A6733E6B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4ED359C3-B74B-4D5E-9D31-8C59A6733E6B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4ED359C3-B74B-4D5E-9D31-8C59A6733E6B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4ED359C3-B74B-4D5E-9D31-8C59A6733E6B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{673AE301-80CB-4A93-8C8D-D9D097E71A74}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{673AE301-80CB-4A93-8C8D-D9D097E71A74}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{673AE301-80CB-4A93-8C8D-D9D097E71A74}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{673AE301-80CB-4A93-8C8D-D9D097E71A74}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5A39B16D-F95C-4043-9D10-60F2040CE62E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5A39B16D-F95C-4043-9D10-60F2040CE62E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5A39B16D-F95C-4043-9D10-60F2040CE62E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5A39B16D-F95C-4043-9D10-60F2040CE62E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E73B2C2F-BDC6-4AB6-A4DA-763578F64D9F}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{E73B2C2F-BDC6-4AB6-A4DA-763578F64D9F}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{E73B2C2F-BDC6-4AB6-A4DA-763578F64D9F}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{E73B2C2F-BDC6-4AB6-A4DA-763578F64D9F}.Release|Mixed Platforms.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ToolExport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolExport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendSqlCode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\AppendSqlCode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewLog_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\ViewLog_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="More" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\More.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolExpand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolExpand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolDownload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolDownload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FAbout_SqlManager" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Help\FAbout_SqlManager.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HelpAbout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\HelpAbout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SystemClose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Function" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\Function.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolFind" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolFind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolComment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolComment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FSqmContainer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FSqmContainer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Log" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\View\Log.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolExecute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolExecute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupSystem_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupSystem_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupFunction_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupFunction_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupSystem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupSystem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupSqlCode_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupSqlCode_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolIndentRemove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ToolIndentRemove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Dlg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\View\File_Dlg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterSqlCode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\InsertAfterSqlCode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WinCloseAllWindows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\WinCloseAllWindows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolCopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolCopy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolPaste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolPaste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolRefresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolRefresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FConnectionDialog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\System\FConnectionDialog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolReplace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolReplace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolSqlWorksheet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TolSqlWorksheet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolMigration" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolMigration.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeSqlCode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\InsertBeforeSqlCode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Parameter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\Parameter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolSqlWorksheet_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TolSqlWorksheet_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolClear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolClear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupFunction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupFunction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolUppercase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolUppercase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolMoveDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolMoveDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileSave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\FileSave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolIndent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ToolIndent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Form" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Window\Form.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeModule" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\InsertBeforeModule.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolCommentRemove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolCommentRemove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolCut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolCut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupSqlCode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupSqlCode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolSqlExplorer_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TolSqlExplorer_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendModule" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\AppendModule.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemLogOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SystemLogOut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Log" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\View\File_Log.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ViewLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupModule" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupModule.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SqlCode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SqlCode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemLogout_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SystemLogout_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterModule" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\InsertAfterModule.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterSystem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\InsertAfterSystem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolCollapse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolCollapse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolMoveUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolMoveUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeFunction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\InsertBeforeFunction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeSystem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\InsertBeforeSystem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="History" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\View\History.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterFunction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\InsertAfterFunction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupModule_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupModule_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WinMoreWindows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\WinMoreWindows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolRemove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolRemove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendSystem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\AppendSystem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ParameterViewer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\ParameterViewer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolSqlExplorer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TolSqlExplorer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="System" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\System.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendFunction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\AppendFunction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SqlCode_NotCompatible" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SqlCode_NotCompatible.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Module" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\Module.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewNotCompatible" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\ViewNotCompatible.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

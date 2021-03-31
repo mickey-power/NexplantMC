@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F8D5833-F74C-4687-A050-1F00D9C8CEAE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nexplant.MC.SqlManager</RootNamespace>
+    <AssemblyName>Nexplant.MC.SqlManager.v4.6</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\Nexplant.Mc.WorkspaceManager\Nexplant.MC.WorkspaceManager.v4.6.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Documents.Excel.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.SupportDialogs.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinDock.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinListView.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTree.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinMaskedEdit.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.Misc.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Shared.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Documents.Core.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2012.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Core.v12.1.dll</HintPath>
+      <Name>Infragistics4.Documents.Core.v12.1</Name>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Nexplant.MC.Core.Design.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core.Design\bin\Nexplant.MC.Core.Design.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nexplant.MC.Core.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core\bin\Nexplant.MC.Core.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\c_FCommon.cs" />
+    <Compile Include="Common\c_FConstants.cs" />
+    <Compile Include="Common\c_FMenuKey.cs" />
+    <Compile Include="Common\c_FSqmCore.cs" />
+    <Compile Include="Common\e_FEnum.cs" />
+    <Compile Include="Common\f_FSqmContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\f_FSqmContainer.Designer.cs">
+      <DependentUpon>f_FSqmContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\c_FSqlParameter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FDatabaseSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FDatabaseSelector.designer.cs">
+      <DependentUpon>f_FDatabaseSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FParameterBinder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FParameterBinder.Designer.cs">
+      <DependentUpon>f_FParameterBinder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FParameterBinderTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FParameterBinderTest.Designer.cs">
+      <DependentUpon>f_FParameterBinderTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FParameterViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FParameterViewer.Designer.cs">
+      <DependentUpon>f_FParameterViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Prop\c_FPropParameter.cs" />
+    <Compile Include="Dialog\FQueryEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\FQueryEditor.Designer.cs">
+      <DependentUpon>FQueryEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H101\SQMSQS\c_FSQMSQSCallback.cs" />
+    <Compile Include="H101\SQMSQS\c_FSQMSQSCaster.cs" />
+    <Compile Include="H101\SQMSQS\c_FSQMSQSTuner.cs" />
+    <Compile Include="H101\SQMSQS\c_FSQMSQSSkeleton.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetSystemMigration_In.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetSystemMigration_Out.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Tool\Parameters\c_FSQMSQS_TolMove_In.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Tool\Parameters\c_FSQMSQS_TolMove_Out.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Tool\Parameters\c_FSQMSQS_TolSqlCodeExecute_In.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Tool\Parameters\c_FSQMSQS_TolSqlCodeExecute_Out.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetSqlCodeList_In.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetSqlCodeList_Out.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetSqlCodeSearch_In.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetSqlCodeSearch_Out.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetSqlCodeUpdate_In.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetSqlCodeUpdate_Out.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetSystemDownload_In.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetSystemDownload_Out.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\View\Parameters\c_FSQMSQS_ViwSqlServiceLogDownload_In.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\View\Parameters\c_FSQMSQS_ViwSqlServiceLogDownload_Out.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\View\Parameters\c_FSQMSQS_ViwSqlServiceLogList_In.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\View\Parameters\c_FSQMSQS_ViwSqlServiceLogList_Out.cs" />
+    <Compile Include="MainForm\Help\f_FAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Help\f_FAbout.Designer.cs">
+      <DependentUpon>f_FAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\View\f_FLogList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\View\f_FLogList.Designer.cs">
+      <DependentUpon>f_FLogList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Window\f_FFormList.cs" />
+    <Compile Include="MainForm\Window\f_FFormSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Window\f_FFormSelector.Designer.cs">
+      <DependentUpon>f_FFormSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\f_FSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\f_FSystem.Designer.cs">
+      <DependentUpon>f_FSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\Prop\c_FPropSystem.cs" />
+    <Compile Include="MainForm\Setup\f_FModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\f_FModule.Designer.cs">
+      <DependentUpon>f_FModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\f_FFunction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\f_FFunction.Designer.cs">
+      <DependentUpon>f_FFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\f_FSqlCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\f_FSqlCode.Designer.cs">
+      <DependentUpon>f_FSqlCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\Prop\c_FPropSqlCode.cs" />
+    <Compile Include="MainForm\Setup\Prop\c_FPropModule.cs" />
+    <Compile Include="MainForm\Setup\Prop\c_FPropFunction.cs" />
+    <Compile Include="MainForm\Setup\Prop\PropAttr\c_FPropAttrSqlCodeQueryUITypeEditor.cs" />
+    <Compile Include="Option\c_FOption.cs" />
+    <Compile Include="MainForm\System\c_FConnectionOption.cs" />
+    <Compile Include="MainForm\System\f_FOptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\System\f_FOptionDialog.Designer.cs">
+      <DependentUpon>f_FOptionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MainForm\Tool\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Tool\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\System\Prop\c_FPropConnectionOption.cs" />
+    <Compile Include="MainForm\System\c_FDatabaseOption.cs" />
+    <Compile Include="MainForm\System\Prop\c_FPropDatabaseOption.cs" />
+    <Compile Include="MainForm\Tool\f_FSqlExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Tool\f_FSqlExplorer.Designer.cs">
+      <DependentUpon>f_FSqlExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Tool\f_FSqlWorksheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Tool\f_FSqlWorksheet.Designer.cs">
+      <DependentUpon>f_FSqlWorksheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetFunctionList_In.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetFunctionList_Out.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetFunctionSearch_In.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetFunctionSearch_Out.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetFunctionUpdate_In.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetFunctionUpdate_Out.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetModuleList_In.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetModuleList_Out.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetModuleSearch_In.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetModuleSearch_Out.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetModuleUpdate_In.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetModuleUpdate_Out.cs" />
+    <Compile Include="MainForm\View\f_FApplicationLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\View\f_FApplicationLogViewer.Designer.cs">
+      <DependentUpon>f_FApplicationLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\View\f_FDebugLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\View\f_FDebugLogViewer.Designer.cs">
+      <DependentUpon>f_FDebugLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmlTag\c_FXmlTagSQMOption.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetSystemList_In.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetSystemList_Out.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetSystemSearch_In.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetSystemSearch_Out.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetSystemUpdate_In.cs" />
+    <Compile Include="H101\SQMSQS\SQMSQSCallback\Setup\Parameters\c_FSQMSQS_SetSystemUpdate_Out.cs" />
+    <Compile Include="MainForm\System\f_FConnectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\System\f_FConnectionDialog.Designer.cs">
+      <DependentUpon>f_FConnectionDialog.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\f_FSqmContainer.resx">
+      <DependentUpon>f_FSqmContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FDatabaseSelector.resx">
+      <DependentUpon>f_FDatabaseSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FParameterBinder.resx">
+      <DependentUpon>f_FParameterBinder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\FQueryEditor.resx">
+      <DependentUpon>FQueryEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FParameterBinderTest.resx">
+      <DependentUpon>f_FParameterBinderTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FParameterViewer.resx">
+      <DependentUpon>f_FParameterViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Help\f_FAbout.resx">
+      <DependentUpon>f_FAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\View\f_FLogList.resx">
+      <DependentUpon>f_FLogList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Window\f_FFormSelector.resx">
+      <DependentUpon>f_FFormSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\f_FSystem.resx">
+      <DependentUpon>f_FSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\f_FModule.resx">
+      <DependentUpon>f_FModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\f_FFunction.resx">
+      <DependentUpon>f_FFunction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\f_FSqlCode.resx">
+      <DependentUpon>f_FSqlCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\System\f_FOptionDialog.resx">
+      <DependentUpon>f_FOptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Tool\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Tool\f_FSqlExplorer.resx">
+      <DependentUpon>f_FSqlExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\System\f_FConnectionDialog.resx">
+      <DependentUpon>f_FConnectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Tool\f_FSqlWorksheet.resx">
+      <DependentUpon>f_FSqlWorksheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\View\f_FApplicationLogViewer.resx">
+      <DependentUpon>f_FApplicationLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\View\f_FDebugLogViewer.resx">
+      <DependentUpon>f_FDebugLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Tool\Module.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Tool\Function.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Tool\System.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Tool\SqlCode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolCollapse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolExpand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolExecute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Tool\DbProvider_Oracle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolIndent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolIndentRemove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolComment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolCommentRemove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolFind.png" />
+    <None Include="Resources\ToolRefresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Tool\FileSave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Icon\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\TolSqlWorksheet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\TolSqlExplorer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Tool\More.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Tool\AppendFunction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Tool\AppendModule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Tool\AppendSqlCode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Tool\AppendSystem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\ViewLog_22.png" />
+    <None Include="Resources\MainForm\View\History.png" />
+    <None Include="Resources\MainToolbar\TolSqlWorksheet_22.png" />
+    <None Include="Resources\MainToolbar\TolSqlExplorer_22.png" />
+    <Content Include="Resources\FSqmContainer.png" />
+    <Content Include="Resources\MainForm\Help\FAbout_SqlManager.png" />
+    <None Include="Resources\MainForm\System\FConnectionDialog.png" />
+    <None Include="Resources\MainForm\Tool\ParameterViewer.png" />
+    <None Include="Resources\MainForm\Tool\DbProvider_MySql.png" />
+    <None Include="Resources\MainForm\Tool\DbProvider_PostgreSql.png" />
+    <None Include="Resources\MainForm\Tool\DbProvider_MariaDb.png" />
+    <None Include="Resources\MainForm\Tool\DbProvider_Cubrid.png" />
+    <Content Include="Resources\MainForm\Tool\SqlCode_NotCompatible.png" />
+    <Content Include="Resources\MainForm\Tool\ViewNotCompatible.png" />
+    <Content Include="Resources\MainForm\View\Log.png" />
+    <Content Include="Resources\MainForm\Window\Form.png" />
+    <Content Include="Resources\MainMenu\HelpAbout.png" />
+    <None Include="Resources\MainMenu\WinCloseAllWindows.png" />
+    <None Include="Resources\MainMenu\WinMoreWindows.png" />
+    <Content Include="Resources\MainToolbar\SetupFunction_22.png" />
+    <Content Include="Resources\MainToolbar\SetupModule_22.png" />
+    <Content Include="Resources\MainToolbar\SetupSqlCode_22.png" />
+    <Content Include="Resources\MainToolbar\SetupSystem_22.png" />
+    <Content Include="Resources\MainToolbar\SystemLogout_22.png" />
+    <None Include="Resources\MainMenu\SystemClose.png" />
+    <None Include="Resources\ToolExport.png" />
+    <Content Include="Resources\ToolMigration.png" />
+    <Content Include="Resources\ToolUppercase.png" />
+    <None Include="Resources\MainMenu\ViewLog.png" />
+    <None Include="Resources\MainForm\View\File_Log.png" />
+    <None Include="Resources\MainForm\View\File_Dlg.png" />
+    <None Include="Resources\MainMenu\SystemLogOut.png" />
+    <Content Include="Resources\ToolDownload.png" />
+    <Content Include="Resources\ToolMoveDown.png" />
+    <Content Include="Resources\ToolMoveUp.png" />
+    <Content Include="Resources\ToolPaste.png" />
+    <Content Include="Resources\ToolRemove.png" />
+    <None Include="Resources\MainForm\Tool\InsertAfterFunction.png" />
+    <None Include="Resources\MainForm\Tool\InsertAfterModule.png" />
+    <None Include="Resources\MainForm\Tool\InsertAfterSqlCode.png" />
+    <None Include="Resources\MainForm\Tool\InsertAfterSystem.png" />
+    <None Include="Resources\MainForm\Tool\InsertBeforeFunction.png" />
+    <None Include="Resources\MainForm\Tool\InsertBeforeModule.png" />
+    <None Include="Resources\MainForm\Tool\InsertBeforeSqlCode.png" />
+    <None Include="Resources\MainForm\Tool\InsertBeforeSystem.png" />
+    <Content Include="Resources\MainMenu\SetupModule.png" />
+    <Content Include="Resources\MainForm\Tool\Parameter.png" />
+    <None Include="Resources\ToolReplace.png" />
+    <Content Include="Resources\MainMenu\SetupSqlCode.png" />
+    <Content Include="Resources\MainMenu\SetupSystem.png" />
+    <None Include="Resources\ToolCopy.png" />
+    <None Include="Resources\ToolCut.png" />
+    <Content Include="Resources\MainMenu\SetupFunction.png" />
+    <Content Include="Resources\MainForm\Tool\DbProvider_MsSql.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nexplant.Mc.WorkspaceInterface\Nexplant.MC.WorkspaceInterface.v4.6.csproj">
+      <Project>{37de8452-640c-4262-b631-6ec3e6cb0951}</Project>
+      <Name>Nexplant.MC.WorkspaceInterface.v4.6</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir).\..\..\nexplant.mc-dll\"
+
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

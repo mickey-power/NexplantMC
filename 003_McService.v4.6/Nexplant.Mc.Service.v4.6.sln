@@ -1,0 +1,151 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nexplant.MC.AdminAgent", "Nexplant.MC.AdminAgent", "{32CFB3CA-3469-4A00-8AA6-67D0CBDBF914}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nexplant.MC.AdminService", "Nexplant.MC.AdminService", "{B53B8C19-B2EE-4C2C-ABC8-ACC6C0047974}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nexplant.MC.SqlService", "Nexplant.MC.SqlService", "{EA2A51DE-8706-4EAB-8DE5-ABDB9AC8BB1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SetupKits", "SetupKits", "{D169270D-2CD5-4F2C-9D04-5D6BBC03F78E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.SqlService.v4.6", "Nexplant.MC.SqlService\Nexplant.MC.SqlService.v4.6.csproj", "{44616C90-1E90-4A85-9368-EFE50F1D7DE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.SqlServiceOption.v4.6", "Nexplant.MC.SqlServiceOption\Nexplant.MC.SqlServiceOption.v4.6.csproj", "{D7F90DC6-E9A8-448D-9118-FD8EA75ED3DB}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Nexplant.MC.SqlService.v4.6.Setup", "Nexplant.MC.SqlService.Setup\Nexplant.MC.SqlService.v4.6.Setup.vdproj", "{C3D65A9E-F97F-4011-89C2-6C96D1E3F576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.AdminAgent.v4.6", "Nexplant.MC.AdminAgent\Nexplant.MC.AdminAgent.v4.6.csproj", "{D9B86203-2DA4-4342-B1B9-545FC85DD501}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.AdminAgentContainer.v4.6", "Nexplant.MC.AdminAgentContainer\Nexplant.MC.AdminAgentContainer.v4.6.csproj", "{CBEDAC7C-2D74-425D-A1DF-C00D740B14EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.AdminAgentCore.v4.6", "Nexplant.MC.AdminAgentCore\Nexplant.MC.AdminAgentCore.v4.6.csproj", "{7940EEC3-A812-4168-BE7B-263190BF07D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.AdminAgentOption.v4.6", "Nexplant.MC.AdminAgentOption\Nexplant.MC.AdminAgentOption.v4.6.csproj", "{4576E9F6-E7A2-476C-9548-80C39415DB20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.AdminAgentTracer.v4.6", "Nexplant.MC.ServiceTracer\Nexplant.MC.AdminAgentTracer.v4.6.csproj", "{96D70BFE-69E3-43C6-9374-F6493BD227E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.ProcessAgent.v4.6", "Nexplant.MC.ProcessAgent\Nexplant.MC.ProcessAgent.v4.6.csproj", "{39292F91-FECB-4AF6-A81E-C708189C39A7}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Nexplant.MC.AdminAgent.v4.6.Setup", "Nexplant.MC.AdminAgent.Setup\Nexplant.MC.AdminAgent.v4.6.Setup.vdproj", "{A9E5EA44-4875-4D54-A85C-EDE2E1E5FDA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.AdminServiceContainer.v4.6", "Nexplant.MC.AdminServiceContainer\Nexplant.MC.AdminServiceContainer.v4.6.csproj", "{C4B609EC-2B2F-4448-BEAB-8E334E7BD31E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.AdminServiceCore.v4.6", "Nexplant.MC.AdminServiceCore\Nexplant.MC.AdminServiceCore.v4.6.csproj", "{2CCA0248-4504-4C3E-B0F9-2AB56AF66E6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.AdminServiceOption.v4.6", "Nexplant.MC.AdminServiceOption\Nexplant.MC.AdminServiceOption.v4.6.csproj", "{A29F95F9-10D3-4656-8C03-DBDF364CA63F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.AdminServiceTracer.v4.6", "Nexplant.MC.ServiceTracer\Nexplant.MC.AdminServiceTracer.v4.6.csproj", "{F1A2CFC3-32CF-4B50-8903-250EB3992D3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.AdminService2.v4.6", "Nexplant.MC.AdminService2\Nexplant.MC.AdminService2.v4.6.csproj", "{8C214E84-07C2-40CB-841E-D64BE69BBAB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexplant.MC.AdminService1.v4.6", "Nexplant.MC.AdminService1\Nexplant.MC.AdminService1.v4.6.csproj", "{B1D8A6D7-C5D5-44B8-9C8A-19E274F73C13}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Nexplant.MC.AdminService1.v4.6.Setup", "Nexplant.MC.AdminService1.Setup\Nexplant.MC.AdminService1.v4.6.Setup.vdproj", "{AF692B02-966D-49F1-9E79-FE6662B01A9F}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Nexplant.MC.AdminService2.v4.6.Setup", "Nexplant.MC.AdminService2.Setup\Nexplant.MC.AdminService2.v4.6.Setup.vdproj", "{4136787B-E636-43B6-89AD-CE0FA3622523}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44616C90-1E90-4A85-9368-EFE50F1D7DE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44616C90-1E90-4A85-9368-EFE50F1D7DE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44616C90-1E90-4A85-9368-EFE50F1D7DE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44616C90-1E90-4A85-9368-EFE50F1D7DE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7F90DC6-E9A8-448D-9118-FD8EA75ED3DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7F90DC6-E9A8-448D-9118-FD8EA75ED3DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7F90DC6-E9A8-448D-9118-FD8EA75ED3DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7F90DC6-E9A8-448D-9118-FD8EA75ED3DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3D65A9E-F97F-4011-89C2-6C96D1E3F576}.Debug|Any CPU.ActiveCfg = Debug
+		{C3D65A9E-F97F-4011-89C2-6C96D1E3F576}.Release|Any CPU.ActiveCfg = Release
+		{D9B86203-2DA4-4342-B1B9-545FC85DD501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9B86203-2DA4-4342-B1B9-545FC85DD501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9B86203-2DA4-4342-B1B9-545FC85DD501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9B86203-2DA4-4342-B1B9-545FC85DD501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBEDAC7C-2D74-425D-A1DF-C00D740B14EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBEDAC7C-2D74-425D-A1DF-C00D740B14EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBEDAC7C-2D74-425D-A1DF-C00D740B14EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBEDAC7C-2D74-425D-A1DF-C00D740B14EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7940EEC3-A812-4168-BE7B-263190BF07D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7940EEC3-A812-4168-BE7B-263190BF07D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7940EEC3-A812-4168-BE7B-263190BF07D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7940EEC3-A812-4168-BE7B-263190BF07D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4576E9F6-E7A2-476C-9548-80C39415DB20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4576E9F6-E7A2-476C-9548-80C39415DB20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4576E9F6-E7A2-476C-9548-80C39415DB20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4576E9F6-E7A2-476C-9548-80C39415DB20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96D70BFE-69E3-43C6-9374-F6493BD227E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D70BFE-69E3-43C6-9374-F6493BD227E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96D70BFE-69E3-43C6-9374-F6493BD227E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96D70BFE-69E3-43C6-9374-F6493BD227E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39292F91-FECB-4AF6-A81E-C708189C39A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39292F91-FECB-4AF6-A81E-C708189C39A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39292F91-FECB-4AF6-A81E-C708189C39A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39292F91-FECB-4AF6-A81E-C708189C39A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9E5EA44-4875-4D54-A85C-EDE2E1E5FDA5}.Debug|Any CPU.ActiveCfg = Debug
+		{A9E5EA44-4875-4D54-A85C-EDE2E1E5FDA5}.Release|Any CPU.ActiveCfg = Release
+		{C4B609EC-2B2F-4448-BEAB-8E334E7BD31E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4B609EC-2B2F-4448-BEAB-8E334E7BD31E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4B609EC-2B2F-4448-BEAB-8E334E7BD31E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4B609EC-2B2F-4448-BEAB-8E334E7BD31E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CCA0248-4504-4C3E-B0F9-2AB56AF66E6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CCA0248-4504-4C3E-B0F9-2AB56AF66E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CCA0248-4504-4C3E-B0F9-2AB56AF66E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CCA0248-4504-4C3E-B0F9-2AB56AF66E6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A29F95F9-10D3-4656-8C03-DBDF364CA63F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A29F95F9-10D3-4656-8C03-DBDF364CA63F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A29F95F9-10D3-4656-8C03-DBDF364CA63F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A29F95F9-10D3-4656-8C03-DBDF364CA63F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1A2CFC3-32CF-4B50-8903-250EB3992D3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1A2CFC3-32CF-4B50-8903-250EB3992D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1A2CFC3-32CF-4B50-8903-250EB3992D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1A2CFC3-32CF-4B50-8903-250EB3992D3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C214E84-07C2-40CB-841E-D64BE69BBAB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C214E84-07C2-40CB-841E-D64BE69BBAB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C214E84-07C2-40CB-841E-D64BE69BBAB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C214E84-07C2-40CB-841E-D64BE69BBAB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1D8A6D7-C5D5-44B8-9C8A-19E274F73C13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1D8A6D7-C5D5-44B8-9C8A-19E274F73C13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1D8A6D7-C5D5-44B8-9C8A-19E274F73C13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1D8A6D7-C5D5-44B8-9C8A-19E274F73C13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF692B02-966D-49F1-9E79-FE6662B01A9F}.Debug|Any CPU.ActiveCfg = Debug
+		{AF692B02-966D-49F1-9E79-FE6662B01A9F}.Release|Any CPU.ActiveCfg = Release
+		{4136787B-E636-43B6-89AD-CE0FA3622523}.Debug|Any CPU.ActiveCfg = Debug
+		{4136787B-E636-43B6-89AD-CE0FA3622523}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{44616C90-1E90-4A85-9368-EFE50F1D7DE8} = {EA2A51DE-8706-4EAB-8DE5-ABDB9AC8BB1B}
+		{D7F90DC6-E9A8-448D-9118-FD8EA75ED3DB} = {EA2A51DE-8706-4EAB-8DE5-ABDB9AC8BB1B}
+		{C3D65A9E-F97F-4011-89C2-6C96D1E3F576} = {D169270D-2CD5-4F2C-9D04-5D6BBC03F78E}
+		{D9B86203-2DA4-4342-B1B9-545FC85DD501} = {32CFB3CA-3469-4A00-8AA6-67D0CBDBF914}
+		{CBEDAC7C-2D74-425D-A1DF-C00D740B14EE} = {32CFB3CA-3469-4A00-8AA6-67D0CBDBF914}
+		{7940EEC3-A812-4168-BE7B-263190BF07D4} = {32CFB3CA-3469-4A00-8AA6-67D0CBDBF914}
+		{4576E9F6-E7A2-476C-9548-80C39415DB20} = {32CFB3CA-3469-4A00-8AA6-67D0CBDBF914}
+		{96D70BFE-69E3-43C6-9374-F6493BD227E1} = {32CFB3CA-3469-4A00-8AA6-67D0CBDBF914}
+		{39292F91-FECB-4AF6-A81E-C708189C39A7} = {32CFB3CA-3469-4A00-8AA6-67D0CBDBF914}
+		{A9E5EA44-4875-4D54-A85C-EDE2E1E5FDA5} = {D169270D-2CD5-4F2C-9D04-5D6BBC03F78E}
+		{C4B609EC-2B2F-4448-BEAB-8E334E7BD31E} = {B53B8C19-B2EE-4C2C-ABC8-ACC6C0047974}
+		{2CCA0248-4504-4C3E-B0F9-2AB56AF66E6B} = {B53B8C19-B2EE-4C2C-ABC8-ACC6C0047974}
+		{A29F95F9-10D3-4656-8C03-DBDF364CA63F} = {B53B8C19-B2EE-4C2C-ABC8-ACC6C0047974}
+		{F1A2CFC3-32CF-4B50-8903-250EB3992D3C} = {B53B8C19-B2EE-4C2C-ABC8-ACC6C0047974}
+		{8C214E84-07C2-40CB-841E-D64BE69BBAB4} = {B53B8C19-B2EE-4C2C-ABC8-ACC6C0047974}
+		{B1D8A6D7-C5D5-44B8-9C8A-19E274F73C13} = {B53B8C19-B2EE-4C2C-ABC8-ACC6C0047974}
+		{AF692B02-966D-49F1-9E79-FE6662B01A9F} = {D169270D-2CD5-4F2C-9D04-5D6BBC03F78E}
+		{4136787B-E636-43B6-89AD-CE0FA3622523} = {D169270D-2CD5-4F2C-9D04-5D6BBC03F78E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

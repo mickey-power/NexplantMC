@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>Nexplant.MC.Core.Converter.v4.6</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>5a39b16d-f95c-4043-9d10-60f2040ce62e</ProjectGuid>
+  <FullPath>D:\Product\Nexplant\src\nexplant.mc\001_MCCore.v4.6\Nexplant.MC.Core.Converter\Nexplant.MC.Core.Converter.v4.6.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResults>
+    <AnalysisResult Id="FilesToAnalyze" Location="D:\Product\Nexplant\src\nexplant.mc\001_MCCore.v4.6\.sonarqube\out\1\FilesToAnalyze.txt" />
+  </AnalysisResults>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePath">D:\Product\Nexplant\src\nexplant.mc\001_MCCore.v4.6\Nexplant.MC.Core.Converter\bin\Nexplant.MC.Core.Conveter.v4.6.dll.RoslynCA.json|D:\Product\Nexplant\src\nexplant.mc\001_MCCore.v4.6\Nexplant.MC.Core.Converter\bin\Nexplant.MC.Core.Conveter.v4.6.dll.RoslynCA.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPath">D:\Product\Nexplant\src\nexplant.mc\001_MCCore.v4.6\.sonarqube\out\1</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+</ProjectInfo>

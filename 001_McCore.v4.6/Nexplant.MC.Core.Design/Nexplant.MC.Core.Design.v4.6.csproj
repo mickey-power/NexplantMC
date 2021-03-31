@@ -1,0 +1,1051 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4ED359C3-B74B-4D5E-9D31-8C59A6733E6B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nexplant.MC.Core</RootNamespace>
+    <AssemblyName>Nexplant.MC.Core.Design.v4.6</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Win.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Excel.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Misc.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDock.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinListView.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinMaskedEdit.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTree.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Core.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2012.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Core.v12.1.dll</HintPath>
+      <Name>Infragistics4.Documents.Core.v12.1</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm\f_FBaseStandAloneForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseStandAloneForm.Designer.cs">
+      <DependentUpon>f_FBaseStandAloneForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\c_FFormCloseConfirmEventArgs.cs" />
+    <Compile Include="Button\t_FToolButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Button\t_FToolButton.Designer.cs">
+      <DependentUpon>t_FToolButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\t_FChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Chart\t_FChart.Designer.cs">
+      <DependentUpon>t_FChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\t_FPointChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Chart\t_FPointChart.Designer.cs">
+      <DependentUpon>t_FPointChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\FChartCommon.cs" />
+    <Compile Include="Chart\WaferChart\c_FCell.cs" />
+    <Compile Include="Chart\WaferChart\c_FCellCollectionEnumerator.cs" />
+    <Compile Include="Chart\WaferChart\c_FFlagCollectionEnumerator.cs" />
+    <Compile Include="Chart\WaferChart\w_FWaferChart.xaml.cs">
+      <DependentUpon>w_FWaferChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\WaferChart\c_FFlag.cs" />
+    <Compile Include="Chart\WaferChart\c_FCellCollection.cs" />
+    <Compile Include="Chart\WaferChart\c_FFlagCollection.cs" />
+    <Compile Include="Combo\t_FDropDownListCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Combo\t_FDropDownListCombo.Designer.cs">
+      <DependentUpon>t_FDropDownListCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\c_FConstants.cs" />
+    <Compile Include="Common\d_FDelegate.cs" />
+    <Compile Include="Common\e_FEnum.cs" />
+    <Compile Include="Combo\c_FComboCommon.cs" />
+    <Compile Include="Chart\t_FBarChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Chart\t_FBarChart.Designer.cs">
+      <DependentUpon>t_FBarChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateTimeBox\c_FDateTimeBoxCommon.cs" />
+    <Compile Include="DynPropGrid\c_FDynPropNoticeRaisedEventArgs.cs" />
+    <Compile Include="TextBox\t_FFormattedBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextBox\t_FFormattedBox.Designer.cs">
+      <DependentUpon>t_FFormattedBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextBox\t_FFormattedEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TextBox\t_FFormattedEditor.Designer.cs">
+      <DependentUpon>t_FFormattedEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextBox\t_FRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextBox\t_FRichTextBox.Designer.cs">
+      <DependentUpon>t_FRichTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextEditor\t_FTextEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TextEditor\t_FTextEditor.Designer.cs">
+      <DependentUpon>t_FTextEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExplorerBar\t_FExplorerBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExplorerBar\t_FExplorerBar.Designer.cs">
+      <DependentUpon>t_FExplorerBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dock\t_FDockManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dock\t_FDockManager.Designer.cs">
+      <DependentUpon>t_FDockManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\t_FLineChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Chart\t_FLineChart.Designer.cs">
+      <DependentUpon>t_FLineChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flow\c_FFlowCtrlActivatedEventArgs.cs" />
+    <Compile Include="Flow\t_FFlowContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Flow\t_FFlowContainer.Designer.cs">
+      <DependentUpon>t_FFlowContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flow\c_FFlowCtrlCollection.cs" />
+    <Compile Include="Flow\c_FFlowCtrlCollectionEnumerator.cs" />
+    <Compile Include="Flow\i_FIFlowCtrl.cs" />
+    <Compile Include="Flow\t_FSecsTriggerFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Flow\t_FSecsTriggerFlow.Designer.cs">
+      <DependentUpon>t_FSecsTriggerFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flow\t_FSecsTransmitterFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Flow\t_FSecsTransmitterFlow.Designer.cs">
+      <DependentUpon>t_FSecsTransmitterFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flow\t_FBaseFlowCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Flow\t_FBaseFlowCtrl.Designer.cs">
+      <DependentUpon>t_FBaseFlowCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flow\t_FHostTransmitterFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Flow\t_FHostTransmitterFlow.Designer.cs">
+      <DependentUpon>t_FHostTransmitterFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flow\t_FHostTriggerFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Flow\t_FHostTriggerFlow.Designer.cs">
+      <DependentUpon>t_FHostTriggerFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flow\c_FFlowContainerActivatedEventArgs.cs" />
+    <Compile Include="Flow\t_FBranchFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Flow\t_FBranchFlow.Designer.cs">
+      <DependentUpon>t_FBranchFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flow\t_FCallbackFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Flow\t_FCallbackFlow.Designer.cs">
+      <DependentUpon>t_FCallbackFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flow\t_FCommentFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Flow\t_FCommentFlow.Designer.cs">
+      <DependentUpon>t_FCommentFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flow\t_FMapperFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Flow\t_FMapperFlow.Designer.cs">
+      <DependentUpon>t_FMapperFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flow\t_FStorageFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Flow\t_FStorageFlow.Designer.cs">
+      <DependentUpon>t_FStorageFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flow\t_FJudgementFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Flow\t_FJudgementFlow.Designer.cs">
+      <DependentUpon>t_FJudgementFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flow\t_FEquipmentStateSetAltererFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Flow\t_FEquipmentStateSetAltererFlow.Designer.cs">
+      <DependentUpon>t_FEquipmentStateSetAltererFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionSet\t_FOptionSet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OptionSet\t_FOptionSet.Designer.cs">
+      <DependentUpon>t_FOptionSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\t_FPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Panel\t_FPanel.Designer.cs">
+      <DependentUpon>t_FPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sequence\c_FSequenceFlowCollection.cs" />
+    <Compile Include="Sequence\c_FSequenceFlowCollectionEnumerator.cs" />
+    <Compile Include="Sequence\c_FSequenceFlowActivatedEventArgs.cs" />
+    <Compile Include="Sequence\t_FSequenceFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sequence\t_FSequenceFlow.Designer.cs">
+      <DependentUpon>t_FSequenceFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sequence\t_FSequenceFlowContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sequence\t_FSequenceFlowContainer.Designer.cs">
+      <DependentUpon>t_FSequenceFlowContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Label\t_FTitleLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Label\t_FTitleLabel.Designer.cs">
+      <DependentUpon>t_FTitleLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sequence\c_FScenarioActivatedEventArgs.cs" />
+    <Compile Include="NumericBox\c_FNumericBoxCommon.cs" />
+    <Compile Include="CheckBox\t_FCheckedBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CheckBox\t_FCheckedBox.Designer.cs">
+      <DependentUpon>t_FCheckedBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateTimeBox\t_FDateTimeBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DateTimeBox\t_FDateTimeBox.Designer.cs">
+      <DependentUpon>t_FDateTimeBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spiltter\t_FSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Spiltter\t_FSplitter.Designer.cs">
+      <DependentUpon>t_FSplitter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tab\t_FTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tab\t_FTab.Designer.cs">
+      <DependentUpon>t_FTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextBox\c_FTextBoxCommon.cs" />
+    <Compile Include="TextBox\t_FEditTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextBox\t_FEditTextBox.designer.cs">
+      <DependentUpon>t_FEditTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaskedBox\t_FMaskedBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MaskedBox\t_FMaskedBox.Designer.cs">
+      <DependentUpon>t_FMaskedBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumericBox\t_FNumericBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NumericBox\t_FNumericBox.Designer.cs">
+      <DependentUpon>t_FNumericBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeView\c_FTreeViewBeforeMouseDownEventArgs.cs" />
+    <Compile Include="TreeView\t_FTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeView\t_FTreeView.Designer.cs">
+      <DependentUpon>t_FTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Label\t_FLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Label\t_FLabel.Designer.cs">
+      <DependentUpon>t_FLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\c_FFormCommon.cs" />
+    <Compile Include="DynPropGrid\c_FDynPropGridAttr.cs" />
+    <Compile Include="DynPropGrid\c_FDynPropGridAttrCollection.cs" />
+    <Compile Include="DynPropGrid\c_FDynPropGridProp.cs" />
+    <Compile Include="DynPropGrid\c_FDynPropGridPropCollection.cs" />
+    <Compile Include="DynPropGrid\c_FDynPropGridPropDescriptor.cs" />
+    <Compile Include="DynPropGrid\c_FDynPropGridPropSortAttribute.cs" />
+    <Compile Include="DynPropGrid\c_FDynPropGridPropSortByAttribute.cs" />
+    <Compile Include="DynPropGrid\c_FDynPropGridPropSortByNatural.cs" />
+    <Compile Include="DynPropGrid\c_FDynPropGridTypeDescriptor.cs" />
+    <Compile Include="DynPropGrid\t_FDynPropGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DynPropGrid\t_FDynPropGrid.Designer.cs">
+      <DependentUpon>t_FDynPropGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Button\t_FButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Button\t_FButton.Designer.cs">
+      <DependentUpon>t_FButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DynPropGrid\f_FDynPropBase.cs" />
+    <Compile Include="Cursor\c_FCursor.cs" />
+    <Compile Include="BaseForm\f_FBaseControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseControlForm.Designer.cs">
+      <DependentUpon>f_FBaseControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseTabChildDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseTabChildDialogForm.Designer.cs">
+      <DependentUpon>f_FBaseTabChildDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\f_FTabChildIcon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\f_FTabChildIcon.Designer.cs">
+      <DependentUpon>f_FTabChildIcon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseTabChildForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseTabChildForm.Designer.cs">
+      <DependentUpon>f_FBaseTabChildForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Label\t_FValueLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Label\t_FValueLabel.Designer.cs">
+      <DependentUpon>t_FValueLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextBox\f_FTextSearcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextBox\f_FTextSearcher.Designer.cs">
+      <DependentUpon>f_FTextSearcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\t_FTilePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Panel\t_FTilePanel.Designer.cs">
+      <DependentUpon>t_FTilePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseStandardGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseStandardGroupForm.Designer.cs">
+      <DependentUpon>f_FBaseStandardGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseStandardDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseStandardDialogForm.Designer.cs">
+      <DependentUpon>f_FBaseStandardDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseStandardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseStandardForm.Designer.cs">
+      <DependentUpon>f_FBaseStandardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextBox\t_FLogTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextBox\t_FLogTextBox.Designer.cs">
+      <DependentUpon>t_FLogTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grid\c_FGridCommon.cs" />
+    <Compile Include="Grid\t_FDetailViewGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grid\t_FDetailViewGrid.Designer.cs">
+      <DependentUpon>t_FDetailViewGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toolbar\c_FSearchRequestedEventArgs.cs" />
+    <Compile Include="StatusBar\t_FStatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StatusBar\t_FStatusBar.Designer.cs">
+      <DependentUpon>t_FStatusBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tab\t_FTabbedMdiManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tab\t_FTabbedMdiManager.Designer.cs">
+      <DependentUpon>t_FTabbedMdiManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextBox\t_FTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextBox\t_FTextBox.Designer.cs">
+      <DependentUpon>t_FTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toolbar\t_FToolbarsManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Toolbar\t_FToolbarsManager.Designer.cs">
+      <DependentUpon>t_FToolbarsManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grid\t_FGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grid\t_FGrid.Designer.cs">
+      <DependentUpon>t_FGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseForm.Designer.cs">
+      <DependentUpon>f_FBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DynPropGrid\f_FDynPropCusBase.cs" />
+    <Compile Include="BaseForm\f_FBaseTabMdiChildForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseTabMdiChildForm.Designer.cs">
+      <DependentUpon>f_FBaseTabMdiChildForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toolbar\t_FRibbonToolbarsManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Toolbar\t_FRibbonToolbarsManager.Designer.cs">
+      <DependentUpon>t_FRibbonToolbarsManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toolbar\t_FRefreshAndSearchToolbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Toolbar\t_FRefreshAndSearchToolbar.Designer.cs">
+      <DependentUpon>t_FRefreshAndSearchToolbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextBox\c_FSearchWordSelectionRequestedEventArgs.cs" />
+    <Compile Include="UIWizard\c_FFontNameChangedEventArgs.cs" />
+    <Compile Include="UIWizard\c_FLanguageChangedEventArgs.cs" />
+    <Compile Include="UIWizard\c_FUIWizard.cs" />
+    <Compile Include="Progress\c_FProgress.cs" />
+    <Compile Include="Progress\f_FProgressDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress\f_FProgressDialog.Designer.cs">
+      <DependentUpon>f_FProgressDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseRibbonMdiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseRibbonMdiForm.Designer.cs">
+      <DependentUpon>f_FBaseRibbonMdiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Combo\t_FDropDownCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Combo\t_FDropDownCombo.Designer.cs">
+      <DependentUpon>t_FDropDownCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopAlert\t_FDesktopAlert.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DesktopAlert\t_FDesktopAlert.Designer.cs">
+      <DependentUpon>t_FDesktopAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Adorners\c_FDragAdorner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Adorners\c_FInsertAdorner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Arrow\c_FArrowEnds.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Arrow\c_FArrowLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Arrow\c_FArrowLineBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Arrow\c_FArrowPolyline.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Common\c_FCommon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Common\d_FDelegate.cs" />
+    <Compile Include="WPF\Events\c_FFlowContainerActivatedEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Events\c_FFlowCtrlActivatedEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Events\c_FFlowCtrlDroppedEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\c_FFlowCtrlCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\c_FFlowCtrlCollectionEnumerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\c_FFlowDragEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\c_FFlowItems.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\c_FFlowMouseEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\c_FToolboxItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\c_FToolboxItems.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\i_FIFlowCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FBaseFlowCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FBaseFlowCtrl.Designer.cs">
+      <DependentUpon>t_FBaseFlowCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FBranchFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FBranchFlow.Designer.cs">
+      <DependentUpon>t_FBranchFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FCallbackFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FCallbackFlow.Designer.cs">
+      <DependentUpon>t_FCallbackFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FCommentFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FCommentFlow.Designer.cs">
+      <DependentUpon>t_FCommentFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FEntryPointFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FEntryPointFlow.Designer.cs">
+      <DependentUpon>t_FEntryPointFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FEquipmentStateSetAltererFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FEquipmentStateSetAltererFlow.Designer.cs">
+      <DependentUpon>t_FEquipmentStateSetAltererFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FHostTransmitterFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FHostTransmitterFlow.Designer.cs">
+      <DependentUpon>t_FHostTransmitterFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FHostTriggerFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FHostTriggerFlow.Designer.cs">
+      <DependentUpon>t_FHostTriggerFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FJudgementFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FJudgementFlow.Designer.cs">
+      <DependentUpon>t_FJudgementFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FMapperFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FMapperFlow.Designer.cs">
+      <DependentUpon>t_FMapperFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FOpcTransmitterFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FOpcTransmitterFlow.Designer.cs">
+      <DependentUpon>t_FOpcTransmitterFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FOpcTriggerFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FOpcTriggerFlow.Designer.cs">
+      <DependentUpon>t_FOpcTriggerFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FPauserFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FPauserFlow.Designer.cs">
+      <DependentUpon>t_FPauserFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FPlcTransmitterFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FPlcTransmitterFlow.Designer.cs">
+      <DependentUpon>t_FPlcTransmitterFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FPlcTriggerFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FPlcTriggerFlow.Designer.cs">
+      <DependentUpon>t_FPlcTriggerFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FSecsTransmitterFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FSecsTransmitterFlow.Designer.cs">
+      <DependentUpon>t_FSecsTransmitterFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FSecsTriggerFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FSecsTriggerFlow.Designer.cs">
+      <DependentUpon>t_FSecsTriggerFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FStorageFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FStorageFlow.Designer.cs">
+      <DependentUpon>t_FStorageFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FTcpTransmitterFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FTcpTransmitterFlow.Designer.cs">
+      <DependentUpon>t_FTcpTransmitterFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FTcpTriggerFlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\t_FTcpTriggerFlow.Designer.cs">
+      <DependentUpon>t_FTcpTriggerFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Flow\w_FFlowContainer.xaml.cs">
+      <DependentUpon>w_FFlowContainer.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WPF\Flow\w_FToolBox.xaml.cs">
+      <DependentUpon>w_FToolBox.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XmlTag\c_FXmlTagCaption.cs" />
+    <Compile Include="XmlTag\c_FXmlTagCaptionGroup.cs" />
+    <Compile Include="XmlTag\c_FXmlTagMessage.cs" />
+    <Compile Include="XmlTag\c_FXmlTagMessageGroup.cs" />
+    <Compile Include="BaseForm\f_FBaseTabChildGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseTabChildGroupForm.Designer.cs">
+      <DependentUpon>f_FBaseTabChildGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseControlDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\f_FBaseControlDialogForm.Designer.cs">
+      <DependentUpon>f_FBaseControlDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileExport\c_FExcelExporter.cs" />
+    <Compile Include="FileExport\c_FExcelExporter2.cs" />
+    <Compile Include="FileExport\c_FExcelImporter.cs" />
+    <Compile Include="FileExport\c_FExcelSheet.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseForm\f_FBaseStandAloneForm.resx">
+      <DependentUpon>f_FBaseStandAloneForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\f_FBaseControlForm.resx">
+      <DependentUpon>f_FBaseControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\f_FBaseStandardGroupForm.resx">
+      <DependentUpon>f_FBaseStandardGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\f_FBaseStandardDialogForm.resx">
+      <DependentUpon>f_FBaseStandardDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\f_FBaseStandardForm.resx">
+      <DependentUpon>f_FBaseStandardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\f_FBaseTabChildDialogForm.resx">
+      <DependentUpon>f_FBaseTabChildDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\f_FBaseTabChildForm.resx">
+      <DependentUpon>f_FBaseTabChildForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\f_FTabChildIcon.resx">
+      <DependentUpon>f_FTabChildIcon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextBox\t_FFormattedEditor.resx">
+      <DependentUpon>t_FFormattedEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextEditor\t_FTextEditor.resx">
+      <DependentUpon>t_FTextEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flow\t_FFlowContainer.resx">
+      <DependentUpon>t_FFlowContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flow\t_FSecsTriggerFlow.resx">
+      <DependentUpon>t_FSecsTriggerFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flow\t_FSecsTransmitterFlow.resx">
+      <DependentUpon>t_FSecsTransmitterFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flow\t_FBaseFlowCtrl.resx">
+      <DependentUpon>t_FBaseFlowCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flow\t_FHostTransmitterFlow.resx">
+      <DependentUpon>t_FHostTransmitterFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flow\t_FHostTriggerFlow.resx">
+      <DependentUpon>t_FHostTriggerFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flow\t_FBranchFlow.resx">
+      <DependentUpon>t_FBranchFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flow\t_FCallbackFlow.resx">
+      <DependentUpon>t_FCallbackFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flow\t_FCommentFlow.resx">
+      <DependentUpon>t_FCommentFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flow\t_FMapperFlow.resx">
+      <DependentUpon>t_FMapperFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flow\t_FStorageFlow.resx">
+      <DependentUpon>t_FStorageFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flow\t_FJudgementFlow.resx">
+      <DependentUpon>t_FJudgementFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flow\t_FEquipmentStateSetAltererFlow.resx">
+      <DependentUpon>t_FEquipmentStateSetAltererFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence\t_FSequenceFlow.resx">
+      <DependentUpon>t_FSequenceFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence\t_FSequenceFlowContainer.resx">
+      <DependentUpon>t_FSequenceFlowContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextBox\f_FTextSearcher.resx">
+      <DependentUpon>f_FTextSearcher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grid\t_FGrid.resx">
+      <DependentUpon>t_FGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\f_FBaseForm.resx">
+      <DependentUpon>f_FBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\f_FBaseTabMdiChildForm.resx">
+      <DependentUpon>f_FBaseTabMdiChildForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress\f_FProgressDialog.resx">
+      <DependentUpon>f_FProgressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\f_FBaseRibbonMdiForm.resx">
+      <DependentUpon>f_FBaseRibbonMdiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toolbar\t_FRefreshAndSearchToolbar.resx">
+      <DependentUpon>t_FRefreshAndSearchToolbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\f_FBaseTabChildGroupForm.resx">
+      <DependentUpon>f_FBaseTabChildGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\f_FBaseControlDialogForm.resx">
+      <DependentUpon>f_FBaseControlDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FBaseFlowCtrl.resx">
+      <DependentUpon>t_FBaseFlowCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FBranchFlow.resx">
+      <DependentUpon>t_FBranchFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FCallbackFlow.resx">
+      <DependentUpon>t_FCallbackFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FCommentFlow.resx">
+      <DependentUpon>t_FCommentFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FEntryPointFlow.resx">
+      <DependentUpon>t_FEntryPointFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FEquipmentStateSetAltererFlow.resx">
+      <DependentUpon>t_FEquipmentStateSetAltererFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FHostTransmitterFlow.resx">
+      <DependentUpon>t_FHostTransmitterFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FHostTriggerFlow.resx">
+      <DependentUpon>t_FHostTriggerFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FJudgementFlow.resx">
+      <DependentUpon>t_FJudgementFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FMapperFlow.resx">
+      <DependentUpon>t_FMapperFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FOpcTransmitterFlow.resx">
+      <DependentUpon>t_FOpcTransmitterFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FOpcTriggerFlow.resx">
+      <DependentUpon>t_FOpcTriggerFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FPauserFlow.resx">
+      <DependentUpon>t_FPauserFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FPlcTransmitterFlow.resx">
+      <DependentUpon>t_FPlcTransmitterFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FPlcTriggerFlow.resx">
+      <DependentUpon>t_FPlcTriggerFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FSecsTransmitterFlow.resx">
+      <DependentUpon>t_FSecsTransmitterFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FSecsTriggerFlow.resx">
+      <DependentUpon>t_FSecsTriggerFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FStorageFlow.resx">
+      <DependentUpon>t_FStorageFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FTcpTransmitterFlow.resx">
+      <DependentUpon>t_FTcpTransmitterFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WPF\Flow\t_FTcpTriggerFlow.resx">
+      <DependentUpon>t_FTcpTriggerFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Progress.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolFind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolRefresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIForm_TitleClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIForm_TitleCloseDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIForm_TitleCloseHotTrack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIForm_TitleClosePressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIForm_TitleMaximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIForm_TitleMaximizeDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIForm_TitleMaximizeHotTrack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIForm_TitleMaximizePressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIForm_TitleMinimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIForm_TitleMinimizeDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIForm_TitleMinimizeHotTrack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIForm_TitleMinimizePressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIForm_TitleRestore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIForm_TitleRestoreDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIForm_TitleRestoreHotTrack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIForm_TitleRestorePressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIEdit_Picture.png" />
+    <None Include="Resources\UIEdit_Link.png" />
+    <None Include="Resources\not_defined.png" />
+    <None Include="Resources\ToolEdit_Clicked.png" />
+    <None Include="Resources\ToolEdit.png" />
+    <None Include="Resources\ConnectOption.png" />
+    <Content Include="Resources\FExplorerbar_Item.png" />
+    <Content Include="Resources\FExplorerbar_Item_Checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Chart\WaferChart\w_FWaferChart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPF\Flow\w_FFlowContainer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPF\Flow\w_FToolBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nexplant.Mc.Core\Nexplant.MC.Core.v4.6.csproj">
+      <Project>{87e1cd5d-13c7-4f9e-be21-d7ae31df80ef}</Project>
+      <Name>Nexplant.MC.Core.v4.6</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)..\..\nexplant.mc-dll\"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

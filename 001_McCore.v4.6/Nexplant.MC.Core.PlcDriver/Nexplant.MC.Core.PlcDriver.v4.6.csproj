@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{673AE301-80CB-4A93-8C8D-D9D097E71A74}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nexplant.MC.Core</RootNamespace>
+    <AssemblyName>Nexplant.MC.Core.PlcDriver.v4.6</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Converter\c_FByteConverter.cs" />
+    <Compile Include="Common\Converter\c_FEnumConverter.cs" />
+    <Compile Include="Common\Converter\c_FMessageConverter.cs" />
+    <Compile Include="Common\Converter\c_FPlcValueConverter.cs" />
+    <Compile Include="Common\Converter\c_FValueConverter.cs" />
+    <Compile Include="Common\c_FBaseCollection.cs" />
+    <Compile Include="Common\c_FBaseCollectionEnumerator.cs" />
+    <Compile Include="Common\c_FBoolean.cs" />
+    <Compile Include="Common\c_FCommon.cs" />
+    <Compile Include="Common\c_FConstants.cs" />
+    <Compile Include="Common\d_FDelegate.cs" />
+    <Compile Include="Common\e_FEnum.cs" />
+    <Compile Include="Common\i_FIEnumerator.cs" />
+    <Compile Include="Common\Search\c_FSearchNode.cs" />
+    <Compile Include="HostDriver\c_FHostDriverArgs.cs" />
+    <Compile Include="HostDriver\c_FHostDriverDataMessage.cs" />
+    <Compile Include="HostDriver\c_FHostDriverDataMessageReceivedEventArgs.cs" />
+    <Compile Include="HostDriver\c_FHostDriverDataMessageSentEventArgs.cs" />
+    <Compile Include="HostDriver\c_FHostDriverErrorRaisedEventArgs.cs" />
+    <Compile Include="HostDriver\c_FHostDriverStateChangedEventArgs.cs" />
+    <Compile Include="HostDriver\i_FIHostDriver.cs" />
+    <Compile Include="HostDriver\i_FIHostDriverOption.cs" />
+    <Compile Include="PlcDriverLog\c_FBaseObjectLog.cs" />
+    <Compile Include="PlcDriverLog\c_FBaseObjectLogCollection.cs" />
+    <Compile Include="PlcDriverLog\c_FObjectLogCollection.cs" />
+    <Compile Include="PlcDriverLog\c_FObjectLogCollectionEnumerator.cs" />
+    <Compile Include="PlcDriverLog\c_FPcdlCore.cs" />
+    <Compile Include="PlcDriverLog\c_FPlcDriverLog.cs" />
+    <Compile Include="PlcDriverLog\c_FPlcDriverLogCommon.cs" />
+    <Compile Include="PlcDriverLog\HostDeviceLog\c_FHostDeviceDataMessageLog.cs" />
+    <Compile Include="PlcDriverLog\HostDeviceLog\c_FHostDeviceDataMessageReceivedLog.cs" />
+    <Compile Include="PlcDriverLog\HostDeviceLog\c_FHostDeviceDataMessageSentLog.cs" />
+    <Compile Include="PlcDriverLog\HostDeviceLog\c_FHostDeviceErrorRaisedLog.cs" />
+    <Compile Include="PlcDriverLog\HostDeviceLog\c_FHostDeviceLog.cs" />
+    <Compile Include="PlcDriverLog\HostDeviceLog\c_FHostDeviceStateChangedLog.cs" />
+    <Compile Include="PlcDriverLog\HostDeviceLog\c_FHostDeviceVfeiLog.cs" />
+    <Compile Include="PlcDriverLog\HostDeviceLog\c_FHostDeviceVfeiReceivedLog.cs" />
+    <Compile Include="PlcDriverLog\HostDeviceLog\c_FHostDeviceVfeiSentLog.cs" />
+    <Compile Include="PlcDriverLog\HostDeviceLog\c_FHostItemLog.cs" />
+    <Compile Include="PlcDriverLog\HostDeviceLog\c_FHostItemLogCollection.cs" />
+    <Compile Include="PlcDriverLog\HostDeviceLog\c_FHostItemLogCollectionEnumerator.cs" />
+    <Compile Include="PlcDriverLog\Interface\i_FIMessageLog.cs" />
+    <Compile Include="PlcDriverLog\Interface\i_FIObjectLog.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcBitListLog.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcBitListLogCollection.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcBitListLogCollectionEnumerator.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcBitLog.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcBitLogCollection.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcBitLogCollectionEnumerator.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcDeviceDataMessageLog.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcDeviceDataMessageReadLog.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcDeviceDataMessageWrittenLog.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcDeviceDataReceivedLog.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcDeviceDataSentLog.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcDeviceErrorRaisedLog.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcDeviceLog.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcDeviceStateChangedLog.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcDeviceTimeoutRaisedLog.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcWordListLog.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcWordListLogCollection.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcWordListLogCollectionEnumerator.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcWordLog.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcWordLogCollection.cs" />
+    <Compile Include="PlcDriverLog\PlcDeviceLog\c_FPlcWordLogCollectionEnumerator.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FApplicationWrittenLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FBranchRaisedLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FCallbackRaisedLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FColumnLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FColumnLogCollection.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FColumnLogCollectionEnumerator.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FCommentWrittenLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FContentLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FContentLogCollection.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FContentLogCollectionEnumerator.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FDataLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FDataLogCollection.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FDataLogCollectionEnumerator.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FDataSetLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FDataSetLogCollection.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FDataSetLogCollectionEnumerator.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FEntryPointCalledLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FEquipmentStateAltererLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FEquipmentStateAltererLogCollection.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FEquipmentStateAltererLogCollectionEnumerator.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FEquipmentStateSetAltererPerformedLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FFunctionCalledLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FHostTransmitterRaisedLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FHostTriggerRaisedLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FJudgementPerformedLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FMapperPerformedLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FPauserRaisedLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FPlcTransmitterRaisedLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FPlcTriggerRaisedLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FRepositoryLog.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FRepositoryLogCollection.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FRepositoryLogCollectionEnumerator.cs" />
+    <Compile Include="PlcDriverLog\ScenarioLog\c_FStoragePerformedLog.cs" />
+    <Compile Include="PlcDriver\Config\c_FConfig.cs" />
+    <Compile Include="PlcDriver\c_FBaseObject.cs" />
+    <Compile Include="PlcDriver\c_FBaseObjectCollection.cs" />
+    <Compile Include="PlcDriver\c_FCbObjectFormat.cs" />
+    <Compile Include="PlcDriver\c_FFlowCollection.cs" />
+    <Compile Include="PlcDriver\c_FFlowCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\c_FObjectCollection.cs" />
+    <Compile Include="PlcDriver\c_FObjectCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\c_FPcdCore.cs" />
+    <Compile Include="PlcDriver\c_FPlcDriver.cs" />
+    <Compile Include="PlcDriver\c_FPlcDriverCommon.cs" />
+    <Compile Include="PlcDriver\EquipmentStateMaterial\c_FEquipmentStateMaterial.cs" />
+    <Compile Include="PlcDriver\EquipmentStateMaterial\c_FEquipmentStateMaterialCollection.cs" />
+    <Compile Include="PlcDriver\EquipmentStateMaterial\c_FEquipmentStateMaterialCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\EquipmentStateMaterial\c_FEquipmentStateMaterialStorage.cs" />
+    <Compile Include="PlcDriver\Event\c_FEventHandler.cs" />
+    <Compile Include="PlcDriver\Event\c_FEventPusher.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FApplicationWritedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FBranchRaisedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FCallbackRaisedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FCommentWritedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FEntryPointCalledEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FEquipmentStateSetAltererPerformedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FEventArgsBase.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FFunctionCalledEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FHostDeviceDataMessageReceivedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FHostDeviceDataMessageSentEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FHostDeviceErrorRaisedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FHostDeviceStateChangedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FHostDeviceVfeiReceivedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FHostDeviceVfeiSentEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FHostTransmitterRaisedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FHostTriggerRaisedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FJudgementPerformedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FMapperPerformedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FModelingFileChangedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FModelingFileOpenCompletedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FModelingFileReopenCompletedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FModelingFileReopenFailedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FModelingFileReopenPrecompletedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FModelingFileSaveCompletedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FObjectEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FObjectMoveToCompletedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FPauserRaisedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FPlcDeviceDataMessageReadEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FPlcDeviceDataMessageWrittenEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FPlcDeviceDataReceivedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FPlcDeviceDataSentEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FPlcDeviceErrorRaisedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FPlcDeviceStateChangedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FPlcDeviceTimeoutRaisedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FPlcTransmitterRaisedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FPlcTriggerRaisedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FRepositoryMaterialSavedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\EventArgs\c_FStoragePerformedEventArgs.cs" />
+    <Compile Include="PlcDriver\Event\Pauser\c_FPauserAgent.cs" />
+    <Compile Include="PlcDriver\Event\Pauser\c_FPauserData.cs" />
+    <Compile Include="PlcDriver\Interface\i_FIDevice.cs" />
+    <Compile Include="PlcDriver\Interface\i_FIFlow.cs" />
+    <Compile Include="PlcDriver\Interface\i_FIHostOperand.cs" />
+    <Compile Include="PlcDriver\Interface\i_FILibrary.cs" />
+    <Compile Include="PlcDriver\Interface\i_FIMessage.cs" />
+    <Compile Include="PlcDriver\Interface\i_FIMessageTransfer.cs" />
+    <Compile Include="PlcDriver\Interface\i_FIObject.cs" />
+    <Compile Include="PlcDriver\Interface\i_FIPlcMessage.cs" />
+    <Compile Include="PlcDriver\Interface\i_FIPlcOperand.cs" />
+    <Compile Include="PlcDriver\Interface\i_FISession.cs" />
+    <Compile Include="PlcDriver\Interface\i_FITransfer.cs" />
+    <Compile Include="PlcDriver\LogWriter\c_FLogWriter.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FBranch.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FCallback.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FComment.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FEntryPoint.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FEquipment.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FEquipmentCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FEquipmentCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FEquipmentStateAlterer.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FEquipmentStateAltererCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FEquipmentStateAltererCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FEquipmentStateSetAlterer.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FFunction.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FFunctionCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FFunctionCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FHostCondition.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FHostConditionCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FHostConditionCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FHostExpression.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FHostExpressionCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FHostExpressionCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FHostTransfer.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FHostTransferCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FHostTransferCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FHostTransmitter.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FHostTrigger.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FJudgement.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FJudgementCondition.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FJudgementConditionCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FJudgementConditionCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FJudgementExpression.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FJudgementExpressionCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FJudgementExpressionCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FMapper.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FPauser.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FPlcCondition.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FPlcConditionCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FPlcConditionCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FPlcExpression.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FPlcExpressionCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FPlcExpressionCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FPlcTransfer.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FPlcTransferCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FPlcTransferCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FPlcTransmitter.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FPlcTrigger.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FScenario.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FScenarioCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FScenarioCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FScenarioGroup.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FScenarioGroupCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FScenarioGroupCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FStorage.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FTransfer.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FTransferCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\EquipmentModeling\c_FTransferCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostDeviceModeling\c_FHostDevice.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostDeviceModeling\c_FHostDeviceCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostDeviceModeling\c_FHostDeviceCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostDeviceModeling\c_FHostSession.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostDeviceModeling\c_FHostSessionCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostDeviceModeling\c_FHostSessionCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostItem.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostItemCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostItemCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostLibrary.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostLibraryCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostLibraryCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostLibraryGroup.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostLibraryGroupCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostLibraryGroupCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostMessage.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostMessageCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostMessageCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostMessageList.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostMessageListCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostMessageListCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostMessages.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostMessagesCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostMessagesCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\HostLibraryModeling\c_FHostMessageTransfer.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcDeviceModeling\c_FPlcDevice.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcDeviceModeling\c_FPlcDeviceCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcDeviceModeling\c_FPlcDeviceCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcDeviceModeling\c_FPlcSession.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcDeviceModeling\c_FPlcSessionCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcDeviceModeling\c_FPlcSessionCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcBit.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcBitCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcBitCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcBitList.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcBitListCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcBitListCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcLibrary.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcLibraryCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcLibraryCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcLibraryGroup.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcLibraryGroupCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcLibraryGroupCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcMessage.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcMessageCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcMessageCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcMessageList.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcMessageListCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcMessageListCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcMessages.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcMessagesCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcMessagesCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcMessageTransfer.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcWord.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcWordCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcWordCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcWordList.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcWordListCollection.cs" />
+    <Compile Include="PlcDriver\PlcModeling\PlcLibraryModeling\c_FPlcWordListCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataConversionSetDefinition\c_FDataConversion.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataConversionSetDefinition\c_FDataConversionCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataConversionSetDefinition\c_FDataConversionCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataConversionSetDefinition\c_FDataConversionExpression.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataConversionSetDefinition\c_FDataConversionSet.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataConversionSetDefinition\c_FDataConversionSetCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataConversionSetDefinition\c_FDataConversionSetCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataConversionSetDefinition\c_FDataConversionSetList.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataConversionSetDefinition\c_FDataConversionSetListCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataConversionSetDefinition\c_FDataConversionSetListCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataSetDefinition\c_FData.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataSetDefinition\c_FDataCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataSetDefinition\c_FDataCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataSetDefinition\c_FDataSet.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataSetDefinition\c_FDataSetCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataSetDefinition\c_FDataSetCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataSetDefinition\c_FDataSetList.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataSetDefinition\c_FDataSetListCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\DataSetDefinition\c_FDataSetListCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\EnvironmentDefinition\c_FEnvironment.cs" />
+    <Compile Include="PlcDriver\PlcSetup\EnvironmentDefinition\c_FEnvironmentCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\EnvironmentDefinition\c_FEnvironmentCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\EnvironmentDefinition\c_FEnvironmentList.cs" />
+    <Compile Include="PlcDriver\PlcSetup\EnvironmentDefinition\c_FEnvironmentListCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\EnvironmentDefinition\c_FEnvironmentListCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\EquipmentStateSetDefinition\c_FEquipmentState.cs" />
+    <Compile Include="PlcDriver\PlcSetup\EquipmentStateSetDefinition\c_FEquipmentStateCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\EquipmentStateSetDefinition\c_FEquipmentStateCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\EquipmentStateSetDefinition\c_FEquipmentStateSet.cs" />
+    <Compile Include="PlcDriver\PlcSetup\EquipmentStateSetDefinition\c_FEquipmentStateSetCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\EquipmentStateSetDefinition\c_FEquipmentStateSetCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\EquipmentStateSetDefinition\c_FEquipmentStateSetList.cs" />
+    <Compile Include="PlcDriver\PlcSetup\EquipmentStateSetDefinition\c_FEquipmentStateSetListCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\EquipmentStateSetDefinition\c_FEquipmentStateSetListCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\EquipmentStateSetDefinition\c_FStateValue.cs" />
+    <Compile Include="PlcDriver\PlcSetup\EquipmentStateSetDefinition\c_FStateValueCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\EquipmentStateSetDefinition\c_FStateValueCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\FunctionNameDefinition\c_FArgument.cs" />
+    <Compile Include="PlcDriver\PlcSetup\FunctionNameDefinition\c_FArgumentCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\FunctionNameDefinition\c_FArgumentCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\FunctionNameDefinition\c_FFunctionName.cs" />
+    <Compile Include="PlcDriver\PlcSetup\FunctionNameDefinition\c_FFunctionNameCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\FunctionNameDefinition\c_FFunctionNameCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\FunctionNameDefinition\c_FFunctionNameList.cs" />
+    <Compile Include="PlcDriver\PlcSetup\FunctionNameDefinition\c_FFunctionNameListCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\FunctionNameDefinition\c_FFunctionNameListCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\FunctionNameDefinition\c_FParameterName.cs" />
+    <Compile Include="PlcDriver\PlcSetup\FunctionNameDefinition\c_FParameterNameCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\FunctionNameDefinition\c_FParameterNameCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\ObjectNameDefinition\c_FObjectName.cs" />
+    <Compile Include="PlcDriver\PlcSetup\ObjectNameDefinition\c_FObjectNameCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\ObjectNameDefinition\c_FobjectNameCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\ObjectNameDefinition\c_FObjectNameList.cs" />
+    <Compile Include="PlcDriver\PlcSetup\ObjectNameDefinition\c_FObjectNameListCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\ObjectNameDefinition\c_FObjectNameListCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\RepositoryDefinition\c_FColumn.cs" />
+    <Compile Include="PlcDriver\PlcSetup\RepositoryDefinition\c_FColumnCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\RepositoryDefinition\c_FColumnCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\RepositoryDefinition\c_FRepository.cs" />
+    <Compile Include="PlcDriver\PlcSetup\RepositoryDefinition\c_FRepositoryCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\RepositoryDefinition\c_FRepositoryCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\RepositoryDefinition\c_FRepositoryList.cs" />
+    <Compile Include="PlcDriver\PlcSetup\RepositoryDefinition\c_FRepositoryListCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\RepositoryDefinition\c_FRepositoryListCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\PlcSetup\UserTagDefinition\c_FUserTagName.cs" />
+    <Compile Include="PlcDriver\PlcSetup\UserTagDefinition\c_FUserTagNameCollection.cs" />
+    <Compile Include="PlcDriver\PlcSetup\UserTagDefinition\c_FUserTagNameCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\Protocol\AutoCycle\c_FAutoCycleAgent.cs" />
+    <Compile Include="PlcDriver\Protocol\AutoCycle\c_FAutoCycleData.cs" />
+    <Compile Include="PlcDriver\Protocol\AutoCycle\c_FAutoCycleDataCollection.cs" />
+    <Compile Include="PlcDriver\Protocol\AutoCycle\c_FAutoCycleDataCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\Protocol\AutoTrace\c_FAutoTraceAgent.cs" />
+    <Compile Include="PlcDriver\Protocol\AutoTrace\c_FAutoTraceData.cs" />
+    <Compile Include="PlcDriver\Protocol\AutoTrace\c_FAutoTraceDataCollection.cs" />
+    <Compile Include="PlcDriver\Protocol\AutoTrace\c_FAutoTraceDataCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\Protocol\c_FBaseProtocol.cs" />
+    <Compile Include="PlcDriver\Protocol\c_FProtocolAgent.cs" />
+    <Compile Include="PlcDriver\Protocol\c_FTidStorage.cs" />
+    <Compile Include="PlcDriver\Protocol\DataMapper\c_FDataMapper.cs" />
+    <Compile Include="PlcDriver\Protocol\HOST2\c_FHost2.cs" />
+    <Compile Include="PlcDriver\Protocol\HOST2\c_FHostOpenTransaction.cs" />
+    <Compile Include="PlcDriver\Protocol\HOST\c_FHost.cs" />
+    <Compile Include="PlcDriver\Protocol\HOST\c_FHostProtocol.cs" />
+    <Compile Include="PlcDriver\Protocol\JudgementParser\c_FJudgementParser.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\c_FMelsece.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\c_FMelsece2.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\c_FMelseceProtocol.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\c_FMelseceRecvBuffer.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\c_FMelseceSession.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\MelseceAutoReset\c_FMelseceAutoReset.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\MelseceAutoReset\c_FMelseceAutoResetList.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\MelseceData\c_FMelseceBitReadData.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\MelseceData\c_FMelseceBitResult.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\MelseceData\c_FMelseceBitWriteData.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\MelseceData\c_FMelseceData.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\MelseceData\c_FMelseceRandomParam.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\MelseceData\c_FMelseceResult.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\MelseceData\c_FMelseceWordReadData.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\MelseceData\c_FMelseceWordResult.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\MelseceData\c_FMelseceWordWriteData.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\MelseceLinkMapData\c_FMelseceLinkMapAutoResetData.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\MelseceLinkMapData\c_FMelseceLinkMapData.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\MelseceLinkMapData\c_FMelseceLinkMapMessageReadData.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\MelseceLinkMapData\c_FMelseceLinkMapMessageWriteData.cs" />
+    <Compile Include="PlcDriver\Protocol\MELSECE\MelseceLinkMapData\c_FMelseceLinkMapSessionReadData.cs" />
+    <Compile Include="PlcDriver\Protocol\RepositoryHandler\c_FRepositoryHandler.cs" />
+    <Compile Include="PlcDriver\Protocol\ScenarioController\c_FResourceData.cs" />
+    <Compile Include="PlcDriver\Protocol\ScenarioController\c_FScenarioController.cs" />
+    <Compile Include="PlcDriver\Protocol\ScenarioController\c_FScenarioData.cs" />
+    <Compile Include="PlcDriver\RepositoryMaterial\c_FRepositoryMaterial.cs" />
+    <Compile Include="PlcDriver\RepositoryMaterial\c_FRepositoryMaterialCollection.cs" />
+    <Compile Include="PlcDriver\RepositoryMaterial\c_FRepositoryMaterialCollectionEnumerator.cs" />
+    <Compile Include="PlcDriver\RepositoryMaterial\c_FRepositoryMaterialStorage.cs" />
+    <Compile Include="Precondition\c_FHostItemLogPrecondition.cs" />
+    <Compile Include="Precondition\c_FHostItemPrecondition.cs" />
+    <Compile Include="Precondition\c_FHostItemPreconditionValueCollection.cs" />
+    <Compile Include="Precondition\c_FHostItemPreconditionValueCollectionEnumerator.cs" />
+    <Compile Include="Precondition\i_FIPrecondition.cs" />
+    <Compile Include="Precondition\i_FIPreconditionLog.cs" />
+    <Compile Include="Precondition\i_FIPreconditionValueCollection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValueTransformer\c_FColumnLogValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FColumnValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\c_FColumnValueFormulaCollectionEnumerator.cs" />
+    <Compile Include="ValueTransformer\c_FColumnValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FDataConversionValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\c_FDataConversionValueFormulaCollectionEnumerator.cs" />
+    <Compile Include="ValueTransformer\c_FDataConversionValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FDataLogValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FDataValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\c_FDataValueFormulaCollectionEnumerator.cs" />
+    <Compile Include="ValueTransformer\c_FDataValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FHostExpressionValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\c_FHostExpressionValueFormulaCollectionEnumerator.cs" />
+    <Compile Include="ValueTransformer\c_FHostExpressionValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FHostItemLogValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FHostItemValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\c_FHostItemValueFormulaCollectionEnumerator.cs" />
+    <Compile Include="ValueTransformer\c_FHostItemValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FJudgementExpressionValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\c_FJudgementExpressionValueFormulaCollectionEnumerator.cs" />
+    <Compile Include="ValueTransformer\c_FJudgementExpressionValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FPlcExpressionValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\c_FPlcExpressionValueFormulaCollectionEnumerator.cs" />
+    <Compile Include="ValueTransformer\c_FPlcExpressionValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FPlcWordLogValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FPlcWordValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\c_FPlcWordValueFormulaCollectionEnumerator.cs" />
+    <Compile Include="ValueTransformer\c_FPlcWordValueTransformer.cs" />
+    <Compile Include="ValueTransformer\c_FValueFormulaCollectionBase.cs" />
+    <Compile Include="ValueTransformer\c_FValueTransformerBase.cs" />
+    <Compile Include="ValueTransformer\c_FValueTransformerLogBase.cs" />
+    <Compile Include="ValueTransformer\i_FIValueFormulaCollection.cs" />
+    <Compile Include="ValueTransformer\i_FIValueTransformer.cs" />
+    <Compile Include="ValueTransformer\i_FIValueTransformerLog.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FDecimalToHex.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FHexToDecimal.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FLength.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FStringCount.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FTrimAll.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FAdd.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FCeil.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FChoose.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FChooseIncluded.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FChooseIncludedR.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FChooseR.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FDateTime.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FDivide.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FFixLength.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FFixLengthR.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FInsert.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FInsertR.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FMod.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FMultiply.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FPadLeft.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FPadRight.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FPrefix.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FRemove.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FRemoveR.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FReplace.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FRound.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSelect.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSelectArrary.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSelectArraryR.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSelectIncluded.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSelectIncludedR.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSelectR.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSubString.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSubStringR.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSubtract.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FSuffix.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FToBit.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FToLower.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FToUpper.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FTrim.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FTrimEnd.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FTrimStart.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FTrunc.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\c_FValueFormulaBase.cs" />
+    <Compile Include="ValueTransformer\ValueFormula\i_FIValueFormula.cs" />
+    <Compile Include="XmlTag\c_FXmlTagCommon.cs" />
+    <Compile Include="XmlTag\c_FXmlTagFAM.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\c_FXmlTagPCDL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\HostDeviceLog\c_FXmlTagHDEL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\HostDeviceLog\c_FXmlTagHDVL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\HostDeviceLog\c_FXmlTagHITL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\HostDeviceLog\c_FXmlTagHMGL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\HostDeviceLog\c_FXmlTagVFEL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\PlcDeviceLog\c_FXmlTagPBLL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\PlcDeviceLog\c_FXmlTagPBTL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\PlcDeviceLog\c_FXmlTagPDEL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\PlcDeviceLog\c_FXmlTagPDTL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\PlcDeviceLog\c_FXmlTagPDVL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\PlcDeviceLog\c_FXmlTagPMGL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\PlcDeviceLog\c_FXmlTagPWDL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\PlcDeviceLog\c_FXmlTagPWLL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagAPPL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagBRNL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagCBKL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagCMTL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagCOLL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagCTTL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagDATL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagDTSL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagEATL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagESAL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagETPL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagFUNL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagHTNL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagHTRL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagJDML.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagMAPL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagPAUL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagPTNL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagPTRL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagRPSL.cs" />
+    <Compile Include="XmlTag\PlcDriverLog\ScenarioLog\c_FXmlTagSTGL.cs" />
+    <Compile Include="XmlTag\PlcDriver\c_FXmlTagPCD.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagBRN.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagCBK.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagCMT.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagEAT.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagEPT.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagEQM.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagEQP.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagESA.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagFUN.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagHCN.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagHEP.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagHTF.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagHTN.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagHTR.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagJCN.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagJDM.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagJEP.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagMAP.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagPAU.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagPCN.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagPEP.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagPTF.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagPTN.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagPTR.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagSNG.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagSNR.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\EquipmentModeling\c_FXmlTagSTG.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\HostDeviceModeling\c_FXmlTagHDM.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\HostDeviceModeling\c_FXmlTagHDV.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\HostDeviceModeling\c_FXmlTagHSN.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\HostLibraryModeling\c_FXmlTagHDMG.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\HostLibraryModeling\c_FXmlTagHIT.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\HostLibraryModeling\c_FXmlTagHLB.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\HostLibraryModeling\c_FXmlTagHLG.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\HostLibraryModeling\c_FXmlTagHLM.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\HostLibraryModeling\c_FXmlTagHMG.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\HostLibraryModeling\c_FXmlTagHML.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\HostLibraryModeling\c_FXmlTagHMS.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\HostLibraryModeling\c_FXmlTagHMT.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\PlcDeviceModeling\c_FXmlTagPDM.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\PlcDeviceModeling\c_FXmlTagPDV.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\PlcDeviceModeling\c_FXmlTagPSN.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\PlcLibraryModeling\c_FXmlTagPBL.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\PlcLibraryModeling\c_FXmlTagPBT.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\PlcLibraryModeling\c_FXmlTagPLB.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\PlcLibraryModeling\c_FXmlTagPLG.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\PlcLibraryModeling\c_FXmlTagPLM.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\PlcLibraryModeling\c_FXmlTagPMG.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\PlcLibraryModeling\c_FXmlTagPML.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\PlcLibraryModeling\c_FXmlTagPMS.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\PlcLibraryModeling\c_FXmlTagPMT.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\PlcLibraryModeling\c_FXmlTagPWD.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcModeling\PlcLibraryModeling\c_FXmlTagPWL.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\c_FXmlTagSET.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\DataConversionSetDefinition\c_FXmlTagDCD.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\DataConversionSetDefinition\c_FXmlTagDCL.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\DataConversionSetDefinition\c_FXmlTagDCS.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\DataConversionSetDefinition\c_FXmlTagDCV.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\DataSetDefinition\c_FXmlTagDAT.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\DataSetDefinition\c_FXmlTagDSD.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\DataSetDefinition\c_FXmlTagDSL.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\DataSetDefinition\c_FXmlTagDTS.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\EnvironmentDefinition\c_FXmlTagEND.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\EnvironmentDefinition\c_FXmlTagENL.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\EnvironmentDefinition\c_FXmlTagENV.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\EquipmentStateSetDefinition\c_FXmlTagESD.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\EquipmentStateSetDefinition\c_FXmlTagESL.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\EquipmentStateSetDefinition\c_FXmlTagESS.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\EquipmentStateSetDefinition\c_FXmlTagEST.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\EquipmentStateSetDefinition\c_FXmlTagSTV.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\FunctionNameDefinition\c_FXmlTagARG.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\FunctionNameDefinition\c_FXmlTagFNA.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\FunctionNameDefinition\c_FXmlTagFND.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\FunctionNameDefinition\c_FXmlTagFNL.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\FunctionNameDefinition\c_FXmlTagPAN.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\ObjectNameDefinition\c_FXmlTagONA.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\ObjectNameDefinition\c_FXmlTagOND.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\ObjectNameDefinition\c_FXmlTagONL.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\RepositoryDefinition\c_FXmlTagCOL.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\RepositoryDefinition\c_FXmlTagRPD.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\RepositoryDefinition\c_FXmlTagRPL.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\RepositoryDefinition\c_FXmlTagRPM.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\RepositoryDefinition\c_FXmlTagRPS.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\UserTagDefinition\c_FXmlTagUTD.cs" />
+    <Compile Include="XmlTag\PlcDriver\PlcSetup\UserTagDefinition\c_FXmlTagUTN.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nexplant.Mc.Core.Design\Nexplant.MC.Core.Design.v4.6.csproj">
+      <Project>{4ed359c3-b74b-4d5e-9d31-8c59a6733e6b}</Project>
+      <Name>Nexplant.MC.Core.Design.v4.6</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nexplant.Mc.Core\Nexplant.MC.Core.v4.6.csproj">
+      <Project>{87e1cd5d-13c7-4f9e-be21-d7ae31df80ef}</Project>
+      <Name>Nexplant.MC.Core.v4.6</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PlcDriver\Protocol\MODBUS\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

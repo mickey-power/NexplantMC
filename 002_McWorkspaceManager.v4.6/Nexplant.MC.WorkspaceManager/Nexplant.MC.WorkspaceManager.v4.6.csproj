@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{916F8C4B-0444-40A9-B022-BDF3B47D2077}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nexplant.MC.WorkspaceManager</RootNamespace>
+    <AssemblyName>Nexplant.MC.WorkspaceManager.v4.6</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2BFF12429F087711B4CB5B0A8D568A6D79B9FDCC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Miracom.FAMate.WorkspaceManager.v4.5_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Nexplant.MC.WorkspaceManager.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Icon\WorkspaceManager.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>Nexplant.MC.WorkspaceManager.v4.6.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Shared.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.Misc.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinDock.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\nexplant.mc-dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Nexplant.MC.Core.Design.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core.Design\bin\Nexplant.MC.Core.Design.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nexplant.MC.Core.OpcDriver-x86.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\nexplant.mc-dll\Nexplant.MC.Core.OpcDriver-x86.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nexplant.MC.Core.SecsDriver.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core.SecsDriver\bin\Nexplant.MC.Core.SecsDriver.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nexplant.MC.Core.Securities32.v4.6, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core.Securities\bin\Nexplant.MC.Core.Securities32.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nexplant.MC.Core.Securities64.v4.6, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core.Securities\bin\Nexplant.MC.Core.Securities64.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nexplant.MC.Core.TcpDriver.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core.TcpDriver\bin\Nexplant.MC.Core.TcpDriver.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nexplant.MC.Core.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core\bin\Nexplant.MC.Core.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\c_FCommon.cs" />
+    <Compile Include="Common\c_FConstants.cs" />
+    <Compile Include="Common\c_FMainStatusBarChangedEventArgs.cs" />
+    <Compile Include="Common\c_FMenuKey.cs" />
+    <Compile Include="Common\e_FEnum.cs" />
+    <Compile Include="Common\d_FDelegate.cs" />
+    <Compile Include="H101\WSMADS\c_FWSMADSCallback.cs" />
+    <Compile Include="H101\WSMADS\c_FWSMADSCaster.cs" />
+    <Compile Include="H101\WSMADS\c_FWSMADSSkeleton.cs" />
+    <Compile Include="H101\WSMADS\c_FWSMADSTuner.cs" />
+    <Compile Include="H101\WSMADS\WSMADSCallback\Parameters\c_FWSMADS_SysPasswordChange_In.cs" />
+    <Compile Include="H101\WSMADS\WSMADSCallback\Parameters\c_FWSMADS_SysPasswordChange_Out.cs" />
+    <Compile Include="H101\WSMADS\WSMADSCallback\Parameters\c_FWSMADS_SysUserLogIn_In.cs" />
+    <Compile Include="H101\WSMADS\WSMADSCallback\Parameters\c_FWSMADS_SysUserLogIn_Out.cs" />
+    <Compile Include="Option\f_FSetupOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Option\f_FSetupOption.Designer.cs">
+      <DependentUpon>f_FSetupOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Option\Prop\c_FPropSetupOption.cs" />
+    <Compile Include="System\c_FAdmSiteOption.cs" />
+    <Compile Include="System\c_FDcmSiteOption.cs" />
+    <Compile Include="System\c_FPmmSiteOption.cs" />
+    <Compile Include="System\c_FRmmSiteOption.cs" />
+    <Compile Include="System\c_FWsmSiteOption.cs" />
+    <Compile Include="System\f_FPasswordChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\f_FPasswordChange.designer.cs">
+      <DependentUpon>f_FPasswordChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\f_FUserLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\f_FUserLogIn.designer.cs">
+      <DependentUpon>f_FUserLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\f_FUserLogInOptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\f_FUserLogInOptionDialog.designer.cs">
+      <DependentUpon>f_FUserLogInOptionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\Prop\c_FPropAdmOption.cs" />
+    <Compile Include="System\Prop\c_FPropDcmOption.cs" />
+    <Compile Include="System\Prop\c_FPropPmmOption.cs" />
+    <Compile Include="System\Prop\c_FPropRmmOption.cs" />
+    <Compile Include="System\Prop\c_FPropWsmOption.cs" />
+    <Compile Include="System\c_FFhmSiteOption.cs" />
+    <Compile Include="System\Prop\c_FPropFhmOption.cs" />
+    <Compile Include="XmlTag\c_FXmlTagWSMOption.cs" />
+    <Compile Include="Option\c_FOption.cs" />
+    <Compile Include="Common\f_FWsmContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\f_FWsmContainer.Designer.cs">
+      <DependentUpon>f_FWsmContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\c_FWsmCore.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="HostDriver\Nexplant.MC.HostDriver.OpcCommon.v4.6.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HostDriver\Nexplant.MC.HostDriver.OpcMESplus.v4.6.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LanguageFile\NexplantMcLanguageFile.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Library\NexplantMcStandardSecsLibrary.ssm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Oss\css\report.css" />
+    <Content Include="Oss\css\third_party_notices_report.css" />
+    <Content Include="Oss\images\icon_bullet.gif" />
+    <Content Include="Oss\images\icon_component.gif" />
+    <Content Include="Oss\images\icon_csv.gif" />
+    <Content Include="Oss\images\icon_external.gif" />
+    <Content Include="Oss\images\icon_info.gif" />
+    <Content Include="Oss\images\icon_info_disabled.gif" />
+    <Content Include="Oss\images\icon_license.gif" />
+    <Content Include="Oss\images\icon_minus.gif" />
+    <Content Include="Oss\images\icon_not_ok.gif" />
+    <Content Include="Oss\images\icon_no_indicator_file.gif" />
+    <Content Include="Oss\images\icon_ok.gif" />
+    <Content Include="Oss\images\icon_other.gif" />
+    <Content Include="Oss\images\icon_pdf.gif" />
+    <Content Include="Oss\images\icon_plus.gif" />
+    <Content Include="Oss\images\icon_third_party_file.gif" />
+    <Content Include="Oss\images\icon_vulnerability.gif" />
+    <Content Include="Oss\images\icon_xml.gif" />
+    <Content Include="Oss\images\icon_yes.gif" />
+    <Content Include="Oss\images\icon_zip.gif" />
+    <Content Include="Oss\images\palamida_logo.gif" />
+    <Content Include="Oss\index.html" />
+    <Content Include="Oss\scripts\scripts.js" />
+    <Content Include="Oss\scripts\sorttable.js" />
+    <Content Include="Oss\third_party_notices.txt" />
+    <Content Include="Oss\third_party_notices.xml" />
+    <Content Include="FmbWebMonitor\FMBWebMonitor.swf" />
+    <Content Include="Resources\Icon\File_Osl.ico" />
+    <Content Include="Resources\Icon\File_Osm.ico" />
+    <Content Include="Resources\Icon\File_Tsl.ico" />
+    <Content Include="Resources\Icon\File_Tsm.ico" />
+    <Content Include="Resources\Icon\WorkspaceManager.ico" />
+    <Content Include="License\license_old.lic" />
+    <Content Include="Config\NexplantMCWorkspaceManager.cfg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="License\license.lic">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\MainForm\System\FUserLogIn.png" />
+    <Content Include="Resources\MainToolbar\BisManager.png" />
+    <EmbeddedResource Include="System\f_FPasswordChange.resx">
+      <DependentUpon>f_FPasswordChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\f_FUserLogIn.resx">
+      <DependentUpon>f_FUserLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\f_FUserLogInOptionDialog.resx">
+      <DependentUpon>f_FUserLogInOptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\MainToolbar\ComTester.png" />
+    <Content Include="Resources\MainToolbar\File_Gen.png" />
+    <None Include="Resources\MainToolbar\File_Osl.png" />
+    <None Include="Resources\MainToolbar\File_Osm.png" />
+    <Content Include="Resources\MainToolbar\File_Ssm.png" />
+    <Content Include="Resources\MainToolbar\File_Bng.png" />
+    <Content Include="Resources\MainToolbar\File_Dlg.png" />
+    <Content Include="Resources\MainToolbar\File_Log.png" />
+    <Content Include="Resources\MainToolbar\File_Sml.png" />
+    <Content Include="Resources\MainToolbar\File_Ssl.png" />
+    <None Include="Resources\MainToolbar\File_Tsl.png" />
+    <None Include="Resources\MainToolbar\File_Tsm.png" />
+    <Content Include="Resources\MainToolbar\File_Vfe.png" />
+    <None Include="Resources\MainToolbar\Login.png" />
+    <None Include="Resources\MainToolbar\Logout.png" />
+    <Content Include="Resources\MainToolbar\LogViewer.png" />
+    <Content Include="Resources\MainToolbar\OeeManager.png" />
+    <Content Include="Resources\MainToolbar\OpcModeler.png" />
+    <Content Include="Resources\MainToolbar\PasswordChange.png" />
+    <Content Include="Resources\MainToolbar\PmsManager.png" />
+    <Content Include="Resources\MainToolbar\RmsManager.png" />
+    <Content Include="Resources\MainToolbar\File_Psm.png" />
+    <Content Include="Resources\MainToolbar\File_Psl.png" />
+    <None Include="Resources\MainToolbar\TcpModeler.png" />
+    <None Include="Resources\MainToolbar\ViewLog.png" />
+    <Content Include="RuntimeDll\x64\msvcp100.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RuntimeDll\x64\msvcp100d.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RuntimeDll\x64\msvcr100.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RuntimeDll\x64\msvcr100d.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RuntimeDll\x86\msvcp100.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RuntimeDll\x86\msvcp100d.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RuntimeDll\x86\msvcr100.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RuntimeDll\x86\msvcr100d.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\DefaultAlert.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\MainToolbar\FmbMonitor.png" />
+    <Content Include="7z.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="7z64.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Icon\File_Bng.ico" />
+    <Content Include="Resources\Icon\File_Dlg.ico" />
+    <Content Include="Resources\Icon\File_Gen.ico" />
+    <Content Include="Resources\Icon\File_Sml.ico" />
+    <Content Include="Resources\Icon\File_Sqm.ico" />
+    <Content Include="Resources\Icon\File_Ssl.ico" />
+    <Content Include="Resources\Icon\File_Ssm.ico" />
+    <Content Include="Resources\Icon\File_Vfe.ico" />
+    <None Include="Resources\MainToolbar\PlcModeler.png" />
+    <Content Include="Resources\FWsmContainer.png" />
+    <EmbeddedResource Include="Common\f_FWsmContainer.resx">
+      <DependentUpon>f_FWsmContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option\f_FSetupOption.resx">
+      <DependentUpon>f_FSetupOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Infragistics4.Documents.Excel.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Shared.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.Misc.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.SupportDialogs.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinCalcManager.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinCalcManager.v12.1.FormulaBuilder">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinDataSource.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinDock.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinEditors.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinExplorerBar.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinGrid.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinListView.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinMaskedEdit.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinStatusBar.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinTabbedMdi.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinTabControl.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinToolbars.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.UltraWinTree.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics4.Win.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\AdminManager.png" />
+    <None Include="Resources\MainToolbar\SqlManager.png" />
+    <None Include="Resources\MainToolbar\SourceGenerator.png" />
+    <None Include="Resources\MainToolbar\SecsModeler.png" />
+    <None Include="Resources\MainToolbar\Exit.png" />
+    <None Include="Resources\MainToolbar\Option.png" />
+    <None Include="Resources\MainToolbar\ApplicationLogViewer.png" />
+    <None Include="Resources\MainToolbar\LanguageFileEditor.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Nexplant.Mc.AdminManager\Nexplant.MC.AdminManager.v4.6.csproj">
+      <Project>{fdefce52-5123-42ac-a4a4-788eae1f67b4}</Project>
+      <Name>Nexplant.MC.AdminManager.v4.6</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nexplant.Mc.ApplicationLogViewer\Nexplant.MC.ApplicationLogViewer.v4.6.csproj">
+      <Project>{2c16cdd0-8ad1-4a59-b05f-a1a1ff3cdb3e}</Project>
+      <Name>Nexplant.MC.ApplicationLogViewer.v4.6</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nexplant.Mc.LanguageFileEditor\Nexplant.MC.LanguageFileEditor.v4.6.csproj">
+      <Project>{ba772cad-0ed3-4889-abd6-95f235721ddd}</Project>
+      <Name>Nexplant.MC.LanguageFileEditor.v4.6</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nexplant.Mc.OpcModeler\Nexplant.MC.OpcModeler.v4.6.csproj">
+      <Project>{3620cf46-4cb4-4b49-9833-1176c2a6d9c4}</Project>
+      <Name>Nexplant.MC.OpcModeler.v4.6</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nexplant.Mc.SecsModeler\Nexplant.MC.SecsModeler.v4.6.csproj">
+      <Project>{4bcf5fa8-6f1e-49f6-b139-ed1fb37f6ec3}</Project>
+      <Name>Nexplant.MC.SecsModeler.v4.6</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nexplant.Mc.SourceGenerator\Nexplant.MC.SourceGenerator.v4.6.csproj">
+      <Project>{73078fa1-106f-4f3a-8455-d5e4a377422e}</Project>
+      <Name>Nexplant.MC.SourceGenerator.v4.6</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nexplant.Mc.SqlManager\Nexplant.MC.SqlManager.v4.6.csproj">
+      <Project>{8f8d5833-f74c-4687-a050-1f00d9c8ceae}</Project>
+      <Name>Nexplant.MC.SqlManager.v4.6</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nexplant.Mc.TcpModeler\Nexplant.MC.TcpModeler.v4.6.csproj">
+      <Project>{8d9fc359-9bcd-4633-9241-7b048d817d22}</Project>
+      <Name>Nexplant.MC.TcpModeler.v4.6</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nexplant.Mc.WorkspaceInterface\Nexplant.MC.WorkspaceInterface.v4.6.csproj">
+      <Project>{37de8452-640c-4262-b631-6ec3e6cb0951}</Project>
+      <Name>Nexplant.MC.WorkspaceInterface.v4.6</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>REM "C:\Program Files (x86)\Kepware Technologies\ClientAce\Sign\sign.exe" "$(TargetPath)" "$(TargetName).lic"
+REM "C:\Program Files (x86)\Kepware Technologies\ClientAce\Sign\sign.exe" "$(TargetDir)$(TargetName).vshost.exe" "$(TargetName).vshost.lic"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

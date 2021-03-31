@@ -1,0 +1,2472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D9FC359-9BCD-4633-9241-7B048D817D22}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nexplant.MC.TcpModeler</RootNamespace>
+    <AssemblyName>Nexplant.MC.TcpModeler.v4.6</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>..\Nexplant.Mc.WorkspaceManager\Nexplant.MC.WorkspaceManager.v4.6.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Shared.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.Misc.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.SupportDialogs.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTree.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Nexplant.MC.Core.Design.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core.Design\bin\Nexplant.MC.Core.Design.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nexplant.MC.Core.TcpDriver.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core.TcpDriver\bin\Nexplant.MC.Core.TcpDriver.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nexplant.MC.Core.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core\bin\Nexplant.MC.Core.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\c_FCommon.cs" />
+    <Compile Include="Common\c_FConstants.cs" />
+    <Compile Include="Common\c_FDragDropData.cs" />
+    <Compile Include="Common\c_FMenuKey.cs" />
+    <Compile Include="Common\c_FModelingFileModifiedEventArgs.cs" />
+    <Compile Include="Common\c_FTcmCore.cs" />
+    <Compile Include="Common\c_FTcmFileInfo.cs" />
+    <Compile Include="Common\d_FDelegate.cs" />
+    <Compile Include="Common\e_FEnum.cs" />
+    <Compile Include="Common\f_FTcmContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\f_FTcmContainer.designer.cs">
+      <DependentUpon>f_FTcmContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Prop\c_FPropTcd.cs" />
+    <Compile Include="Common\Prop\PropAttr\c_FPropAttrNameStringConverter.cs" />
+    <Compile Include="Dialog\f_ExpressionViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_ExpressionViewer.designer.cs">
+      <DependentUpon>f_ExpressionViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FDataConversionSetSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FDataConversionSetSelector.designer.cs">
+      <DependentUpon>f_FDataConversionSetSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FDataSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FDataSelector.designer.cs">
+      <DependentUpon>f_FDataSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FDataSetGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FDataSetGenerator.Designer.cs">
+      <DependentUpon>f_FDataSetGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FDataSetSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FDataSetSelector.designer.cs">
+      <DependentUpon>f_FDataSetSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FEnvironmentSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FEnvironmentSelector.designer.cs">
+      <DependentUpon>f_FEnvironmentSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentStateSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentStateSelector.designer.cs">
+      <DependentUpon>f_FEquipmentStateSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentStateSelector2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentStateSelector2.designer.cs">
+      <DependentUpon>f_FEquipmentStateSelector2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentStateSetSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentStateSetSelector.designer.cs">
+      <DependentUpon>f_FEquipmentStateSetSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FFunctionSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FFunctionSelector.designer.cs">
+      <DependentUpon>f_FFunctionSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FHostDeviceSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FHostDeviceSelector.designer.cs">
+      <DependentUpon>f_FHostDeviceSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FHostDriverSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FHostDriverSelector.designer.cs">
+      <DependentUpon>f_FHostDriverSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FHostItemSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FHostItemSelector.designer.cs">
+      <DependentUpon>f_FHostItemSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FHostLibrarySelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FHostLibrarySelector.designer.cs">
+      <DependentUpon>f_FHostLibrarySelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FHostMessageSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FHostMessageSelector.designer.cs">
+      <DependentUpon>f_FHostMessageSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FReplaceNameDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FReplaceNameDialog.Designer.cs">
+      <DependentUpon>f_FReplaceNameDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FTcpItemSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FTcpItemSelector.designer.cs">
+      <DependentUpon>f_FTcpItemSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FPreconditionEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FPreconditionEditor.designer.cs">
+      <DependentUpon>f_FPreconditionEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FPreconditionViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FPreconditionViewer.designer.cs">
+      <DependentUpon>f_FPreconditionViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FRelationViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FRelationViewer.designer.cs">
+      <DependentUpon>f_FRelationViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FRepositorySelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FRepositorySelector.designer.cs">
+      <DependentUpon>f_FRepositorySelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FScenarioSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FScenarioSelector.designer.cs">
+      <DependentUpon>f_FScenarioSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FTcpDeviceSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FTcpDeviceSelector.designer.cs">
+      <DependentUpon>f_FTcpDeviceSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FTcpLibrarySelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FTcpLibrarySelector.designer.cs">
+      <DependentUpon>f_FTcpLibrarySelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FTcpMessageSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FTcpMessageSelector.designer.cs">
+      <DependentUpon>f_FTcpMessageSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FValueEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FValueEditor.designer.cs">
+      <DependentUpon>f_FValueEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FValueTransformationEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FValueTransformationEditor.designer.cs">
+      <DependentUpon>f_FValueTransformationEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FValueTransformationViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FValueTransformationViewer.designer.cs">
+      <DependentUpon>f_FValueTransformationViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FValueViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FValueViewer.designer.cs">
+      <DependentUpon>f_FValueViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Prop\c_FPropPrc.cs" />
+    <Compile Include="Dialog\Prop\c_FPropVfm.cs" />
+    <Compile Include="Dialog\Prop\PropAttr\c_FPropAttrValueViewerUITypeEditor.cs" />
+    <Compile Include="Dialog\Prop\PropAttr\c_FPropAttrVfmTypeStringConverter.cs" />
+    <Compile Include="Dialog\f_FTcpProtocolSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FTcpProtocolSelector.designer.cs">
+      <DependentUpon>f_FTcpProtocolSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\File\c_FOptionSource.cs" />
+    <Compile Include="MainForm\File\f_FExportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\File\f_FExportDialog.designer.cs">
+      <DependentUpon>f_FExportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\File\f_FOptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\File\f_FOptionDialog.Designer.cs">
+      <DependentUpon>f_FOptionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\File\Prop\c_FPropOptionEvent.cs" />
+    <Compile Include="MainForm\File\Prop\c_FPropOptionLog.cs" />
+    <Compile Include="MainForm\File\Prop\PropAttr\c_FPropAttrFolderUITypeEditor.cs" />
+    <Compile Include="MainForm\Help\f_FAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Help\f_FAbout.designer.cs">
+      <DependentUpon>f_FAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Modeling\EquipmentModeler\f_FEquipmentModeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Modeling\EquipmentModeler\f_FEquipmentModeler.designer.cs">
+      <DependentUpon>f_FEquipmentModeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Modeling\EquipmentModeler\f_FScenarioDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Modeling\EquipmentModeler\f_FScenarioDesigner.designer.cs">
+      <DependentUpon>f_FScenarioDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropBrn.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropCbk.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropCmt.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropEat.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropEqp.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropEsa.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropEtp.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropFun.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropHcn.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropHep.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropHtf.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropHtn.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropHtr.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropJcn.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropJdm.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropJep.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropMap.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropTcn.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropTep.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropTtf.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropTtn.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropTtr.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropPau.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropSng.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropSnr.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropStg.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrBrnScenarioUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrDcvValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrEatEquipmentStateUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrEatValueStringConverter.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrEsaEquipmentStateSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrFunFunctionUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrFunParameterStringConverter.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrHcnDeviceUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrHcnExpressionUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrHcnMessageUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrHepDataConversionSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrHepOperandUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrHepValueStringConverter.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrHepValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrHtfMessageUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrJcnDataSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrJcnExpressionUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrJdmScenarioUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrJepDataConversionSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrJepOperandUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrJepOperandValueUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrJepValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrMapDataSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrTcnDeviceUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrTcnExpressionUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrTcnMessageUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrTepDataConversionSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrTepOperandUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrTepValueStringConverter.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrTepValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrTtfMessageUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrStgRepositoryUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrStgScenarioUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\HostDeviceModeler\f_FHostDeviceModeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Modeling\HostDeviceModeler\f_FHostDeviceModeler.designer.cs">
+      <DependentUpon>f_FHostDeviceModeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Modeling\HostDeviceModeler\Prop\c_FPropHdv.cs" />
+    <Compile Include="MainForm\Modeling\HostDeviceModeler\Prop\c_FPropHsn.cs" />
+    <Compile Include="MainForm\Modeling\HostDeviceModeler\Prop\PropAttr\c_FPropAttrHdvDriverOptionUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\HostDeviceModeler\Prop\PropAttr\c_FPropAttrHdvDriverUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\HostDeviceModeler\Prop\PropAttr\c_FPropAttrHsnLibraryUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\f_FHostLibraryModeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\f_FHostLibraryModeler.designer.cs">
+      <DependentUpon>f_FHostLibraryModeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\c_FPropHit.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\c_FPropHlb.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\c_FPropHlg.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\c_FPropHmg.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\c_FPropHml.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\c_FPropHms.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\PropAttr\c_FPropAttrHitDataConversionSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\PropAttr\c_FPropAttrHitPreconditionUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\PropAttr\c_FPropAttrHitValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\PropAttr\c_FPropAttrHitValueUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\TcpDeviceModeler\f_FTcpDeviceModeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Modeling\TcpDeviceModeler\f_FTcpDeviceModeler.Designer.cs">
+      <DependentUpon>f_FTcpDeviceModeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Modeling\TcpDeviceModeler\Prop\c_FPropTdv.cs" />
+    <Compile Include="MainForm\Modeling\TcpDeviceModeler\Prop\c_FPropTsn.cs" />
+    <Compile Include="MainForm\Modeling\TcpDeviceModeler\Prop\PropAttr\c_FPropAttrTsnLibraryUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\TcpLibraryModeler\f_FTcpLibraryModeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Modeling\TcpLibraryModeler\f_FTcpLibraryModeler.Designer.cs">
+      <DependentUpon>f_FTcpLibraryModeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Modeling\TcpLibraryModeler\Prop\c_FPropTit.cs" />
+    <Compile Include="MainForm\Modeling\TcpLibraryModeler\Prop\c_FPropTlb.cs" />
+    <Compile Include="MainForm\Modeling\TcpLibraryModeler\Prop\c_FPropTlg.cs" />
+    <Compile Include="MainForm\Modeling\TcpLibraryModeler\Prop\c_FPropTmg.cs" />
+    <Compile Include="MainForm\Modeling\TcpLibraryModeler\Prop\c_FPropTml.cs" />
+    <Compile Include="MainForm\Modeling\TcpLibraryModeler\Prop\c_FPropTms.cs" />
+    <Compile Include="MainForm\Modeling\TcpLibraryModeler\Prop\PropAttr\c_FPropAttrTitDataConversionSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\TcpLibraryModeler\Prop\PropAttr\c_FPropAttrTitPreconditionUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\TcpLibraryModeler\Prop\PropAttr\c_FPropAttrTitValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\TcpLibraryModeler\Prop\PropAttr\c_FPropAttrTitValueUITypeEditor.cs" />
+    <Compile Include="MainForm\Setup\DataConversionSetDefinition\f_FDataConversionSetDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\DataConversionSetDefinition\f_FDataConversionSetDefinition.designer.cs">
+      <DependentUpon>f_FDataConversionSetDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\DataConversionSetDefinition\Prop\c_FPropDcl.cs" />
+    <Compile Include="MainForm\Setup\DataConversionSetDefinition\Prop\c_FPropDcs.cs" />
+    <Compile Include="MainForm\Setup\DataConversionSetDefinition\Prop\c_FPropDcv.cs" />
+    <Compile Include="MainForm\Setup\DataSetDefinition\f_FDataSetDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\DataSetDefinition\f_FDataSetDefinition.designer.cs">
+      <DependentUpon>f_FDataSetDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\DataSetDefinition\Prop\c_FPropDat.cs" />
+    <Compile Include="MainForm\Setup\DataSetDefinition\Prop\c_FPropDsl.cs" />
+    <Compile Include="MainForm\Setup\DataSetDefinition\Prop\c_FPropDts.cs" />
+    <Compile Include="MainForm\Setup\DataSetDefinition\Prop\PropAttr\c_FPropAttrDatDataConversionSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Setup\DataSetDefinition\Prop\PropAttr\c_FPropAttrDatValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Setup\DataSetDefinition\Prop\PropAttr\c_FPropAttrDatValueUITypeEditor.cs" />
+    <Compile Include="MainForm\Setup\EnviromentDefinition\f_FEnvironmentDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\EnviromentDefinition\f_FEnvironmentDefinition.designer.cs">
+      <DependentUpon>f_FEnvironmentDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\EnviromentDefinition\Prop\c_FPropEnl.cs" />
+    <Compile Include="MainForm\Setup\EnviromentDefinition\Prop\c_FPropEnv.cs" />
+    <Compile Include="MainForm\Setup\EnviromentDefinition\Prop\PropAttr\c_FPropAttrEnvValueUITypeEditor.cs" />
+    <Compile Include="MainForm\Setup\EquipmentStateSetDefinition\f_FEquipmentStateSetDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\EquipmentStateSetDefinition\f_FEquipmentStateSetDefinition.designer.cs">
+      <DependentUpon>f_FEquipmentStateSetDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\EquipmentStateSetDefinition\Prop\c_FPropEsl.cs" />
+    <Compile Include="MainForm\Setup\EquipmentStateSetDefinition\Prop\c_FPropEss.cs" />
+    <Compile Include="MainForm\Setup\EquipmentStateSetDefinition\Prop\c_FPropEst.cs" />
+    <Compile Include="MainForm\Setup\EquipmentStateSetDefinition\Prop\c_FPropStv.cs" />
+    <Compile Include="MainForm\Setup\EquipmentStateSetDefinition\Prop\PropAttr\c_FPropAttrEstDefaultValueStringConverter.cs" />
+    <Compile Include="MainForm\Setup\FunctionNameDefinition\f_FFunctionNameDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\FunctionNameDefinition\f_FFunctionNameDefinition.designer.cs">
+      <DependentUpon>f_FFunctionNameDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\FunctionNameDefinition\Prop\c_FPropArg.cs" />
+    <Compile Include="MainForm\Setup\FunctionNameDefinition\Prop\c_FPropFna.cs" />
+    <Compile Include="MainForm\Setup\FunctionNameDefinition\Prop\c_FPropFnl.cs" />
+    <Compile Include="MainForm\Setup\FunctionNameDefinition\Prop\c_FPropPna.cs" />
+    <Compile Include="MainForm\Setup\ObjectNameDefinition\f_FObjectNameDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\ObjectNameDefinition\f_FObjectNameDefinition.designer.cs">
+      <DependentUpon>f_FObjectNameDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\ObjectNameDefinition\Prop\c_FPropObn.cs" />
+    <Compile Include="MainForm\Setup\ObjectNameDefinition\Prop\c_FPropOnl.cs" />
+    <Compile Include="MainForm\Setup\RepositoryDefinition\f_FRepositoryDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\RepositoryDefinition\f_FRepositoryDefinition.designer.cs">
+      <DependentUpon>f_FRepositoryDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\RepositoryDefinition\Prop\c_FPropCol.cs" />
+    <Compile Include="MainForm\Setup\RepositoryDefinition\Prop\c_FPropRpl.cs" />
+    <Compile Include="MainForm\Setup\RepositoryDefinition\Prop\c_FPropRps.cs" />
+    <Compile Include="MainForm\Setup\RepositoryDefinition\Prop\PropAttr\c_FPropAttrColDataConversionSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Setup\RepositoryDefinition\Prop\PropAttr\c_FPropAttrColValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Setup\RepositoryDefinition\Prop\PropAttr\c_FPropAttrColValueUITypeEditor.cs" />
+    <Compile Include="MainForm\Setup\UserTagNameDefinition\c_FUserTagNameDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\UserTagNameDefinition\c_FUserTagNameDefinition.designer.cs">
+      <DependentUpon>c_FUserTagNameDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\UserTagNameDefinition\Prop\c_FPropUtn.cs" />
+    <Compile Include="MainForm\Trace\f_FXlgTracer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Trace\f_FXlgTracer.Designer.cs">
+      <DependentUpon>f_FXlgTracer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Trace\f_FTcpBinaryTracer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Trace\f_FTcpBinaryTracer.Designer.cs">
+      <DependentUpon>f_FTcpBinaryTracer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Trace\f_FVfeiTracer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Trace\f_FVfeiTracer.designer.cs">
+      <DependentUpon>f_FVfeiTracer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Trace\LogTracer\Component\c_FConfig.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Component\c_FEapCore.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\f_FLogFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Trace\LogTracer\f_FLogFilter.Designer.cs">
+      <DependentUpon>f_FLogFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Trace\LogTracer\f_FTotalLogTracer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Trace\LogTracer\f_FTotalLogTracer.Designer.cs">
+      <DependentUpon>f_FTotalLogTracer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropAppl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropBrnl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropCbkl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropCmtl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropColl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropCttl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropDatl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropDtsl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropEsal.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropEtpl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropFilterEvent.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropFunl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropHdcl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropHdel.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropHdmrl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropHdmsl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropHitl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropHtnl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropHtrl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropHvrl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropHvsl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropJdml.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropMapl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropTcdl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropTdcl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropTdel.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropTdmrl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropTdmsl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropTdtl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropTitl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropTtnl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropTtrl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropPaul.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropRpsl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropStgl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\PropAttr\c_FPropAttrCollValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\PropAttr\c_FPropAttrDatlValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\PropAttr\c_FPropAttrHitlPreconditlionUITypeEditor.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\PropAttr\c_FPropAttrHitlValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\PropAttr\c_FPropAttrTitlValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\PropAttr\c_FPropAttrTitlPreconditlionUITypeEditor.cs" />
+    <Compile Include="MainForm\View\f_FXlgViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\View\f_FXlgViewer.Designer.cs">
+      <DependentUpon>f_FXlgViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\View\f_FVfeiViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\View\f_FVfeiViewer.designer.cs">
+      <DependentUpon>f_FVfeiViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Window\c_FFormList.cs" />
+    <Compile Include="MainForm\Window\f_FFormSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Window\f_FFormSelector.designer.cs">
+      <DependentUpon>f_FFormSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Option\c_FOption.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="XmlTag\c_FXmlTagTCMOption.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\f_FTcmContainer.resx">
+      <DependentUpon>f_FTcmContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_ExpressionViewer.resx">
+      <DependentUpon>f_ExpressionViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FDataConversionSetSelector.resx">
+      <DependentUpon>f_FDataConversionSetSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FDataSelector.resx">
+      <DependentUpon>f_FDataSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FDataSetGenerator.resx">
+      <DependentUpon>f_FDataSetGenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FDataSetSelector.resx">
+      <DependentUpon>f_FDataSetSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FEnvironmentSelector.resx">
+      <DependentUpon>f_FEnvironmentSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FEquipmentStateSelector.resx">
+      <DependentUpon>f_FEquipmentStateSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FEquipmentStateSelector2.resx">
+      <DependentUpon>f_FEquipmentStateSelector2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FEquipmentStateSetSelector.resx">
+      <DependentUpon>f_FEquipmentStateSetSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FFunctionSelector.resx">
+      <DependentUpon>f_FFunctionSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FHostDeviceSelector.resx">
+      <DependentUpon>f_FHostDeviceSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FHostDriverSelector.resx">
+      <DependentUpon>f_FHostDriverSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FHostItemSelector.resx">
+      <DependentUpon>f_FHostItemSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FHostLibrarySelector.resx">
+      <DependentUpon>f_FHostLibrarySelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FHostMessageSelector.resx">
+      <DependentUpon>f_FHostMessageSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FReplaceNameDialog.resx">
+      <DependentUpon>f_FReplaceNameDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FTcpItemSelector.resx">
+      <DependentUpon>f_FTcpItemSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FPreconditionEditor.resx">
+      <DependentUpon>f_FPreconditionEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FPreconditionViewer.resx">
+      <DependentUpon>f_FPreconditionViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FRelationViewer.resx">
+      <DependentUpon>f_FRelationViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FRepositorySelector.resx">
+      <DependentUpon>f_FRepositorySelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FScenarioSelector.resx">
+      <DependentUpon>f_FScenarioSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FTcpDeviceSelector.resx">
+      <DependentUpon>f_FTcpDeviceSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FTcpLibrarySelector.resx">
+      <DependentUpon>f_FTcpLibrarySelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FTcpMessageSelector.resx">
+      <DependentUpon>f_FTcpMessageSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FValueEditor.resx">
+      <DependentUpon>f_FValueEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FValueTransformationEditor.resx">
+      <DependentUpon>f_FValueTransformationEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FValueTransformationViewer.resx">
+      <DependentUpon>f_FValueTransformationViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FValueViewer.resx">
+      <DependentUpon>f_FValueViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FTcpProtocolSelector.resx">
+      <DependentUpon>f_FTcpProtocolSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\File\f_FExportDialog.resx">
+      <DependentUpon>f_FExportDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\File\f_FOptionDialog.resx">
+      <DependentUpon>f_FOptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Help\f_FAbout.resx">
+      <DependentUpon>f_FAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Modeling\EquipmentModeler\f_FEquipmentModeler.resx">
+      <DependentUpon>f_FEquipmentModeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Modeling\EquipmentModeler\f_FScenarioDesigner.resx">
+      <DependentUpon>f_FScenarioDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Modeling\HostDeviceModeler\f_FHostDeviceModeler.resx">
+      <DependentUpon>f_FHostDeviceModeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Modeling\HostLibraryModeler\f_FHostLibraryModeler.resx">
+      <DependentUpon>f_FHostLibraryModeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Modeling\TcpDeviceModeler\f_FTcpDeviceModeler.resx">
+      <DependentUpon>f_FTcpDeviceModeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Modeling\TcpLibraryModeler\f_FTcpLibraryModeler.resx">
+      <DependentUpon>f_FTcpLibraryModeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\DataConversionSetDefinition\f_FDataConversionSetDefinition.resx">
+      <DependentUpon>f_FDataConversionSetDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\DataSetDefinition\f_FDataSetDefinition.resx">
+      <DependentUpon>f_FDataSetDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\EnviromentDefinition\f_FEnvironmentDefinition.resx">
+      <DependentUpon>f_FEnvironmentDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\EquipmentStateSetDefinition\f_FEquipmentStateSetDefinition.resx">
+      <DependentUpon>f_FEquipmentStateSetDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\FunctionNameDefinition\f_FFunctionNameDefinition.resx">
+      <DependentUpon>f_FFunctionNameDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\ObjectNameDefinition\f_FObjectNameDefinition.resx">
+      <DependentUpon>f_FObjectNameDefinition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\RepositoryDefinition\f_FRepositoryDefinition.resx">
+      <DependentUpon>f_FRepositoryDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\UserTagNameDefinition\c_FUserTagNameDefinition.resx">
+      <DependentUpon>c_FUserTagNameDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Trace\f_FXlgTracer.resx">
+      <DependentUpon>f_FXlgTracer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Trace\f_FTcpBinaryTracer.resx">
+      <DependentUpon>f_FTcpBinaryTracer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Trace\f_FVfeiTracer.resx">
+      <DependentUpon>f_FVfeiTracer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Trace\LogTracer\f_FLogFilter.resx">
+      <DependentUpon>f_FLogFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Trace\LogTracer\f_FTotalLogTracer.resx">
+      <DependentUpon>f_FTotalLogTracer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\View\f_FXlgViewer.resx">
+      <DependentUpon>f_FXlgViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\View\f_FVfeiViewer.resx">
+      <DependentUpon>f_FVfeiViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Window\f_FFormSelector.resx">
+      <DependentUpon>f_FFormSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MainForm\Tool\Prop\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\FTcmContainer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\ToolClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\ToolCollapse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\ToolCopy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\ToolCut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\ToolExpand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\ToolFind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\ToolMoveDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\ToolMoveUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\ToolPasteChild.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\ToolPasteSibling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\ToolRefresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\ToolRemove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\Trn_Result_Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\Trn_Result_Fail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\Trn_Result_Skip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\Trn_Result_Success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\Trn_Target.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\Icon\FEquipmentModeling.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\Icon\FView.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\Icon\tsm.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\File\File_Bng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\File\File_Dll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\File\File_Tsl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\File\File_Tsm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\File\File_Vfe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Help\FAbout_TcpModeler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Branch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Callback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\CloseHostDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\CloseTcpDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Comment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\EntryPoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Equipment_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Equipment_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\EquipmentStateAlterer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\EquipmentStateSetAlterer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\File_Dll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Function.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostCondition_Connection_Closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostCondition_Connection_Connected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostCondition_Connection_Opened.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostCondition_Connection_Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostCondition_Expression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostCondition_Timeout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostDevice_Closed_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostDevice_Closed_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostDevice_Connected_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostDevice_Connected_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostDevice_Opened_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostDevice_Opened_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostDevice_Selected_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostDevice_Selected_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostExpression_Bracket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostExpression_Comparison_Length_Environment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostExpression_Comparison_Length_HostItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostExpression_Comparison_Value_Environment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostExpression_Comparison_Value_EquipmentState.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostExpression_Comparison_Value_HostItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostItem_List_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostItem_List_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostItem_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostItem_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostLibrary_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostLibrary_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostLibraryGroup_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostLibraryGroup_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostMessage_Command_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostMessage_Command_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostMessage_Reply_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostMessage_Reply_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostMessage_Unsolicited_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostMessage_Unsolicited_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostMessageList_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostMessageList_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostMessages_Both_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostMessages_Both_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostMessages_Eq_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostMessages_Eq_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostMessages_Host_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostMessages_Host_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostSession_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostSession_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostTransfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostTransmitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\HostTrigger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Judgement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\JudgementCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\JudgementExpression_Bracket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\JudgementExpression_Comparison_Length.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\JudgementExpression_Comparison_Value.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Mapper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\ModelingScenarioModeler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\OpenHostDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\OpenTcpDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\PastePrimaryHostMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\PastePrimaryTcpMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\PasteSecondaryHostMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\PasteSecondaryTcpMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Pauser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Scenario_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Scenario_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\ScenarioGroup_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\ScenarioGroup_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\SendHostMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\SendTcpMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Storage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpCondition_Connection_Closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpCondition_Connection_Connected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpCondition_Connection_Opened.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpCondition_Connection_Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpCondition_Expression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpCondition_Timeout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpDevice_Closed_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpDevice_Closed_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpDevice_Connected_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpDevice_Connected_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpDevice_Opened_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpDevice_Opened_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpDevice_Selected_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpDevice_Selected_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpDriver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpExpression_Bracket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpExpression_Comparison_Length_Environment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpExpression_Comparison_Length_SecsItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpExpression_Comparison_Value_Environment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpExpression_Comparison_Value_EquipmentState.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpExpression_Comparison_Value_SecsItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpItem_List_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpItem_List_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpItem_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpItem_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpLibrary_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpLibrary_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpLibraryGroup_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpLibraryGroup_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessage_Primary_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessage_Primary_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessage_Secondary_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessage_Secondary_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessageList_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessageList_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessages_Both_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessages_Both_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessages_Eq_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessages_Eq_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessages_Host_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessages_Host_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpSession_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpSession_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpTransfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpTransmitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpTrigger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Value.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\ValueFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendBranch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendCallback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendComment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendEntryPoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendEquipment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendEquipmentStateAlterer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendEquipmentStateSetAlterer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendFunction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendHostCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendHostDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendHostExpression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendHostItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendHostLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendHostLibraryGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendHostMessageList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendHostMessages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendHostSession.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendHostTransfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendHostTransmitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendHostTrigger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendJudgement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendJudgementCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendJudgementExpression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendMapper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendPauser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendPrimaryHostMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendPrimaryTcpMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendScenario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendScenarioGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendSecondaryHostMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendSecondaryTcpMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendStateValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendStorage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendTcpCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendTcpDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendTcpExpression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendTcpItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendTcpLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendTcpLibraryGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendTcpMessageList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendTcpMessages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendTcpSession.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendTcpTransfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendTcpTransmitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendTcpTrigger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Append\AppendValueFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterBranch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterCallback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterComment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterEntryPoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterEquipment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterEquipmentStateAlterer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterEquipmentStateSetAlterer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterFunction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterHostCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterHostDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterHostExpression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterHostItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterHostLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterHostLibraryGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterHostMessageList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterHostMessages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterHostSession.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterHostTransfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterHostTransmitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterHostTrigger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterJudgement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterJudgementCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterJudgementExpression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterMapper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterPauser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterScenario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterScenarioGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterStateValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterStorage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterTcpCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterTcpDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterTcpExpression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterTcpItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterTcpLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterTcpLibraryGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterTcpMessageList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterTcpMessages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterTcpSession.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterTcpTransfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterTcpTransmitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterTcpTrigger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertAfter\InsertAfterValueFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeBranch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeCallback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeComment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeEntryPoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeEquipment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeEquipmentStateAlterer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeEquipmentStateSetAlterer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeFunction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeHostCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeHostDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeHostExpression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeHostItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeHostLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeHostLibraryGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeHostMessageList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeHostMessages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeHostSession.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeHostTransfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeHostTransmitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeHostTrigger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeJudgement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeJudgementCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeJudgementExpression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeMapper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforePauser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeScenario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeScenarioGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeStateValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeStorage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeTcpCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeTcpDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeTcpExpression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeTcpItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeTcpLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeTcpLibraryGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeTcpMessageList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeTcpMessages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeTcpSession.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeTcpTransfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeTcpTransmitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeTcpTrigger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\InsertBefore\InsertBeforeValueFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Remove\RemoveAllValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Remove\RemoveAllValueFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Remove\RemoveValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\Remove\RemoveValueFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Column.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Column_List.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Data_List_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Data_List_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Data_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Data_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\DataConversion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\DataConversionSet_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\DataConversionSet_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\DataConversionSetList_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\DataConversionSetList_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\DataSet_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\DataSet_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\DataSetList_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\DataSetList_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Environment_List_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Environment_List_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Environment_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Environment_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\EnvironmentList_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\EnvironmentList_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\EquipmentState_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\EquipmentState_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\EquipmentStateSet_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\EquipmentStateSet_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\EquipmentStateSetList_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\EquipmentStateSetList_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Repository_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Repository_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\RepositoryList_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\RepositoryList_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\StateValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\TmdArgument.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\TmdFunctionName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\TmdFunctionNameList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\TmdObjectName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\TmdObjectNameList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\TmdParameterName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\TmdUserTagName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\TmdUserTagNameList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendColumn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendData.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendDataConversion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendDataConversionSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendDataConversionSetList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendDataSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendDataSetList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendEnvironment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendEnvironmentList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendEquipmentState.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendEquipmentStateSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendEquipmentStateSetList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendRepository.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendRepositoryList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendTmdArgument.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendTmdFunctionName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendTmdFunctionNameList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendTmdObjectName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\Append\AppendTmdParameterName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterColumn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterData.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterDataConversion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterDataConversionSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterDataConversionSetList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterDataSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterDataSetList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterEnvironment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterEnvironmentList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterEquipmentState.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterEquipmentStateSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterEquipmentStateSetList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterRepository.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterRepositoryList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterTmdArgument.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterTmdFunctionName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterTmdFunctionNameList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterTmdObjectName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertAfter\InsertAfterTmdParameterName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeColumn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeData.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeDataConversion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeDataConversionSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeDataConversionSetList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeDataSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeDataSetList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeEnvironment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeEnvironmentList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeEquipmentState.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeEquipmentStateSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeEquipmentStateSetList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeRepository.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeRepositoryList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeTmdArgument.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeTmdFunctionName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeTmdFunctionNameList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeTmdObjectName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Setup\InsertBefore\InsertBeforeTmdParameterName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Tool\AttacheTsmFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Tool\ClearTsmFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Tool\DettachTsmFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Tool\FAmateTsmFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\ApplicationLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\ApplicationWritedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\BranchRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\CallbackRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\CommentWritedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\ContentLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\ContentLog_List.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\ConvertToXlg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\ConvertToVfei.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\DataLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\DataLog_List.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\DataSetLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\EntryPointCalledLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\EquipmentStateAltererLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\EquipmentStateSetAltererPerformedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\FunctionCalledLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HdvDataMessageReceivedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HdvDataMessageReceivedLog_Command.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HdvDataMessageReceivedLog_Reply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HdvDataMessageReceivedLog_Unsolicited.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HdvDataMessageSentLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HdvDataMessageSentLog_Command.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HdvDataMessageSentLog_Reply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HdvDataMessageSentLog_Unsolicited.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HdvErrorRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HdvStateChangedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HdvStateChangedLog_Closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HdvStateChangedLog_Connected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HdvStateChangedLog_Opened.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HdvStateChangedLog_Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HdvVfeiReceivedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HdvVfeiSentLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HostDeviceLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HostItemLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HostItemLog_List.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HostTransmitterRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\HostTriggerRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\JudgementPerformedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\MapperPerformedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\PauserRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\Result_Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\Result_Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\ScenarioLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\ScreenLock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\ScreenUnlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\StoragePerformedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TcpDeviceLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TcpDriverLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TcpItemLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TcpItemLog_List.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TcpLogAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TcpLogFilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TcpTransmitterRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TcpTriggerRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TdvErrorRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TdvSmlReceivedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TdvSmlSentLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TdvStateChangedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TdvStateChangedLog_Closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TdvStateChangedLog_Connected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TdvStateChangedLog_Opened.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TdvStateChangedLog_Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TdvTimeoutRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TraceDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TraceEnabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\View\Goto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\View\Relation_Inclusion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\View\Relation_Reference.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Window\Form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\FileClone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\FileClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\FileExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\FileExport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\FileNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\FileOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\FileOption.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\FileRecentLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\FileRecentLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\FileSave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\FileSaveAs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\HelpAbout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\ModelingEquipmentModeler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\ModelingHostDeviceModeler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\ModelingHostLibraryModeler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\ModelingScenarioModeler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\ModelingTcpDeviceModeler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\ModelingTcpLibraryModeler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\SetupDataConversionSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\SetupDataSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\SetupEnvironment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\SetupEquipmentStateSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\SetupRepository.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\SetupTmdFunctionName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\SetupTmdObjectName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\SetupTmdUserTagName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\TolBinaryLogCut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\TolCloseAllDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\TolOpenAllDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\TolTcpLogCut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\TolVfeiLogCut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\TraceBinaryLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\TraceTcpLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\TraceVfeiLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\ViewRelation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\ViewVfeiLog.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\WinCloseAllWindows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\WinMoreWindows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\FileClone_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\FileClose_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\FileExit_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\FileNew_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\FileOpen_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\FileOption_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\FileSave_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\FileSaveAs_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\ModelingEquipmentModeler_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\ModelingHostDeviceModeler_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\ModelingHostLibraryModeler_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\ModelingTcpDeviceModeler_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\ModelingTcpLibraryModeler_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\SetupDataConversionSet_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\SetupDataSet_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\SetupEnvironment_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\SetupEquipmentStateSet_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\SetupRepository_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\SetupTmdFunctionName_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\SetupTmdObjectName_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\SetupTmdUserTagName_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\TolCloseAllDevice_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\TolOpenAllDevice_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\TraceBinaryLog_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\TraceTcpLog_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\TraceVfeiLog_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\ViewRelation_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\ViewVfeiLog_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessage_Command_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessage_Command_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessage_Reply_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessage_Reply_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessage_Unsolicited_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Modeling\TcpMessage_Unsolicited_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TdvDataMessageReceivedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TdvDataMessageReceivedLog_Command.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TdvDataMessageReceivedLog_Reply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TdvDataMessageReceivedLog_Unsolicited.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TdvDataMessageSentLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TdvDataMessageSentLog_Command.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TdvDataMessageSentLog_Reply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\TdvDataMessageSentLog_Unsolicited.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\TolXlgLogCut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\TraceXlgLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainMenu\ViewXlgLog.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\TraceXlgLog_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainToolbar\ViewXlgLog_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nexplant.MC.ComponentInterface\Nexplant.MC.ComponentInterface.v4.6.csproj">
+      <Project>{0f3cf897-7880-4ac0-a6bd-11ee5665b363}</Project>
+      <Name>Nexplant.MC.ComponentInterface.v4.6</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nexplant.Mc.WorkspaceInterface\Nexplant.MC.WorkspaceInterface.v4.6.csproj">
+      <Project>{37de8452-640c-4262-b631-6ec3e6cb0951}</Project>
+      <Name>Nexplant.MC.WorkspaceInterface.v4.6</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\PlugInComponent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reources\MainForm\Trace\ReloadComponent.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir).\..\..\nexplant.mc-dll\"
+
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

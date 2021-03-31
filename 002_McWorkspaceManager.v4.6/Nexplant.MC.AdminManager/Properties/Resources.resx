@@ -1,0 +1,1951 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ModelManual" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\ModelManual.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewAdminServiceBackupLogList_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\ViewAdminServiceBackupLogList_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupGeneralCodeData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\SetupGeneralCodeData.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqServerResourceList_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqServerResourceList_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupOmdFunctionName_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupOmdFunctionName_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupPackage_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupPackage_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupOmdFunctionName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupOmdFunctionName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvHandshakeReceivedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvHandshakeReceivedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlcDevice_Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\PlcDevice_Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Server_Main_Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Server_Main_Up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Opc_Main_Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Opc_Main_Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEquipmentAlarmStatus_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqEquipmentAlarmStatus_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqServerResourceStatus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqServerResourceStatus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupUser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\SetupUser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlcLogFilter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PlcLogFilter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEapResourceComparison_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqEapResourceComparison_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BranchRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\BranchRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Server_Backup_Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Server_Backup_Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Exe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\File_Exe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MapperPerformedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\MapperPerformedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PmdUserTagNameList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\PmdUserTagNameList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvVfeiReceivedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HdvVfeiReceivedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Plc_Backup_Alarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Plc_Backup_Alarm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewAdminAgentLogList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ViewAdminAgentLogList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqComponentStatus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\InqComponentStatus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewEapLogList_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\ViewEapLogList_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PdvDataMessageWrittenLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PdvDataMessageWrittenLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnEapRelease" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\TrnEapRelease.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Secs_Main_Alarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Secs_Main_Alarm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupEquipmentArea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupEquipmentArea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvStateChangedLog_Connected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HdvStateChangedLog_Connected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupEvent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupEvent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEapResourceHistory_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqEapResourceHistory_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CallbackRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\CallbackRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupPackageVersion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\SetupPackageVersion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FAbout_AdminManager" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainForm\Help\FAbout_AdminManager.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Etc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\File_Etc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Form" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Window\Form.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvDataMessageReceivedLog_Primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvDataMessageReceivedLog_Primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqModelList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\InqModelList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqNoticeHistory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqNoticeHistory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqModelStatus_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqModelStatus_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEquipmentStatus_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqEquipmentStatus_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\UserGroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Secs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Eap_Secs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolCheck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolCheck.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvStateChangedLog_Opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HdvStateChangedLog_Opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewAlertServiceLogList_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\ViewAlertServiceLogList_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupModel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\SetupModel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupSmdUserTagName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupSmdUserTagName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupEvent_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupEvent_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Equipment_Unknown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Equipment_Unknown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RcmdCustomRemoteCommandRequest_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\RcmdCustomRemoteCommandRequest_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ValueFormula" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\ValueFormula.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PdvStateChangedLog_Selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PdvStateChangedLog_Selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmdUserTagNameList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\SmdUserTagNameList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserGroupApplication" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\UserGroupApplication.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Model_Opc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Model_Opc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Environment_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Environment_List.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEquipmentAlarmStatus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqEquipmentAlarmStatus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Model" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Model.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqServerHistory_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqServerHistory_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ColumnLog_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\ColumnLog_List.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolAdminAgentOption" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TolAdminAgentOption.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ComponentVersion_Secs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\ComponentVersion_Secs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupSmdObjectName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupSmdObjectName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnEapReload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TrnEapReload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Server_Main_Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Server_Main_Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoveServer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\RemoteCommand\RemoveServer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupOmdUserTagName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupOmdUserTagName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnEapBatchModification_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TrnEapBatchModification_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RcmdEquipmentEventDefineRequest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\RcmdEquipmentEventDefineRequest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Opc_Backup_Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Opc_Backup_Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trn_Target" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Transaction\Trn_Target.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Dlg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\File_Dlg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewAdminAgentBackupLogList_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\ViewAdminAgentBackupLogList_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Secs_Backup_Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Secs_Backup_Up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CommentWritedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\CommentWritedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvTimeoutRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvTimeoutRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Bng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\File_Bng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupSmdFunctionName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupSmdFunctionName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoveAllEap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\RemoteCommand\RemoveAllEap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PackageVersion_Opc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\PackageVersion_Opc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEapList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\InqEapList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewModelVersionSchema_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\ViewModelVersionSchema_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupPmdUserTagName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupPmdUserTagName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoveEvent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\RemoveEvent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StoragePerformedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\StoragePerformedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JudgementPerformedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\JudgementPerformedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolRemoveAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolRemoveAll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PmdArgument" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\PmdArgument.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostTransmitterRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HostTransmitterRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvStateChangedLog_Connected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvStateChangedLog_Connected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqServerList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\InqServerList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmdFunctionNameList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\SmdFunctionNameList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmdUserTagName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\SmdUserTagName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvControlMessageSentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvControlMessageSentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RcmdEquipmentEventDefineRequest_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\RcmdEquipmentEventDefineRequest_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\HostDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmdParameterName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\SmdParameterName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OmdParameterName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\OmdParameterName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEquipmentList_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqEquipmentList_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqServerResourceAnalysis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqServerResourceAnalysis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvDataMessageSentLog_Command" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HdvDataMessageSentLog_Command.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqServerResourceStatus_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqServerResourceStatus_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Server" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Server.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EquipmentStateAltererLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\EquipmentStateAltererLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostDevice_Opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\HostDevice_Opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupEap_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupEap_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PmdObjectName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\PmdObjectName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SecsDevice_Unknown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\SecsDevice_Unknown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolAlertServiceOption" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TolAlertServiceOption.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModelVersion_Secs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\ModelVersion_Secs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupModel_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupModel_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Equipment_OnlineRemote" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Equipment_OnlineRemote.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SecsDriver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\SecsDriver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FAdmContainer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FAdmContainer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEapResourceList_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqEapResourceList_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="History" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\History.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewAlertServiceLogList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ViewAlertServiceLogList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvTelnetPacketSentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvTelnetPacketSentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConvertToSml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\ConvertToSml.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupEap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\SetupEap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewAdminAgentBackupLogList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ViewAdminAgentBackupLogList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolCollapse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolCollapse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEapList_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqEapList_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupCustomRemoteCommand_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupCustomRemoteCommand_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvDataMessageSentLog_Unsolicited" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HdvDataMessageSentLog_Unsolicited.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupHostDriver_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupHostDriver_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvBlockReceivedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvBlockReceivedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEquipmentStatus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqEquipmentStatus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolMoveDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolMoveDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EntryPointCalledLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\EntryPointCalledLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewModelVersionSchema" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ViewModelVersionSchema.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvTelnetStateChangedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvTelnetStateChangedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Eap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScenarioLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\ScenarioLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PmdFunctionName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\PmdFunctionName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\FileDelete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupPmdUserTagName_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupPmdUserTagName_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CopyUserGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\CopyUserGroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvDataMessageSentLog_Reply" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HdvDataMessageSentLog_Reply.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Command" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Command.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDevice_Selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\OpcDevice_Selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqComponentList_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqComponentList_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserGroupFunction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\UserGroupFunction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupUser_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupUser_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GeneralCodeData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\GeneralCodeData.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Sml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\File_Sml.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Opc_Main_Alarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Opc_Main_Alarm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConvertToVfei" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\ConvertToVfei.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trn_Result_Success" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Transaction\Trn_Result_Success.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Opc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Eap_Opc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnEapAbort_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TrnEapAbort_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupSmdObjectName_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupSmdObjectName_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEquipmentList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqEquipmentList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OmdObjectName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\OmdObjectName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostTriggerRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HostTriggerRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ApplicationLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\ApplicationLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SecsDevice_Selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\SecsDevice_Selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolCopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolCopy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnServerBackupSwitch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TrnServerBackupSwitch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModelVersion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\ModelVersion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupPackage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\SetupPackage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoveFunction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\RemoveFunction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqUserHistory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqUserHistory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EquipmentLine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\EquipmentLine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FExplorerbar_Item_Checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\FExplorerbar_Item_Checked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ComponentVersion_Opc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\ComponentVersion_Opc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoveEap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\RemoteCommand\RemoveEap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupEquipmentArea_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupEquipmentArea_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEapResourceList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqEapResourceList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataSetLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\DataSetLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewAdminServiceLogList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ViewAdminServiceLogList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupOmdObjectName_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupOmdObjectName_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Secs_Backup_Alarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Secs_Backup_Alarm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostDevice_Selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\HostDevice_Selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvVfeiSentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HdvVfeiSentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEapStatus_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqEapStatus_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnEapAbort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\TrnEapAbort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEapHistory_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqEapHistory_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvStateChangedLog_Selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HdvStateChangedLog_Selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvStateChangedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HdvStateChangedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnServerMainSwitch_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TrnServerMainSwitch_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupSmdUserTagName_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupSmdUserTagName_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvStateChangedLog_Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvStateChangedLog_Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendServer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\RemoteCommand\AppendServer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDevice_Connected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\OpcDevice_Connected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqComponentStatus_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqComponentStatus_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemChangePassword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SystemChangePassword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Server_Main_Alarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Server_Main_Alarm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SecsDeviceLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SecsDeviceLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvDataMessageReceivedLog_Command" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HdvDataMessageReceivedLog_Command.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupOmdObjectName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupOmdObjectName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PackageVersion_Plc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\PackageVersion_Plc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemLogOut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SystemLogOut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEquipmentAlarmHistory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqEquipmentAlarmHistory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewEapBackupLogList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ViewEapBackupLogList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OmdObjectNameList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\OmdObjectNameList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvErrorRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HdvErrorRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RepositoryLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\RepositoryLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PackageVersion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\PackageVersion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Server_Backup_Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Server_Backup_Up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SecsDevice_Connected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\SecsDevice_Connected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostDeviceLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HostDeviceLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendEquipment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\RemoteCommand\AppendEquipment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqPackageList_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqPackageList_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Opc_Backup_Alarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Opc_Backup_Alarm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqServerStatus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\InqServerStatus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContentLog_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\ContentLog_List.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnEapStop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\TrnEapStop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EquipmentArea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\EquipmentArea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\FileAdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Factory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Factory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupComponentVersion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\SetupComponentVersion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Plc_Main_Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Plc_Main_Up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SecsTransmitterRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SecsTransmitterRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolRefreshTimer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolRefreshTimer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostItemLog_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HostItemLog_List.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\File_Dll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FunctionCalledLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\FunctionCalledLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MonEquipment_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\MonEquipment_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RcmdRemotePingTest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\RcmdRemotePingTest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FExplorerbar_Item" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\FExplorerbar_Item.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataLog_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\DataLog_List.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqServerResourceAnalysis_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqServerResourceAnalysis_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RcmdEquipmentControlModeRequest_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\RcmdEquipmentControlModeRequest_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="More" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainForm\Setup\More.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MonEap_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\MonEap_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostDriver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\HostDriver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqPackageStatus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\InqPackageStatus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EapAttrCategory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\EapAttrCategory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EquipmentEvent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\EquipmentEvent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlcDriver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\PlcDriver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupServer_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupServer_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupModelVersion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\SetupModelVersion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ColumnLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\ColumnLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Opc_Backup_Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Opc_Backup_Up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupServer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\SetupServer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Equipment_OnlineLocal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Equipment_OnlineLocal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoveAllEquipment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\RemoteCommand\RemoveAllEquipment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Model_Secs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Model_Secs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PdvDataMessageReadLog_Primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PdvDataMessageReadLog_Primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupComponent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\SetupComponent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PdvStateChangedLog_Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PdvStateChangedLog_Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEapStatus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\InqEapStatus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ApplicationWritedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\ApplicationWritedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostSession" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\HostSession.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupMaker_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupMaker_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OmdFunctionName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\OmdFunctionName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewAdminAgentLogList_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\ViewAdminAgentLogList_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupUserGroupApplication_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupUserGroupApplication_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HelpAbout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\HelpAbout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewAdminServiceLogList_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\ViewAdminServiceLogList_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnEapRestart_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TrnEapRestart_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ComponentVersion_Plc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\ComponentVersion_Plc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostItemLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HostItemLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvDataMessageReceivedLog_Unsolicited" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HdvDataMessageReceivedLog_Unsolicited.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="System" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\System.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewEapBackupLogList_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\ViewEapBackupLogList_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ComponentVersion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\ComponentVersion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlcSession" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\PlcSession.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupPmdFunctionName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupPmdFunctionName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserEvent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\UserEvent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqServerHistory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqServerHistory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlcDevice_Connected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\PlcDevice_Connected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Component_Opc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Component_Opc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupMaker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupMaker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Package" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Package.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemClose_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SystemClose_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvTelnetPacketReceivedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvTelnetPacketReceivedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvDataMessageSentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HdvDataMessageSentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\User.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EquipmentStateSetAltererPerformedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\EquipmentStateSetAltererPerformedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Model_Plc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Model_Plc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvDataMessageSentLog_Primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvDataMessageSentLog_Primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolAdminAgentOption_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TolAdminAgentOption_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvDataMessageSentLog_Secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvDataMessageSentLog_Secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupUserGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\SetupUserGroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EapEvent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\EapEvent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OmdUserTagNameList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\OmdUserTagNameList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PmdParameterName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\PmdParameterName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PdvStateChangedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PdvStateChangedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OmdUserTagName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\OmdUserTagName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDevice_Opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\OpcDevice_Opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupSmdFunctionName_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupSmdFunctionName_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RcmdEquipmentVersionRequest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\RcmdEquipmentVersionRequest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEapHistory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqEapHistory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SecsDriverLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SecsDriverLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvSmlSentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvSmlSentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Result_Warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\Result_Warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RcmdRemotePingTest_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\RcmdRemotePingTest_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Secs_Backup_Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Secs_Backup_Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SecsLogFilter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SecsLogFilter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDriver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\OpcDriver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEquipmentHistory_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqEquipmentHistory_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Package_Opc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Package_Opc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Plc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Eap_Plc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnEapStart_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TrnEapStart_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewAlertServiceBackupLogList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ViewAlertServiceBackupLogList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemLogout_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SystemLogout_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SecsSession" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\SecsSession.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PdvStateChangedLog_Connected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PdvStateChangedLog_Connected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostDevice_Unknown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\HostDevice_Unknown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmdObjectName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\SmdObjectName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PdvDataMessageReadLog_Secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PdvDataMessageReadLog_Secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupGeneralCodeTable_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupGeneralCodeTable_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnEapRestart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\TrnEapRestart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvStateChangedLog_Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HdvStateChangedLog_Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvStateChangedLog_Opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvStateChangedLog_Opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDevice_Unknown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\OpcDevice_Unknown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolAdminServiceOption" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TolAdminServiceOption.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Log" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\File_Log.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PmdUserTagName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\PmdUserTagName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmdFunctionName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\SmdFunctionName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEapResourceComparison" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqEapResourceComparison.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupGeneralCodeTable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\SetupGeneralCodeTable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Log" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\Log.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ViewLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvDataReceivedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvDataReceivedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Psl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\File_Psl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqServerList_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqServerList_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostDevice_Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\HostDevice_Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlcDeviceLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PlcDeviceLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqServerStatus_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqServerStatus_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupUserGroupApplication" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupUserGroupApplication.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupUserGroup_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupUserGroup_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlcWordLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PlcWordLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PdvErrorRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PdvErrorRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupFactory_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupFactory_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqSystemCheckList_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqSystemCheckList_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Component_Plc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Component_Plc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendEvent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\AppendEvent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnEapStart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\TrnEapStart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnEapBatchModification" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TrnEapBatchModification.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SecsDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\SecsDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EquipmentType" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\EquipmentType.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnEapMove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TrnEapMove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PdvDataReceivedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PdvDataReceivedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlcDriverLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PlcDriverLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Equipment_Offline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Equipment_Offline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OmdArgument" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\OmdArgument.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupCustomRemoteCommand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupCustomRemoteCommand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqModelList_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqModelList_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostDevice_Connected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\HostDevice_Connected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Result_Error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\Result_Error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SecsItemLog_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SecsItemLog_List.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PauserRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\PauserRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RcmdCustomRemoteCommandRequest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\RcmdCustomRemoteCommandRequest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcSession" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\OpcSession.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Event" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Event.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqServerResourceList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqServerResourceList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupPmdObjectName_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupPmdObjectName_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EnvironmentList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\EnvironmentList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqServerResourceComparison_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqServerResourceComparison_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolFind" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolFind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvSmlReceivedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvSmlReceivedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\OpcDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqPackageStatus_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqPackageStatus_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvStateChangedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvStateChangedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnEapReload_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TrnEapReload_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PmdFunctionNameList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\PmdFunctionNameList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDevice_Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\OpcDevice_Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupGeneralCodeData_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupGeneralCodeData_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlcTriggerRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PlcTriggerRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvDataMessageReceivedLog_Secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvDataMessageReceivedLog_Secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolExport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolExport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trn_Result_Skip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Transaction\Trn_Result_Skip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlcTransmitterRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PlcTransmitterRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqServerResourceHistory_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqServerResourceHistory_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmdArgument" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\SmdArgument.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ServerEvent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\ServerEvent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupNotice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupNotice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PmdObjectNameList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\PmdObjectNameList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\ContentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SecsDevice_Opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\SecsDevice_Opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEquipmentHistory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqEquipmentHistory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Maker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolExpand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolExpand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvDataMessageReceivedLog_Reply" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HdvDataMessageReceivedLog_Reply.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqServerResourceComparison" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqServerResourceComparison.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SecsTriggerRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SecsTriggerRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupComponent_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupComponent_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqSystemCheckList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqSystemCheckList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Component_Secs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Component_Secs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Package_Secs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Package_Secs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvBlockSentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvBlockSentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Plc_Backup_Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Plc_Backup_Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlcDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\PlcDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Plc_Main_Alarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Plc_Main_Alarm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Secs_Main_Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Secs_Main_Up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvDataSentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvDataSentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvStateChangedLog_Selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvStateChangedLog_Selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModelVersion_Plc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\ModelVersion_Plc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Opc_Main_Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Opc_Main_Up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PdvStateChangedLog_Opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PdvStateChangedLog_Opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupHostDriver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupHostDriver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupModelVersion_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupModelVersion_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolAlertServiceOption_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TolAlertServiceOption_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Ssl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\File_Ssl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnEapMove_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TrnEapMove_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WinMoreWindows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\WinMoreWindows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlcDevice_Selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\PlcDevice_Selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvDataMessageReceivedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvDataMessageReceivedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Vfe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\File_Vfe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvDataMessageReceivedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\HdvDataMessageReceivedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewAlertServiceBackupLogList_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\ViewAlertServiceBackupLogList_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEquipmentAlarmHistory_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqEquipmentAlarmHistory_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendFunction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\AppendFunction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PdvTimeoutRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PdvTimeoutRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SystemClose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvErrorRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvErrorRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Server_Backup_Alarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Server_Backup_Alarm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Environment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Environment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PackageVersion_Secs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\PackageVersion_Secs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolRefresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolRefresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PdvDataMessageWrittenLog_Secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PdvDataMessageWrittenLog_Secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendEap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\RemoteCommand\AppendEap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupPmdFunctionName_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupPmdFunctionName_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqComponentList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\InqComponentList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnEapStop_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TrnEapStop_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupEquipment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupEquipment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trn_Result_Fail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Transaction\Trn_Result_Fail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlcDevice_Unknown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\PlcDevice_Unknown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GeneralCodeTable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\GeneralCodeTable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqUserHistory_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\InqUserHistory_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModelVersion_Opc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\ModelVersion_Opc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupEquipment_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupEquipment_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RcmdEquipmentVersionRequest_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\RcmdEquipmentVersionRequest_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvControlMessageReceivedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvControlMessageReceivedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlcDevice_Opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\PlcDevice_Opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqRecentNotice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqRecentNotice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupEquipmentLine_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupEquipmentLine_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupEquipmentType" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupEquipmentType.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolAdminServiceOption_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TolAdminServiceOption_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlcWordListLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PlcWordListLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnEapRelease_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TrnEapRelease_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OmdFunctionNameList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\OmdFunctionNameList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqPackageList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\InqPackageList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolMoveUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolMoveUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SecsDevice_Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\SecsDevice_Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MonEquipment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\MonEquipment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RcmdEquipmentControlModeRequest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\RcmdEquipmentControlModeRequest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqEapResourceHistory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqEapResourceHistory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupEquipmentLine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupEquipmentLine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnServerBackupSwitch_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TrnServerBackupSwitch_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewEapLogList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ViewEapLogList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trn_Result_Cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Transaction\Trn_Result_Cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewAdminServiceBackupLogList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ViewAdminServiceBackupLogList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupComponentVersion_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupComponentVersion_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlcBitLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PlcBitLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PdvDataMessageReadLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PdvDataMessageReadLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnServerMainSwitch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TrnServerMainSwitch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Component" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Component.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqServerResourceHistory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\InqServerResourceHistory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MonEap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\MonEap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PdvDataSentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PdvDataSentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Plc_Main_Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Plc_Main_Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolDownload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolDownload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmdObjectNameList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\SmdObjectNameList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Secs_Main_Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Secs_Main_Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Package_Plc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Package_Plc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupPmdObjectName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupPmdObjectName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Plc_Backup_Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Plc_Backup_Up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InqModelStatus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\InqModelStatus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupPackageVersion_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupPackageVersion_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\DataLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlcBitListLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PlcBitListLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Value" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\Value.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WinCloseAllWindows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\WinCloseAllWindows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupFactory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\\MainMenu\SetupFactory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoveAllServer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\RemoteCommand\RemoveAllServer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupEquipmentType_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupEquipmentType_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SecsItemLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SecsItemLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoveEquipment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\RemoteCommand\RemoveEquipment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvDataMessageSentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvDataMessageSentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Zip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\File_Zip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SdvHandshakeSentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\SdvHandshakeSentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Equipment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Equipment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PdvDataMessageWrittenLog_Primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\PlcLogViewer\PdvDataMessageWrittenLog_Primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupOmdUserTagName_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupOmdUserTagName_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Osl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\File_Osl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcLogFilter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OpcLogFilter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvDataMessageReadLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OdvDataMessageReadLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvDataMessageReadLog_Primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OdvDataMessageReadLog_Primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvDataMessageReadLog_Secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OdvDataMessageReadLog_Secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvDataMessageWrittenLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OdvDataMessageWrittenLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvDataMessageWrittenLog_Primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OdvDataMessageWrittenLog_Primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvDataMessageWrittenLog_Secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OdvDataMessageWrittenLog_Secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvErrorRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OdvErrorRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvStateChangedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OdvStateChangedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvStateChangedLog_Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OdvStateChangedLog_Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvStateChangedLog_Connected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OdvStateChangedLog_Connected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvStateChangedLog_Opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OdvStateChangedLog_Opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvStateChangedLog_Selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OdvStateChangedLog_Selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvTimeoutRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OdvTimeoutRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDeviceLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OpcDeviceLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDriverLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OpcDriverLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcEventItemListLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OpcEventItemListLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcEventItemLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OpcEventItemLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcItemListLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OpcItemListLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcItemLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OpcItemLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcTransmitterRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OpcTransmitterRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcTriggerRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OpcTriggerRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolRefreshAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolRefreshAll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Process" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Eap_Process.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Process_Backup_Alarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Process_Backup_Alarm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Process_Backup_Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Process_Backup_Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Process_Backup_Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Process_Backup_Up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Process_Main_Alarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Process_Main_Alarm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Process_Main_Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Process_Main_Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Process_Main_Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Process_Main_Up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EquipmentCommand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\EquipmentCommand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnAlarmClear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TrnAlarmClear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrnAlarmClear_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TrnAlarmClear_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Log_host_disable_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\Log_host_disable_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Log_host_enable_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\Log_host_enable_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Log_scenario_disable_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\Log_scenario_disable_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Log_scenario_enable_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\Log_scenario_enable_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ApplicationLogDisable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\SecsLogView\ApplicationLogDisable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Log_object_view" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\Log_object_view.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HashTag_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\HashTag_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Log_check_all_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\Log_check_all_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Log_opc_disable_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\Log_opc_disable_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Log_opc_enable_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\Log_opc_enable_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Log_uncheck_all_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\Log_uncheck_all_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Log_export_trs_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\Log_export_trs_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvStateChangedLog_Error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\OpcLogViewer\OdvStateChangedLog_Error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDevice_Error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\OpcDevice_Error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupTmdFunctionName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupTmdFunctionName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupTmdObjectName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupTmdObjectName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupTmdUserTagName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupTmdUserTagName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupTmdFunctionName_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupTmdFunctionName_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupTmdObjectName_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupTmdObjectName_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupTmdUserTagName_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupTmdUserTagName_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModelVersion_Tcp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\ModelVersion_Tcp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Model_Tcp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Model_Tcp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TcpDeviceLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TcpDeviceLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TcpDriverLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TcpDriverLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TcpItemLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TcpItemLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TcpItemLog_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TcpItemLog_List.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TcpLogFilter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TcpLogFilter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TcpTransmitterRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TcpTransmitterRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TcpTriggerRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TcpTriggerRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvDataMessageReceivedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvDataMessageReceivedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvDataMessageReceivedLog_Command" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvDataMessageReceivedLog_Command.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvDataMessageReceivedLog_Reply" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvDataMessageReceivedLog_Reply.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvDataMessageReceivedLog_Unsolicited" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvDataMessageReceivedLog_Unsolicited.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvDataMessageSentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvDataMessageSentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvDataMessageSentLog_Command" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvDataMessageSentLog_Command.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvDataMessageSentLog_Reply" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvDataMessageSentLog_Reply.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvDataMessageSentLog_Unsolicited" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvDataMessageSentLog_Unsolicited.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvErrorRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvErrorRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvSmlReceivedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvSmlReceivedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvSmlSentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvSmlSentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvStateChangedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvStateChangedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvStateChangedLog_Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvStateChangedLog_Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvStateChangedLog_Connected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvStateChangedLog_Connected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvStateChangedLog_Opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvStateChangedLog_Opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvStateChangedLog_Selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvStateChangedLog_Selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvTimeoutRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvTimeoutRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TmdArgument" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\TmdArgument.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TmdFunctionName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\TmdFunctionName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TmdFunctionNameList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\TmdFunctionNameList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TmdObjectName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\TmdObjectName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TmdObjectNameList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\TmdObjectNameList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TmdParameterName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\TmdParameterName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TmdUserTagName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\TmdUserTagName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TmdUserTagNameList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\TmdUserTagNameList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Tcp_Backup_Alarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Tcp_Backup_Alarm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Tcp_Backup_Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Tcp_Backup_Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Tcp_Backup_Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Tcp_Backup_Up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Tcp_Main_Alarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Tcp_Main_Alarm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Tcp_Main_Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Tcp_Main_Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Tcp_Main_Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\Eap_Tcp_Main_Up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TcpDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\TcpDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TcpDevice_Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\TcpDevice_Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TcpDevice_Connected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\TcpDevice_Connected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TcpDevice_Opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\TcpDevice_Opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TcpDevice_Selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\TcpDevice_Selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TcpDevice_Unknown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\TcpDevice_Unknown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TcpDriver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\TcpDriver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TcpSession" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Inquiry\TcpSession.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvDataReceivedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvDataReceivedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TdvDataSentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\TdvDataSentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ComponentVersion_Tcp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\ComponentVersion_Tcp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Component_Tcp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Component_Tcp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eap_Tcp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Eap_Tcp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PackageVersion_Tcp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\PackageVersion_Tcp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Package_Tcp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Package_Tcp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConvertToXlg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\TcpLogView\ConvertToXlg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Tsl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\File_Tsl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Xlg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\File_Xlg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolNext" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\ToolNext.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolPrevious" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\ToolPrevious.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S2HCvt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S2HCvt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S2HEvent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S2HEvent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S2HCvtBackupLogList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S2HCvtBackupLogList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S2HCvtHistory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S2HCvtHistory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S2HCvtList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S2HCvtList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S2HCvtLogList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S2HCvtLogList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S2HCvtMonitor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S2HCvtMonitor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S2HCvtStatus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S2HCvtStatus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S2HCvt_Alarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S2HCvt_Alarm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S2HCvt_Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S2HCvt_Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S2HCvt_Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S2HCvt_Up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolClear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolClear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UIForm_TitleMaximizeHotTrack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UIForm_TitleMaximizeHotTrack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScreenLock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ScreenLock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileOpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\FileOpen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

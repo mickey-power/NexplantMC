@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0FCF2173-95CB-4AA0-B6B4-84F718CEE175}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nexplant.MC.Counter</RootNamespace>
+    <AssemblyName>Nexplant.MC.Counter.v4.6</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://10.20.10.216/FAmateFtp/bcr_upgrade/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://10.20.10.216/FAmateBCR/</InstallUrl>
+    <ProductName>FAmate BCR v4.5</ProductName>
+    <PublisherName>Miracom</PublisherName>
+    <SuiteName>FAmate BCR v4.5</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>71</ApplicationRevision>
+    <ApplicationVersion>4.5.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Miracom.FAmate.Bcr.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\FAmateBcr.v4.5.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>66F3C23A5858303F25E36804AE85F643F1D6EA80</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Miracom.FAmate.Bcr_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Nexplant.MC.Core.Conveter.v4.6, Version=4.6.1.12, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\nexplant.mc-dll\Nexplant.MC.Core.Conveter.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nexplant.Mc.Core.v4.6">
+      <HintPath>..\..\nexplant.mc-dll\Nexplant.Mc.Core.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\c_FCommon.cs" />
+    <Compile Include="Common\c_FCntCore.cs" />
+    <Compile Include="Common\c_FConstants.cs" />
+    <Compile Include="Common\e_FEnum.cs" />
+    <Compile Include="MainForm\f_FErrorMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\f_FErrorMessageBox.Designer.cs">
+      <DependentUpon>f_FErrorMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\f_FCntContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\f_FCntContainer.Designer.cs">
+      <DependentUpon>f_FCntContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\f_FConfirmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\f_FConfirmMessageBox.Designer.cs">
+      <DependentUpon>f_FConfirmMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\f_FMenuSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\f_FMenuSelector.Designer.cs">
+      <DependentUpon>f_FMenuSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\f_FSecs1OptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\f_FSecs1OptionDialog.Designer.cs">
+      <DependentUpon>f_FSecs1OptionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\f_FHsmsOptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\f_FHsmsOptionDialog.Designer.cs">
+      <DependentUpon>f_FHsmsOptionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\f_FMonitoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\f_FMonitoring.Designer.cs">
+      <DependentUpon>f_FMonitoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\f_FTerminalMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\f_FTerminalMessageBox.Designer.cs">
+      <DependentUpon>f_FTerminalMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogBackup\c_FLogBackupScheduler.cs" />
+    <Compile Include="Option\c_FOption.cs" />
+    <Compile Include="Option\XmlTagOption\c_FXmlTagOption.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="message.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bcr.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="information.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="MainForm\f_FErrorMessageBox.resx">
+      <DependentUpon>f_FErrorMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\f_FCntContainer.resx">
+      <DependentUpon>f_FCntContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\f_FConfirmMessageBox.resx">
+      <DependentUpon>f_FConfirmMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\f_FMenuSelector.resx">
+      <DependentUpon>f_FMenuSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\f_FSecs1OptionDialog.resx">
+      <DependentUpon>f_FSecs1OptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\f_FHsmsOptionDialog.resx">
+      <DependentUpon>f_FHsmsOptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\f_FMonitoring.resx">
+      <DependentUpon>f_FMonitoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\f_FTerminalMessageBox.resx">
+      <DependentUpon>f_FTerminalMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ErrorIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LotArrived.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LotUnload.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LotMoveIn.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LotMoveOut.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConfirmIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAmateBcr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

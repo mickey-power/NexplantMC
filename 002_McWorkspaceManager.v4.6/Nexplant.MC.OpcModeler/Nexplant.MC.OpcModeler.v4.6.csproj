@@ -1,0 +1,2532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3620CF46-4CB4-4B49-9833-1176C2A6D9C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nexplant.MC.OpcModeler</RootNamespace>
+    <AssemblyName>Nexplant.MC.OpcModeler.v4.6</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>..\Nexplant.Mc.WorkspaceManager\Nexplant.MC.WorkspaceManager.v4.6.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Shared.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinTabbedMdi.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.Misc.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.SupportDialogs.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTree.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Shared.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Nexplant.MC.Core.Design.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core.Design\bin\Nexplant.MC.Core.Design.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nexplant.MC.Core.OpcDriver-x86.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\nexplant.mc-dll\Nexplant.MC.Core.OpcDriver-x86.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nexplant.MC.Core.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core\bin\Nexplant.MC.Core.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\c_FCommon.cs" />
+    <Compile Include="Common\c_FConstants.cs" />
+    <Compile Include="Common\c_FDragDropData.cs" />
+    <Compile Include="Common\c_FMenuKey.cs" />
+    <Compile Include="Common\c_FModelingFileModifiedEventArgs.cs" />
+    <Compile Include="Common\c_FOpmCore.cs" />
+    <Compile Include="Common\c_FOpmFileInfo.cs" />
+    <Compile Include="Common\d_FDelegate.cs" />
+    <Compile Include="Common\e_FEnum.cs" />
+    <Compile Include="Common\f_FOpmContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\f_FOpmContainer.Designer.cs">
+      <DependentUpon>f_FOpmContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Prop\c_FPropOcd.cs" />
+    <Compile Include="Common\Prop\PropAttr\c_FPropAttrNameStringConverter.cs" />
+    <Compile Include="Dialog\f_FOpcTagSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FOpcTagSelector.Designer.cs">
+      <DependentUpon>f_FOpcTagSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FPlcAddressEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FPlcAddressEditor.Designer.cs">
+      <DependentUpon>f_FPlcAddressEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FOpcEventItemSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FOpcEventItemSelector.Designer.cs">
+      <DependentUpon>f_FOpcEventItemSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_ExpressionViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_ExpressionViewer.Designer.cs">
+      <DependentUpon>f_ExpressionViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FDataConversionSetSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FDataConversionSetSelector.Designer.cs">
+      <DependentUpon>f_FDataConversionSetSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FDataSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FDataSelector.Designer.cs">
+      <DependentUpon>f_FDataSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FDataSetSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FDataSetSelector.Designer.cs">
+      <DependentUpon>f_FDataSetSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FEnvironmentSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FEnvironmentSelector.Designer.cs">
+      <DependentUpon>f_FEnvironmentSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentStateSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentStateSelector.Designer.cs">
+      <DependentUpon>f_FEquipmentStateSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentStateSelector2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentStateSelector2.Designer.cs">
+      <DependentUpon>f_FEquipmentStateSelector2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentStateSetSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentStateSetSelector.Designer.cs">
+      <DependentUpon>f_FEquipmentStateSetSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FFunctionSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FFunctionSelector.Designer.cs">
+      <DependentUpon>f_FFunctionSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FHostDeviceSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FHostDeviceSelector.Designer.cs">
+      <DependentUpon>f_FHostDeviceSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FHostDriverSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FHostDriverSelector.Designer.cs">
+      <DependentUpon>f_FHostDriverSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FHostItemSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FHostItemSelector.Designer.cs">
+      <DependentUpon>f_FHostItemSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FHostLibrarySelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FHostLibrarySelector.Designer.cs">
+      <DependentUpon>f_FHostLibrarySelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FHostMessageSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FHostMessageSelector.Designer.cs">
+      <DependentUpon>f_FHostMessageSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FImportTagEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FImportTagEditor.Designer.cs">
+      <DependentUpon>f_FImportTagEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FMultiItemEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FMultiItemEditor.Designer.cs">
+      <DependentUpon>f_FMultiItemEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FOpcLibrarySelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FOpcLibrarySelector.Designer.cs">
+      <DependentUpon>f_FOpcLibrarySelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FOpcDeviceSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FOpcDeviceSelector.Designer.cs">
+      <DependentUpon>f_FOpcDeviceSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FOpcMessageSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FOpcMessageSelector.Designer.cs">
+      <DependentUpon>f_FOpcMessageSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FOpcItemSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FOpcItemSelector.Designer.cs">
+      <DependentUpon>f_FOpcItemSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FPreconditionEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FPreconditionEditor.Designer.cs">
+      <DependentUpon>f_FPreconditionEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FPreconditionViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FPreconditionViewer.Designer.cs">
+      <DependentUpon>f_FPreconditionViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FRelationViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FRelationViewer.Designer.cs">
+      <DependentUpon>f_FRelationViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FReplaceNameDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FReplaceNameDialog.Designer.cs">
+      <DependentUpon>f_FReplaceNameDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FRepositorySelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FRepositorySelector.Designer.cs">
+      <DependentUpon>f_FRepositorySelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FScenarioSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FScenarioSelector.Designer.cs">
+      <DependentUpon>f_FScenarioSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FValidationViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FValidationViewer.Designer.cs">
+      <DependentUpon>f_FValidationViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FValueEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FValueEditor.Designer.cs">
+      <DependentUpon>f_FValueEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FValueTransformationEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FValueTransformationEditor.Designer.cs">
+      <DependentUpon>f_FValueTransformationEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FValueTransformationViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FValueTransformationViewer.Designer.cs">
+      <DependentUpon>f_FValueTransformationViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FValueViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FValueViewer.Designer.cs">
+      <DependentUpon>f_FValueViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Prop\c_FPropMultiOei.cs" />
+    <Compile Include="Dialog\Prop\c_FPropMultiOit.cs" />
+    <Compile Include="Dialog\Prop\c_FPropPrc.cs" />
+    <Compile Include="Dialog\Prop\c_FPropVfm.cs" />
+    <Compile Include="Dialog\Prop\PropAttr\c_FPropAttrValueViewerUITypeEditor.cs" />
+    <Compile Include="Dialog\Prop\PropAttr\c_FPropAttrVfmTypeStringConverter.cs" />
+    <Compile Include="Dialog\f_FItemNameSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FItemNameSelector.Designer.cs">
+      <DependentUpon>f_FItemNameSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FDataSetGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FDataSetGenerator.Designer.cs">
+      <DependentUpon>f_FDataSetGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\File\c_FOptionSource.cs" />
+    <Compile Include="MainForm\File\f_FExportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\File\f_FExportDialog.Designer.cs">
+      <DependentUpon>f_FExportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\File\f_FOptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\File\f_FOptionDialog.Designer.cs">
+      <DependentUpon>f_FOptionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\File\Prop\c_FPropOptionEvent.cs" />
+    <Compile Include="MainForm\File\Prop\c_FPropOptionLog.cs" />
+    <Compile Include="MainForm\File\Prop\PropAttr\c_FPropAttrFolderUITypeEditor.cs" />
+    <Compile Include="MainForm\Help\f_FAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Help\f_FAbout.Designer.cs">
+      <DependentUpon>f_FAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Modeling\EquipmentModeler\f_FEquipmentModeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Modeling\EquipmentModeler\f_FEquipmentModeler.Designer.cs">
+      <DependentUpon>f_FEquipmentModeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Modeling\EquipmentModeler\f_FScenarioDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Modeling\EquipmentModeler\f_FScenarioDesigner.Designer.cs">
+      <DependentUpon>f_FScenarioDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropBrn.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropCbk.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropCmt.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropEat.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropEqp.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropEsa.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropEtp.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropFun.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropHcn.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropHep.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropHtf.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropHtn.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropHtr.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropJcn.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropJdm.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropJep.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropMap.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropPau.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropOcn.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropOep.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropOtf.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropOtn.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropOtr.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropSng.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropSnr.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\c_FPropStg.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrBrnScenarioUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrDcvValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrEatEquipmentStateUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrEatValueStringConverter.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrEsaEquipmentStateSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrFunFunctionUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrFunParameterStringConverter.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrHcnDeviceUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrHcnExpressionUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrHcnMessageUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrHepDataConversionSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrHepOperandUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrHepValueStringConverter.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrHepValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrHtfMessageUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrJcnDataSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrJcnExpressionUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrJdmScenarioUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrJepDataConversionSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrJepOperandUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrJepOperandValueUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrJepValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrMapDataSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrOcnDeviceUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrOcnExpressionUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrOcnMessageUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrOepDataConversionSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrOepOperandUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrOepValueStringConverter.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrOepValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrOtfMessageUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrStgRepositoryUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\EquipmentModeler\Prop\PropAttr\c_FPropAttrStgScenarioUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\HostDeviceModeler\f_FHostDeviceModeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Modeling\HostDeviceModeler\f_FHostDeviceModeler.Designer.cs">
+      <DependentUpon>f_FHostDeviceModeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Modeling\HostDeviceModeler\Prop\c_FPropHdv.cs" />
+    <Compile Include="MainForm\Modeling\HostDeviceModeler\Prop\c_FPropHsn.cs" />
+    <Compile Include="MainForm\Modeling\HostDeviceModeler\Prop\PropAttr\c_FPropAttrHdvDriverOptionUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\HostDeviceModeler\Prop\PropAttr\c_FPropAttrHdvDriverUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\HostDeviceModeler\Prop\PropAttr\c_FPropAttrHsnLibraryUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\f_FHostLibraryModeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\f_FHostLibraryModeler.Designer.cs">
+      <DependentUpon>f_FHostLibraryModeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\c_FPropHit.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\c_FPropHlb.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\c_FPropHlg.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\c_FPropHmg.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\c_FPropHml.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\c_FPropHms.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\PropAttr\c_FPropAttrHitDataConversionSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\PropAttr\c_FPropAttrHitPreconditionUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\PropAttr\c_FPropAttrHitValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\HostLibraryModeler\Prop\PropAttr\c_FPropAttrHitValueUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\OpcDeviceModeler\f_FOpcDeviceModeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Modeling\OpcDeviceModeler\f_FOpcDeviceModeler.Designer.cs">
+      <DependentUpon>f_FOpcDeviceModeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Modeling\OpcDeviceModeler\Prop\c_FPropOdv.cs" />
+    <Compile Include="MainForm\Modeling\OpcDeviceModeler\Prop\c_FPropOsn.cs" />
+    <Compile Include="MainForm\Modeling\OpcDeviceModeler\Prop\PropAttr\c_FPropAttrOsnLibraryUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\OpcDeviceModeler\Prop\PropAttr\c_FPropAttrPdvSerialPortStringConverter.cs" />
+    <Compile Include="MainForm\Modeling\OpcLibraryModeler\f_FOpcLibraryModeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Modeling\OpcLibraryModeler\f_FOpcLibraryModeler.Designer.cs">
+      <DependentUpon>f_FOpcLibraryModeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Modeling\OpcLibraryModeler\Prop\c_FPropOlb.cs" />
+    <Compile Include="MainForm\Modeling\OpcLibraryModeler\Prop\c_FPropOlg.cs" />
+    <Compile Include="MainForm\Modeling\OpcLibraryModeler\Prop\c_FPropOmg.cs" />
+    <Compile Include="MainForm\Modeling\OpcLibraryModeler\Prop\c_FPropOml.cs" />
+    <Compile Include="MainForm\Modeling\OpcLibraryModeler\Prop\c_FPropOms.cs" />
+    <Compile Include="MainForm\Modeling\OpcLibraryModeler\Prop\c_FPropOel.cs" />
+    <Compile Include="MainForm\Modeling\OpcLibraryModeler\Prop\c_FPropOei.cs" />
+    <Compile Include="MainForm\Modeling\OpcLibraryModeler\Prop\c_FPropOil.cs" />
+    <Compile Include="MainForm\Modeling\OpcLibraryModeler\Prop\c_FPropOit.cs" />
+    <Compile Include="MainForm\Modeling\OpcLibraryModeler\Prop\PropAttr\c_FPropAttrOeiValueUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\OpcLibraryModeler\Prop\PropAttr\c_FPropAttrOeiValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\OpcLibraryModeler\Prop\PropAttr\c_FPropAttrOitValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\OpcLibraryModeler\Prop\PropAttr\c_FPropAttrOitValueUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\OpcLibraryModeler\Prop\PropAttr\c_FPropAttrOitDataConversionSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\OpcLibraryModeler\Prop\PropAttr\c_FPropAttrOeiItemNameUITypeEditor.cs" />
+    <Compile Include="MainForm\Modeling\OpcLibraryModeler\Prop\PropAttr\c_FPropAttrOitItemNameUITypeEditor.cs" />
+    <Compile Include="MainForm\Setup\DataConversionSetDefinition\f_FDataConversionSetDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\DataConversionSetDefinition\f_FDataConversionSetDefinition.Designer.cs">
+      <DependentUpon>f_FDataConversionSetDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\DataConversionSetDefinition\Prop\c_FPropDcl.cs" />
+    <Compile Include="MainForm\Setup\DataConversionSetDefinition\Prop\c_FPropDcs.cs" />
+    <Compile Include="MainForm\Setup\DataConversionSetDefinition\Prop\c_FPropDcv.cs" />
+    <Compile Include="MainForm\Setup\DataSetDefinition\f_FDataSetDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\DataSetDefinition\f_FDataSetDefinition.Designer.cs">
+      <DependentUpon>f_FDataSetDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\DataSetDefinition\Prop\c_FPropDat.cs" />
+    <Compile Include="MainForm\Setup\DataSetDefinition\Prop\c_FPropDsl.cs" />
+    <Compile Include="MainForm\Setup\DataSetDefinition\Prop\c_FPropDts.cs" />
+    <Compile Include="MainForm\Setup\DataSetDefinition\Prop\PropAttr\c_FPropAttrDatDataConversionSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Setup\DataSetDefinition\Prop\PropAttr\c_FPropAttrDatValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Setup\DataSetDefinition\Prop\PropAttr\c_FPropAttrDatValueUITypeEditor.cs" />
+    <Compile Include="MainForm\Setup\EnviromentDefinition\f_FEnvironmentDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\EnviromentDefinition\f_FEnvironmentDefinition.Designer.cs">
+      <DependentUpon>f_FEnvironmentDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\EnviromentDefinition\Prop\c_FPropEnl.cs" />
+    <Compile Include="MainForm\Setup\EnviromentDefinition\Prop\c_FPropEnv.cs" />
+    <Compile Include="MainForm\Setup\EnviromentDefinition\Prop\PropAttr\c_FPropAttrEnvValueUITypeEditor.cs" />
+    <Compile Include="MainForm\Setup\EquipmentStateSetDefinition\f_FEquipmentStateSetDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\EquipmentStateSetDefinition\f_FEquipmentStateSetDefinition.Designer.cs">
+      <DependentUpon>f_FEquipmentStateSetDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\EquipmentStateSetDefinition\Prop\c_FPropEsl.cs" />
+    <Compile Include="MainForm\Setup\EquipmentStateSetDefinition\Prop\c_FPropEss.cs" />
+    <Compile Include="MainForm\Setup\EquipmentStateSetDefinition\Prop\c_FPropEst.cs" />
+    <Compile Include="MainForm\Setup\EquipmentStateSetDefinition\Prop\c_FPropStv.cs" />
+    <Compile Include="MainForm\Setup\EquipmentStateSetDefinition\Prop\PropAttr\c_FPropAttrEstDefaultValueStringConverter.cs" />
+    <Compile Include="MainForm\Setup\FunctionNameDefinition\f_FFunctionNameDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\FunctionNameDefinition\f_FFunctionNameDefinition.Designer.cs">
+      <DependentUpon>f_FFunctionNameDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\FunctionNameDefinition\Prop\c_FPropArg.cs" />
+    <Compile Include="MainForm\Setup\FunctionNameDefinition\Prop\c_FPropFna.cs" />
+    <Compile Include="MainForm\Setup\FunctionNameDefinition\Prop\c_FPropFnl.cs" />
+    <Compile Include="MainForm\Setup\FunctionNameDefinition\Prop\c_FPropPna.cs" />
+    <Compile Include="MainForm\Setup\ObjectNameDefinition\f_FObjectNameDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\ObjectNameDefinition\f_FObjectNameDefinition.Designer.cs">
+      <DependentUpon>f_FObjectNameDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\ObjectNameDefinition\Prop\c_FPropObn.cs" />
+    <Compile Include="MainForm\Setup\ObjectNameDefinition\Prop\c_FPropOnl.cs" />
+    <Compile Include="MainForm\Setup\RepositoryDefinition\f_FRepositoryDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\RepositoryDefinition\f_FRepositoryDefinition.Designer.cs">
+      <DependentUpon>f_FRepositoryDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\RepositoryDefinition\Prop\c_FPropCol.cs" />
+    <Compile Include="MainForm\Setup\RepositoryDefinition\Prop\c_FPropRpl.cs" />
+    <Compile Include="MainForm\Setup\RepositoryDefinition\Prop\c_FPropRps.cs" />
+    <Compile Include="MainForm\Setup\RepositoryDefinition\Prop\PropAttr\c_FPropAttrColDataConversionSetUITypeEditor.cs" />
+    <Compile Include="MainForm\Setup\RepositoryDefinition\Prop\PropAttr\c_FPropAttrColValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Setup\RepositoryDefinition\Prop\PropAttr\c_FPropAttrColValueUITypeEditor.cs" />
+    <Compile Include="MainForm\Setup\UserTagNameDefinition\c_FUserTagNameDefinition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Setup\UserTagNameDefinition\c_FUserTagNameDefinition.Designer.cs">
+      <DependentUpon>c_FUserTagNameDefinition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Setup\UserTagNameDefinition\Prop\c_FPropUtn.cs" />
+    <Compile Include="MainForm\Tool\f_FApplyOsmFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Tool\f_FApplyOsmFiles.Designer.cs">
+      <DependentUpon>f_FApplyOsmFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Tool\f_FItemNameOfOpcSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Tool\f_FItemNameOfOpcSession.Designer.cs">
+      <DependentUpon>f_FItemNameOfOpcSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Tool\Prop\c_FPropItn.cs" />
+    <Compile Include="MainForm\Trace\f_FVfeiTracer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Trace\f_FVfeiTracer.Designer.cs">
+      <DependentUpon>f_FVfeiTracer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Trace\LogTracer\Component\c_FConfig.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Component\c_FEapCore.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\f_FLogFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Trace\LogTracer\f_FLogFilter.Designer.cs">
+      <DependentUpon>f_FLogFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Trace\LogTracer\f_FTotalLogTracer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Trace\LogTracer\f_FTotalLogTracer.Designer.cs">
+      <DependentUpon>f_FTotalLogTracer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropAppl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropBrnl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropCbkl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropCmtl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropColl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropCttl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropDatl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropDtsl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropEsal.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropEtpl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropFilterEvent.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropFunl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropHdcl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropHdel.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropHdmrl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropHdmsl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropHitl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropHtnl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropHtrl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropHvrl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropHvsl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropJdml.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropMapl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropPaul.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropOell.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropOeil.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropOcdl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropOdcl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropOdel.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropOdmrl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropOdmwl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropOdtl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropOtnl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropOtrl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropOitl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropOill.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropRpsl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\c_FPropStgl.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\PropAttr\c_FPropAttrCollValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\PropAttr\c_FPropAttrDatlValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\PropAttr\c_FPropAttrHitlPreconditlionUITypeEditor.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\PropAttr\c_FPropAttrHitlValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\PropAttr\c_FPropAttrOitlValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\Trace\LogTracer\Prop\PropAttr\c_FPropAttrOeilValueTransformerUITypeEditor.cs" />
+    <Compile Include="MainForm\View\f_FTrsViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\View\f_FTrsViewer.Designer.cs">
+      <DependentUpon>f_FTrsViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\View\f_FVfeiViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\View\f_FVfeiViewer.Designer.cs">
+      <DependentUpon>f_FVfeiViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Option\c_FOption.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Window\c_FFormList.cs" />
+    <Compile Include="MainForm\Window\f_FFormSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Window\f_FFormSelector.Designer.cs">
+      <DependentUpon>f_FFormSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmlTag\c_FXmlTagOPMOption.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\f_FOpmContainer.resx">
+      <DependentUpon>f_FOpmContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FOpcTagSelector.resx">
+      <DependentUpon>f_FOpcTagSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FPlcAddressEditor.resx">
+      <DependentUpon>f_FPlcAddressEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FOpcEventItemSelector.resx">
+      <DependentUpon>f_FOpcEventItemSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_ExpressionViewer.resx">
+      <DependentUpon>f_ExpressionViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FDataConversionSetSelector.resx">
+      <DependentUpon>f_FDataConversionSetSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FDataSelector.resx">
+      <DependentUpon>f_FDataSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FDataSetSelector.resx">
+      <DependentUpon>f_FDataSetSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FEnvironmentSelector.resx">
+      <DependentUpon>f_FEnvironmentSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FEquipmentStateSelector.resx">
+      <DependentUpon>f_FEquipmentStateSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FEquipmentStateSelector2.resx">
+      <DependentUpon>f_FEquipmentStateSelector2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FEquipmentStateSetSelector.resx">
+      <DependentUpon>f_FEquipmentStateSetSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FFunctionSelector.resx">
+      <DependentUpon>f_FFunctionSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FHostDeviceSelector.resx">
+      <DependentUpon>f_FHostDeviceSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FHostDriverSelector.resx">
+      <DependentUpon>f_FHostDriverSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FHostItemSelector.resx">
+      <DependentUpon>f_FHostItemSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FHostLibrarySelector.resx">
+      <DependentUpon>f_FHostLibrarySelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FHostMessageSelector.resx">
+      <DependentUpon>f_FHostMessageSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FImportTagEditor.resx">
+      <DependentUpon>f_FImportTagEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FMultiItemEditor.resx">
+      <DependentUpon>f_FMultiItemEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FOpcLibrarySelector.resx">
+      <DependentUpon>f_FOpcLibrarySelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FOpcDeviceSelector.resx">
+      <DependentUpon>f_FOpcDeviceSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FOpcMessageSelector.resx">
+      <DependentUpon>f_FOpcMessageSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FOpcItemSelector.resx">
+      <DependentUpon>f_FOpcItemSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FPreconditionEditor.resx">
+      <DependentUpon>f_FPreconditionEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FPreconditionViewer.resx">
+      <DependentUpon>f_FPreconditionViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FRelationViewer.resx">
+      <DependentUpon>f_FRelationViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FReplaceNameDialog.resx">
+      <DependentUpon>f_FReplaceNameDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FRepositorySelector.resx">
+      <DependentUpon>f_FRepositorySelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FScenarioSelector.resx">
+      <DependentUpon>f_FScenarioSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FValidationViewer.resx">
+      <DependentUpon>f_FValidationViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FValueEditor.resx">
+      <DependentUpon>f_FValueEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FValueTransformationEditor.resx">
+      <DependentUpon>f_FValueTransformationEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FValueTransformationViewer.resx">
+      <DependentUpon>f_FValueTransformationViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FValueViewer.resx">
+      <DependentUpon>f_FValueViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FItemNameSelector.resx">
+      <DependentUpon>f_FItemNameSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FDataSetGenerator.resx">
+      <DependentUpon>f_FDataSetGenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\File\f_FExportDialog.resx">
+      <DependentUpon>f_FExportDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\File\f_FOptionDialog.resx">
+      <DependentUpon>f_FOptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Help\f_FAbout.resx">
+      <DependentUpon>f_FAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Modeling\EquipmentModeler\f_FEquipmentModeler.resx">
+      <DependentUpon>f_FEquipmentModeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Modeling\EquipmentModeler\f_FScenarioDesigner.resx">
+      <DependentUpon>f_FScenarioDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Modeling\HostDeviceModeler\f_FHostDeviceModeler.resx">
+      <DependentUpon>f_FHostDeviceModeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Modeling\HostLibraryModeler\f_FHostLibraryModeler.resx">
+      <DependentUpon>f_FHostLibraryModeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Modeling\OpcDeviceModeler\f_FOpcDeviceModeler.resx">
+      <DependentUpon>f_FOpcDeviceModeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Modeling\OpcLibraryModeler\f_FOpcLibraryModeler.resx">
+      <DependentUpon>f_FOpcLibraryModeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\DataConversionSetDefinition\f_FDataConversionSetDefinition.resx">
+      <DependentUpon>f_FDataConversionSetDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\DataSetDefinition\f_FDataSetDefinition.resx">
+      <DependentUpon>f_FDataSetDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\EnviromentDefinition\f_FEnvironmentDefinition.resx">
+      <DependentUpon>f_FEnvironmentDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\EquipmentStateSetDefinition\f_FEquipmentStateSetDefinition.resx">
+      <DependentUpon>f_FEquipmentStateSetDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\FunctionNameDefinition\f_FFunctionNameDefinition.resx">
+      <DependentUpon>f_FFunctionNameDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\ObjectNameDefinition\f_FObjectNameDefinition.resx">
+      <DependentUpon>f_FObjectNameDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\RepositoryDefinition\f_FRepositoryDefinition.resx">
+      <DependentUpon>f_FRepositoryDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Setup\UserTagNameDefinition\c_FUserTagNameDefinition.resx">
+      <DependentUpon>c_FUserTagNameDefinition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Tool\f_FApplyOsmFiles.resx">
+      <DependentUpon>f_FApplyOsmFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Tool\f_FItemNameOfOpcSession.resx">
+      <DependentUpon>f_FItemNameOfOpcSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Trace\f_FVfeiTracer.resx">
+      <DependentUpon>f_FVfeiTracer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Trace\LogTracer\f_FLogFilter.resx">
+      <DependentUpon>f_FLogFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Trace\LogTracer\f_FTotalLogTracer.resx">
+      <DependentUpon>f_FTotalLogTracer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\View\f_FTrsViewer.resx">
+      <DependentUpon>f_FTrsViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\View\f_FVfeiViewer.resx">
+      <DependentUpon>f_FVfeiViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Window\f_FFormSelector.resx">
+      <DependentUpon>f_FFormSelector.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trn_Result_Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FOpmContainer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolClear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolCollapse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolCopy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolCut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolExpand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolFind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolMoveDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolMoveUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolPasteChild.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolPasteSibling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolRefresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolRemove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\FileClone_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\FileClose_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\FileExit_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\FileNew_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\FileOpen_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\FileOption_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\FileSave_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\FileSaveAs_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\ModelingEquipmentModeler_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\ModelingHostDeviceModeler_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\ModelingHostLibraryModeler_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\ModelingOpcDeviceModeler_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\ModelingOpcLibraryModeler_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\SetupDataConversionSet_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\SetupDataSet_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\SetupEnvironment_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\SetupEquipmentStateSet_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\SetupOmdFunctionName_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\SetupOmdObjectName_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\SetupOmdUserTagName_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\SetupRepository_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\TolCloseAllDevice_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\TolOpenAllDevice_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\TraceBinaryLog_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\TraceOpcLog_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\TraceVfeiLog_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\ViewRelation_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainToolbar\ViewVfeiLog_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\FileClone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\FileClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\FileExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\FileExport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\FileNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\FileOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\FileOption.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\FileRecentLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\FileRecentLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\FileSave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\FileSaveAs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\HelpAbout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\ModelingEquipmentModeler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\ModelingHostDeviceModeler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\ModelingHostLibraryModeler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\ModelingOpcDeviceModeler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\ModelingOpcLibraryModeler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\ModelingScenarioModeler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\SetupDataConversionSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\SetupDataSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\SetupEnvironment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\SetupEquipmentStateSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\SetupOmdFunctionName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\SetupOmdObjectName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\SetupOmdUserTagName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\SetupRepository.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\TolBinaryLogCut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\TolCloseAllDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\TolOpcLogCut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\TolOpenAllDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\TolVfeiLogCut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\TraceBinaryLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\TraceOpcLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\TraceVfeiLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\ViewRelation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\ViewVfeiLog.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\WinCloseAllWindows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\WinMoreWindows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon\FEquipmentModeling.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon\FView.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\File\File_Bng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\File\File_Osl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\File\File_Osm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\File\File_Vfe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Column.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Column_List.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Data_List_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Data_List_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Data_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Data_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\DataConversion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\DataConversionSet_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\DataConversionSet_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\DataConversionSetList_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\DataConversionSetList_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\DataSet_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\DataSet_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\DataSetList_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\DataSetList_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Environment_List_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Environment_List_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Environment_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Environment_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\EnvironmentList_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\EnvironmentList_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\EquipmentState_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\EquipmentState_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\EquipmentStateSet_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\EquipmentStateSet_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\EquipmentStateSetList_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\EquipmentStateSetList_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\OmdArgument.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\OmdFunctionName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\OmdFunctionNameList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\OmdObjectName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\OmdObjectNameList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\OmdParameterName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\OmdUserTagName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\OmdUserTagNameList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Repository_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Repository_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\RepositoryList_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\RepositoryList_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\StateValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendColumn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendData.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendDataConversion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendDataConversionSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendDataConversionSetList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendDataSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendDataSetList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendEnvironment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendEnvironmentList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendEquipmentState.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendEquipmentStateSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendEquipmentStateSetList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendOmdArgument.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendOmdFunctionName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendOmdFunctionNameList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendOmdObjectName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendOmdParameterName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendRepository.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\Append\AppendRepositoryList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterColumn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterData.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterDataConversion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterDataConversionSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterDataConversionSetList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterDataSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterDataSetList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterEnvironment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterEnvironmentList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterEquipmentState.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterEquipmentStateSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterEquipmentStateSetList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterOmdArgument.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterOmdFunctionName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterOmdFunctionNameList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterOmdObjectName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterOmdParameterName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterRepository.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertAfter\InsertAfterRepositoryList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeColumn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeData.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeDataConversion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeDataConversionSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeDataConversionSetList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeDataSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeDataSetList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeEnvironment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeEnvironmentList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeEquipmentState.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeEquipmentStateSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeEquipmentStateSetList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeOmdArgument.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeOmdFunctionName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeOmdFunctionNameList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeOmdObjectName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeOmdParameterName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeRepository.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\InsertBefore\InsertBeforeRepositoryList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Branch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Callback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\CloseHostDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Comment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\EntryPoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Equipment_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Equipment_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\EquipmentStateAlterer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\EquipmentStateSetAlterer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\File\File_Dll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Function.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostCondition_Connection_Closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostCondition_Connection_Connected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostCondition_Connection_Opened.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostCondition_Connection_Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostCondition_Expression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostCondition_Timeout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostDevice_Closed_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostDevice_Closed_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostDevice_Connected_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostDevice_Connected_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostDevice_Opened_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostDevice_Opened_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostDevice_Selected_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostDevice_Selected_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostExpression_Bracket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostExpression_Comparison_Length_Environment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostExpression_Comparison_Length_HostItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostExpression_Comparison_Value_Environment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostExpression_Comparison_Value_EquipmentState.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostExpression_Comparison_Value_HostItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostItem_List_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostItem_List_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostItem_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostItem_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostLibrary_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostLibrary_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostLibraryGroup_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostLibraryGroup_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostMessage_Command_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostMessage_Command_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostMessage_Reply_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostMessage_Reply_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostMessage_Unsolicited_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostMessage_Unsolicited_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostMessageList_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostMessageList_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostMessages_Both_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostMessages_Both_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostMessages_Eq_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostMessages_Eq_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostMessages_Host_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostMessages_Host_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostSession_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostSession_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostTransfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostTransmitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\HostTrigger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Judgement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\JudgementCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\JudgementExpression_Bracket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\JudgementExpression_Comparison_Length.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\JudgementExpression_Comparison_Value.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Mapper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\ModelingScenarioModeler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcCondition_Connection_Closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcCondition_Connection_Connected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcCondition_Connection_Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcCondition_Connection_Opened.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcCondition_Expression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcDevice_Closed_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcDevice_Closed_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcDevice_Connected_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcDevice_Connected_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcDevice_Opened_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcDevice_Opened_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcDevice_Selected_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcDevice_Selected_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcDriver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcEventItem_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcEventItem_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcEventItemList_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcEventItemList_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcExpression_Bracket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcExpression_Comparison_Length_Environment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcExpression_Comparison_Value_Environment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcExpression_Comparison_Value_EquipmentState.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcItem_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcItem_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcItemList_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcItemList_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcLibrary_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcLibrary_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcLibraryGroup_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcLibraryGroup_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcMessage_Primary_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcMessage_Primary_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcMessage_Secondary_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcMessage_Secondary_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcMessageList_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcMessageList_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcMessages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcMessages_Read_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcMessages_Read_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcMessages_Write_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcMessages_Write_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcSession_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcSession_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcTransfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcTransmitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcTrigger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpenHostDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\PastePrimaryHostMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\PasteSecondaryHostMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Pauser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\ReadOpcMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Scenario_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Scenario_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\ScenarioGroup_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\ScenarioGroup_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\SendHostMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Storage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Value.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\ValueFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\WriteOpcMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendBranch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendCallback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendComment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendEntryPoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendEquipment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendEquipmentStateAlterer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendEquipmentStateSetAlterer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendFunction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendHostCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendHostDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendHostExpression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendHostItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendHostLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendHostLibraryGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendHostMessageList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendHostMessages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendHostSession.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendHostTransfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendHostTransmitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendHostTrigger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendJudgement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendJudgementCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendJudgementExpression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendMapper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendOpcCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendOpcDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendOpcEventItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendOpcExpression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendOpcItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendOpcLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendOpcLibraryGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendOpcMessageList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendOpcMessages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendOpcSession.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendOpcTransfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendOpcTransmitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendOpcTrigger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendPauser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendPrimaryHostMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendPrimaryOpcMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendScenario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendScenarioGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendSecondaryHostMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendSecondaryOpcMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendStateValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendStorage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Append\AppendValueFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterBranch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterCallback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterComment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterEntryPoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAftereOpcLibraryGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterEquipment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterEquipmentStateAlterer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterEquipmentStateSetAlterer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterFunction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterHostCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterHostDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterHostExpression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterHostItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterHostLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterHostLibraryGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterHostMessageList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterHostMessages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterHostSession.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterHostTransfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterHostTransmitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterHostTrigger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterJudgement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterJudgementCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterJudgementExpression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterMapper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcEventItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcExpression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcLibraryGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcMessageList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcMessages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcSession.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcTransfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcTransmitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcTrigger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterPauser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterScenario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterScenarioGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterStateValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterStorage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertAfter\InsertAfterValueFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeBranch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeCallback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeComment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeEntryPoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeEquipment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeEquipmentStateAlterer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeEquipmentStateSetAlterer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeFunction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostExpression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostLibraryGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostMessageList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostMessages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostSession.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostTransfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostTransmitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostTrigger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeJudgement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeJudgementCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeJudgementExpression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeMapper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcEventItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcExpression.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcLibrary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcLibraryGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcMessageList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcMessages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcSession.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcTransfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcTransmitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcTrigger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforePauser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeScenario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeScenarioGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeStateValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeStorage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\InsertBefore\InsertBeforeValueFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Remove\RemoveAllValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Remove\RemoveAllValueFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Remove\RemoveValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Remove\RemoveValueFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\ApplicationLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\ApplicationWritedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\BranchRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\CallbackRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\CommentWritedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\ContentLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\ContentLog_List.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\ConvertToVfei.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\DataLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\DataLog_List.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\DataSetLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\EntryPointCalledLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\EquipmentStateAltererLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\EquipmentStateSetAltererPerformedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\FunctionCalledLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HdvDataMessageReceivedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HdvDataMessageReceivedLog_Command.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HdvDataMessageReceivedLog_Reply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HdvDataMessageReceivedLog_Unsolicited.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HdvDataMessageSentLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HdvDataMessageSentLog_Command.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HdvDataMessageSentLog_Reply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HdvDataMessageSentLog_Unsolicited.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HdvErrorRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HdvStateChangedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HdvStateChangedLog_Closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HdvStateChangedLog_Connected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HdvStateChangedLog_Opened.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HdvStateChangedLog_Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HdvVfeiReceivedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HdvVfeiSentLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HostDeviceLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HostItemLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HostItemLog_List.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HostTransmitterRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\HostTriggerRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\JudgementPerformedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\MapperPerformedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OdvDataMessageReadLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OdvDataMessageReadLog_Primary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OdvDataMessageReadLog_Secondary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OdvDataMessageWrittenLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OdvDataMessageWrittenLog_Primary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OdvDataMessageWrittenLog_Secondary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OdvDataReceivedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OdvDataSentLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OdvErrorRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OdvStateChangedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OdvStateChangedLog_Closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OdvStateChangedLog_Connected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OdvStateChangedLog_Opened.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OdvStateChangedLog_Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OdvTimeoutRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OpcDeviceLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OpcDriverLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OpcEventItemListLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OpcEventItemLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OpcItemListLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OpcItemLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OpcLogAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OpcLogFilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OpcTransmitterRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OpcTriggerRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\PauserRaisedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\Result_Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\Result_Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\ScenarioLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\ScreenLock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\ScreenUnlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\StoragePerformedLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\TraceDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\TraceEnabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\View\Goto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\View\Relation_Inclusion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\View\Relation_Reference.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Window\Form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\CloseOpcDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpenOpcDevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcExpression_Comparison_Length_Item.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcExpression_Comparison_Value_Item.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\PastePrimaryOpcMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\PasteSecondaryOpcMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Help\FAbout_OpcModeler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trn_Result_Fail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trn_Result_Skip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trn_Result_Success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trn_Target.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Tool\AttacheOsmFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Tool\ClearOsmFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Tool\DettachOsmFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\Plc_Address_New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcDevice_Error_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcDevice_Error_unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\OdvStateChangedLog_Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Modeling\OpcCondition_Connection_Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nexplant.MC.ComponentInterface\Nexplant.MC.ComponentInterface.v4.6.csproj">
+      <Project>{0f3cf897-7880-4ac0-a6bd-11ee5665b363}</Project>
+      <Name>Nexplant.MC.ComponentInterface.v4.6</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nexplant.Mc.WorkspaceInterface\Nexplant.MC.WorkspaceInterface.v4.6.csproj">
+      <Project>{37de8452-640c-4262-b631-6ec3e6cb0951}</Project>
+      <Name>Nexplant.MC.WorkspaceInterface.v4.6</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\PlugInComponent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\ReloadComponent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Trace\UnplugComponent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\MainMenu\TolExport.png" />
+    <Content Include="Resources\MainMenu\TolImport.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir).\..\..\nexplant.mc-dll\"
+
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

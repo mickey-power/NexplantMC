@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="Nexplant.MC.Core.FaUIs.FWaferChart"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="300" Width="400"
+             MinHeight="200" MinWidth="230"
+             HorizontalAlignment="Left"  VerticalAlignment="Top"
+             SizeChanged="fWaferChart_SizeChanged"
+             Loaded="fWaferChart_Loaded">
+    <!-- Start Root -->
+    <Grid Name="RootLayout">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" Name="row"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" Name="column"/>
+        </Grid.ColumnDefinitions>
+        <!-- Start Header -->
+        <TextBlock x:Name="tbTitle" FontSize="18" FontWeight="Bold" TextAlignment="Center"
+                   HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,3,0,10" Visibility="Collapsed"
+                   Text="&lt;Untitled Chart>"/>
+        <!-- End Header -->
+        
+        <!-- Start Body -->
+        <Canvas Name="bodyCanvas" Grid.Row="1" VerticalAlignment="Top" >
+            <!-- Wafer Map -->
+            <Grid Name="cellLayout" ClipToBounds="True" Margin="0" Background="Transparent"/>
+            <Ellipse Name="waferLayout" ClipToBounds="True" Stretch="Uniform" Stroke="Black" StrokeThickness="1" Fill="Transparent"/>
+            <!-- Legend -->
+            <Canvas Name="legendLayout" Grid.Row="1" Width="100">
+                <GroupBox Name="legendGroupBox" Header="Legend" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0" BorderBrush="Black">
+                    <StackPanel>
+                        <ItemsControl x:Name="flagItems" ItemsSource="{Binding FFlagCollection, Mode=TwoWay}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Rectangle Stroke="Black"  Width="15" Height="15" Margin="5,0,0,0">
+                                            <Rectangle.Fill>
+                                                <SolidColorBrush Color="{Binding Path=color}"/>
+                                            </Rectangle.Fill>
+                                        </Rectangle>
+                                        <TextBlock Text="{Binding Path=name}" Padding="5"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+                </GroupBox>
+            </Canvas>
+        </Canvas>
+        <!-- End Body -->
+    </Grid>
+    <!-- End Root -->
+</UserControl>

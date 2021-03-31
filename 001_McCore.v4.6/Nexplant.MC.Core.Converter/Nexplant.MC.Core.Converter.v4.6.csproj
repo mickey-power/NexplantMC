@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5A39B16D-F95C-4043-9D10-60F2040CE62E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nexplant.MC.Core</RootNamespace>
+    <AssemblyName>Nexplant.MC.Core.Conveter.v4.6</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Secs1ToHsms\Common\c_FByteConverter.cs" />
+    <Compile Include="Secs1ToHsms\Common\c_FConstants.cs" />
+    <Compile Include="Secs1ToHsms\Common\c_FSecsConverter.cs" />
+    <Compile Include="Secs1ToHsms\Common\e_FEnum.cs" />
+    <Compile Include="Secs1ToHsms\Common\d_FDelegate.cs" />
+    <Compile Include="Secs1ToHsms\Common\c_FSecsTag.cs" />
+    <Compile Include="SerialToEthernet\Common\c_FByteConverter.cs" />
+    <Compile Include="SerialToEthernet\Common\c_FConstants.cs" />
+    <Compile Include="SerialToEthernet\Common\d_FDelegate.cs" />
+    <Compile Include="SerialToEthernet\Common\e_FEnum.cs" />
+    <Compile Include="SerialToEthernet\Config\c_FSocketConfig.cs" />
+    <Compile Include="SerialToEthernet\Config\c_FSerialPluginConfig.cs" />
+    <Compile Include="SerialToEthernet\c_FSerialToEthernet.cs" />
+    <Compile Include="Secs1ToHsms\c_FSecs1ToHsms.cs" />
+    <Compile Include="Secs1ToHsms\Config\c_FSecs1Config.cs" />
+    <Compile Include="Secs1ToHsms\Config\c_FHsmsConfig.cs" />
+    <Compile Include="Secs1ToHsms\Event\c_FEventPusher.cs" />
+    <Compile Include="Secs1ToHsms\Event\c_FEventHandler.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FEventArgsBase.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FSecs1StateChangedEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FSecs1ErrorRaisedEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FSecs1HandshakeReceivedEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FSecs1HandshakeSentEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FSecs1BlockReceivedEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FSecs1DataMessageReceivedEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FSecs1TimeoutRaisedEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FHsmsStateChangedEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FHsmsErrorRaisedEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FHsmsControlMessageSentEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FHsmsControlMessageReceivedEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FHsmsDataMessageReceivedEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FHsmsTimeoutRaisedEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FHsmsDataMessageSentEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FSecs1DataMessageSentEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FSecs1BlockSentEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FSecs1InterceptingDataMessageReceivedEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FHsmsInterceptingDataMessageReceivedEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\Event\EventArgs\c_FLogMonitoringEventArgs.cs" />
+    <Compile Include="Secs1ToHsms\LogWriter\c_FLogWriter.cs" />
+    <Compile Include="Secs1ToHsms\Protocol\HSMS\c_FHsmsControlMessageTransaction.cs" />
+    <Compile Include="Secs1ToHsms\Protocol\HSMS\c_FHsmsPassive.cs" />
+    <Compile Include="Secs1ToHsms\Protocol\HSMS\c_FBaseHsms.cs" />
+    <Compile Include="Secs1ToHsms\Protocol\HSMS\c_FHsmsRecvBuffer.cs" />
+    <Compile Include="Secs1ToHsms\Protocol\HSMS\c_FHsmsSendBuffer.cs" />
+    <Compile Include="Secs1ToHsms\Protocol\HSMS\c_FHsmsPassive2.cs" />
+    <Compile Include="Secs1ToHsms\Protocol\HSMS\c_FHsmsActive.cs" />
+    <Compile Include="Secs1ToHsms\Protocol\SECS1\c_FSECS1.cs" />
+    <Compile Include="Secs1ToHsms\Protocol\SECS1\c_FSecs1RecvBuffer.cs" />
+    <Compile Include="Secs1ToHsms\Protocol\SECS1\c_FSecs1HandshakeSendData.cs" />
+    <Compile Include="Secs1ToHsms\Protocol\SECS1\c_FSecs1RecvBlock.cs" />
+    <Compile Include="Secs1ToHsms\Protocol\SECS1\c_FSecs1RecvBlockList.cs" />
+    <Compile Include="Secs1ToHsms\Protocol\SECS1\c_FSecs1T4TimeoutBlock.cs" />
+    <Compile Include="Secs1ToHsms\Protocol\SECS1\c_FSecs1SendBlock.cs" />
+    <Compile Include="Secs1ToHsms\Protocol\SECS1\c_FSecs1SendBlockList.cs" />
+    <Compile Include="Secs1ToHsms\SecsMessage\c_FInterceptingDataMessage.cs" />
+    <Compile Include="Secs1ToHsms\SecsMessage\c_FSecsDataMessage.cs" />
+    <Compile Include="Secs1ToHsms\SecsMessage\c_FSecsBlock.cs" />
+    <Compile Include="Secs1ToHsms\SecsMessage\c_FSecsControlMessage.cs" />
+    <Compile Include="Secs1ToHsms\SecsMessage\c_FSecsDataMessageTransfer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SerialToEthernet\Event\c_FEventHandler.cs" />
+    <Compile Include="SerialToEthernet\Event\c_FEventPusher.cs" />
+    <Compile Include="SerialToEthernet\Event\EventArgs\c_FEventArgsBase.cs" />
+    <Compile Include="SerialToEthernet\Event\EventArgs\c_FSocketDataReceivedEventArgs.cs" />
+    <Compile Include="SerialToEthernet\Event\EventArgs\c_FSerialPluginDataReceivedEventArgs.cs" />
+    <Compile Include="SerialToEthernet\Event\EventArgs\c_FSerialPluginErrorRaisedEventArgs.cs" />
+    <Compile Include="SerialToEthernet\Event\EventArgs\c_FSerialPluginStateChangedEventArgs.cs" />
+    <Compile Include="SerialToEthernet\Event\EventArgs\c_FSerialPluginDataSentEventArgs.cs" />
+    <Compile Include="SerialToEthernet\Event\EventArgs\c_FSocketDataSentEventArgs.cs" />
+    <Compile Include="SerialToEthernet\Event\EventArgs\c_FSocketErrorRaisedEventArgs.cs" />
+    <Compile Include="SerialToEthernet\Event\EventArgs\c_FSocketStateChangedEventArgs.cs" />
+    <Compile Include="SerialToEthernet\Event\EventArgs\c_FLogMonitoringEventArgs.cs" />
+    <Compile Include="SerialToEthernet\LogWriter\c_FLogWriter.cs" />
+    <Compile Include="SerialToEthernet\Protocol\Serial\c_FSerialPluginSerialRecvBuffer.cs" />
+    <Compile Include="SerialToEthernet\Protocol\Serial\c_FSerialPlugin.cs" />
+    <Compile Include="SerialToEthernet\Protocol\Socket\c_FBaseTcp.cs" />
+    <Compile Include="SerialToEthernet\Protocol\c_FCustom001RecvBuffer.cs" />
+    <Compile Include="SerialToEthernet\Protocol\Socket\c_FTcpActive.cs" />
+    <Compile Include="SerialToEthernet\Protocol\Socket\c_FTcpPassive.cs" />
+    <Compile Include="SerialToEthernet\Protocol\c_FXmlTagCustom001.cs" />
+    <Compile Include="SerialToEthernet\Protocol\Serial\c_FSerialPluginRecvData.cs" />
+    <Compile Include="SerialToEthernet\Protocol\c_FCustom001SendBuffer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nexplant.Mc.Core\Nexplant.MC.Core.v4.6.csproj">
+      <Project>{87e1cd5d-13c7-4f9e-be21-d7ae31df80ef}</Project>
+      <Name>Nexplant.MC.Core.v4.6</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

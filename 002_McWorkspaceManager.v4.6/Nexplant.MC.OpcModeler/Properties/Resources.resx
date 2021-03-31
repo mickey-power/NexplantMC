@@ -1,0 +1,1777 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AppendHostCondition" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendHostCondition.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoveValueFormula" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Remove\RemoveValueFormula.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcItemListLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OpcItemListLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeHostTransfer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostTransfer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StateValue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\StateValue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataConversion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\DataConversion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModelingHostLibraryModeler_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\ModelingHostLibraryModeler_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostItem_List_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostItem_List_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeOpcMessageList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcMessageList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReadOpcMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\ReadOpcMessage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDriverLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OpcDriverLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDevice_Closed_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcDevice_Closed_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcTriggerRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OpcTriggerRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupOmdObjectName_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupOmdObjectName_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolOpcLogCut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TolOpcLogCut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Storage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Storage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterOpcExpression" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcExpression.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Column" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Column.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeOpcItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcItem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterOpcCondition" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcCondition.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostDevice_Opened_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostDevice_Opened_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScenarioGroup_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\ScenarioGroup_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BranchRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\BranchRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcLibraryGroup_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcLibraryGroup_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModelingOpcLibraryModeler_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\ModelingOpcLibraryModeler_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolExpand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolExpand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcEventItemListLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OpcEventItemListLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendOmdParameterName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendOmdParameterName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDevice_Closed_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcDevice_Closed_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MapperPerformedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\MapperPerformedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendEquipment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendEquipment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvVfeiReceivedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HdvVfeiReceivedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeHostTrigger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostTrigger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcMessage_Secondary_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcMessage_Secondary_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeOmdFunctionName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeOmdFunctionName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostMessageList_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostMessageList_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvDataMessageReceivedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HdvDataMessageReceivedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileOpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\FileOpen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcTransfer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcTransfer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterHostTrigger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterHostTrigger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendJudgementExpression" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendJudgementExpression.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpenHostDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpenHostDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeHostSession" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostSession.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeEquipmentState" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeEquipmentState.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Repository_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Repository_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PasteSecondaryOpcMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\PasteSecondaryOpcMessage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvStateChangedLog_Connected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HdvStateChangedLog_Connected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Data_List_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Data_List_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Goto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\View\Goto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CallbackRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\CallbackRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JudgementPerformedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\JudgementPerformedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Form" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Window\Form.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeDataConversionSetList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeDataConversionSetList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendValue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendValue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scenario_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Scenario_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Comment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Comment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolCloseAllDevice_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TolCloseAllDevice_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendOpcDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendOpcDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendScenarioGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendScenarioGroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostCondition_Expression" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostCondition_Expression.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterOmdObjectName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterOmdObjectName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Osl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\File\File_Osl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeDataConversion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeDataConversion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcMessage_Primary_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcMessage_Primary_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileClone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\FileClone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvStateChangedLog_Opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HdvStateChangedLog_Opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendDataSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendDataSet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterValue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterValue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolRemove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolRemove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TraceBinaryLog_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TraceBinaryLog_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Vfe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\File\File_Vfe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EnvironmentList_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\EnvironmentList_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeOmdObjectName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeOmdObjectName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendData.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ValueFormula" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\ValueFormula.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeJudgementExpression" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeJudgementExpression.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JudgementCondition" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\JudgementCondition.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcItemLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OpcItemLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterFunction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterFunction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContentLog_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\ContentLog_List.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterHostItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterHostItem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EquipmentStateSetAlterer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\EquipmentStateSetAlterer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeEquipmentStateSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeEquipmentStateSet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostTransmitter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostTransmitter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterOpcLibraryGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcLibraryGroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileOpen_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\FileOpen_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupEnvironment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupEnvironment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewVfeiLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ViewVfeiLog.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeValueFormula" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeValueFormula.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcLibraryGroup_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcLibraryGroup_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolPasteChild" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolPasteChild.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CloseHostDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\CloseHostDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OmdUserTagNameList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\OmdUserTagNameList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterOpcTransmitter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcTransmitter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeScenario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeScenario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendHostTrigger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendHostTrigger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewRelation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ViewRelation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeEnvironment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeEnvironment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataSetList_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\DataSetList_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TraceOpcLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TraceOpcLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostMessages_Eq_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostMessages_Eq_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataSet_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\DataSet_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolClear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolClear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeOpcDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CommentWritedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\CommentWritedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileClone_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\FileClone_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataSetLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\DataSetLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendEquipmentStateSetAlterer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendEquipmentStateSetAlterer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendPrimaryHostMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendPrimaryHostMessage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcEventItem_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcEventItem_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JudgementExpression_Comparison_Value" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\JudgementExpression_Comparison_Value.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupOmdUserTagName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupOmdUserTagName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDevice_Selected_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcDevice_Selected_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterJudgementCondition" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterJudgementCondition.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterEntryPoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterEntryPoint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Relation_Inclusion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\View\Relation_Inclusion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeValue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeValue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterOpcMessageList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcMessageList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostDevice_Selected_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostDevice_Selected_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EnvironmentList_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\EnvironmentList_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcExpression_Comparison_Length_Environment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcExpression_Comparison_Length_Environment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeColumn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeColumn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pauser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Pauser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileClose_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\FileClose_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendOpcCondition" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendOpcCondition.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolVfeiLogCut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TolVfeiLogCut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpenOpcDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpenOpcDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendOpcTrigger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendOpcTrigger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvDataMessageSentLog_Command" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HdvDataMessageSentLog_Command.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StoragePerformedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\StoragePerformedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\File\File_Dll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostExpression_Comparison_Length_Environment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostExpression_Comparison_Length_Environment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EquipmentStateAltererLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\EquipmentStateAltererLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OmdObjectName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\OmdObjectName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OmdFunctionName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\OmdFunctionName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterHostCondition" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterHostCondition.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Callback" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Callback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendStorage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendStorage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvDataMessageReadLog_Primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OdvDataMessageReadLog_Primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EquipmentState_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\EquipmentState_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupOmdFunctionName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupOmdFunctionName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterHostSession" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterHostSession.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostTransmitterRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HostTransmitterRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDeviceLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OpcDeviceLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterEquipmentStateAlterer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterEquipmentStateAlterer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupEquipmentStateSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupEquipmentStateSet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendDataSetList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendDataSetList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostSession_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostSession_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolMoveUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolMoveUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FEquipmentModeling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon\FEquipmentModeling.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoveAllValue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Remove\RemoveAllValue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EntryPointCalledLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\EntryPointCalledLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendOpcLibraryGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendOpcLibraryGroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScenarioLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\ScenarioLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeOpcLibraryGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcLibraryGroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcMessage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolRefresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolRefresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupOmdUserTagName_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupOmdUserTagName_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModelingHostDeviceModeler_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\ModelingHostDeviceModeler_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcMessages" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcMessages.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvTimeoutRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OdvTimeoutRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvStateChangedLog_Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HdvStateChangedLog_Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcCondition_Connection_Opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcCondition_Connection_Opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolCollapse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolCollapse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendOpcLibrary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendOpcLibrary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TraceVfeiLog_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TraceVfeiLog_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendPauser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendPauser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcItemList_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcItemList_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcEventItemList_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcEventItemList_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendRepositoryList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendRepositoryList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileSaveAs_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\FileSaveAs_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterOmdFunctionNameList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterOmdFunctionNameList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendOmdFunctionNameList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendOmdFunctionNameList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterValueFormula" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterValueFormula.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileOption_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\FileOption_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendSecondaryOpcMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendSecondaryOpcMessage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendStateValue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendStateValue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostMessage_Unsolicited_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostMessage_Unsolicited_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostDevice_Selected_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostDevice_Selected_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataConversionSet_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\DataConversionSet_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendComment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendComment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendBranch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendBranch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Equipment_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Equipment_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\FileNew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ApplicationLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\ApplicationLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileSaveAs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\FileSaveAs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeRepository" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeRepository.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterEquipmentStateSetAlterer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterEquipmentStateSetAlterer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDevice_Connected_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcDevice_Connected_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendRepository" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendRepository.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendOmdFunctionName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendOmdFunctionName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendEquipmentStateSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendEquipmentStateSet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OmdUserTagName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\OmdUserTagName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeHostMessageList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostMessageList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EquipmentStateAlterer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\EquipmentStateAlterer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcLogAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OpcLogAll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostCondition_Connection_Selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostCondition_Connection_Selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterDataConversionSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterDataConversionSet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeOpcSession" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcSession.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeOpcTrigger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcTrigger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterColumn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterColumn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcMessage_Primary_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcMessage_Primary_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeHostMessages" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostMessages.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforePauser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforePauser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewRelation_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\ViewRelation_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostMessage_Reply_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostMessage_Reply_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostMessages_Eq_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostMessages_Eq_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterStorage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterStorage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendMapper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendMapper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EquipmentStateSetList_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\EquipmentStateSetList_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PastePrimaryHostMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\PastePrimaryHostMessage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModelingHostLibraryModeler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ModelingHostLibraryModeler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvVfeiSentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HdvVfeiSentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvDataMessageReadLog_Secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OdvDataMessageReadLog_Secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterHostExpression" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterHostExpression.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TraceEnabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\TraceEnabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeOpcCondition" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcCondition.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendHostLibraryGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendHostLibraryGroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvStateChangedLog_Selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HdvStateChangedLog_Selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcCondition_Connection_Connected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcCondition_Connection_Connected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupDataSet_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupDataSet_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendOpcTransmitter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendOpcTransmitter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostExpression_Comparison_Length_HostItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostExpression_Comparison_Length_HostItem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolMoveDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolMoveDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostTrigger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostTrigger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeData.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostLibrary_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostLibrary_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcMessageList_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcMessageList_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScenarioGroup_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\ScenarioGroup_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendHostMessages" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendHostMessages.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostMessage_Command_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostMessage_Command_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Column_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Column_List.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvDataMessageReceivedLog_Command" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HdvDataMessageReceivedLog_Command.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JudgementExpression_Bracket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\JudgementExpression_Bracket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostItem_List_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostItem_List_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendOpcItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendOpcItem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostExpression_Bracket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostExpression_Bracket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Environment_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Environment_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvErrorRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HdvErrorRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostDeviceLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HostDeviceLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterScenario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterScenario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Environment_List_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Environment_List_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolBinaryLogCut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TolBinaryLogCut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostMessages_Both_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostMessages_Both_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostDevice_Connected_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostDevice_Connected_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataConversionSet_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\DataConversionSet_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileSave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\FileSave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvStateChangedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OdvStateChangedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostSession_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostSession_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EquipmentStateSet_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\EquipmentStateSet_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendDataConversionSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendDataConversionSet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OmdArgument" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\OmdArgument.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewVfeiLog_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\ViewVfeiLog_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterOpcTransfer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcTransfer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostMessageList_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostMessageList_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendOpcMessageList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendOpcMessageList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostItem_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostItem_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterScenarioGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterScenarioGroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeHostExpression" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostExpression.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Environment_List_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Environment_List_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostItemLog_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HostItemLog_List.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Data_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Data_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FunctionCalledLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\FunctionCalledLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcExpression_Comparison_Value_Item" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcExpression_Comparison_Value_Item.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendEquipmentStateAlterer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendEquipmentStateAlterer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterEquipmentStateSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterEquipmentStateSet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostItem_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostItem_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataLog_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\DataLog_List.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConvertToVfei" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\ConvertToVfei.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeEnvironmentList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeEnvironmentList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterDataSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterDataSet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileExport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\FileExport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendHostMessageList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendHostMessageList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterEquipmentStateSetList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterEquipmentStateSetList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeOpcMessages" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcMessages.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcEventItem_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcEventItem_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeEquipmentStateAlterer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeEquipmentStateAlterer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendEntryPoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendEntryPoint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupRepository_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupRepository_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeJudgementCondition" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeJudgementCondition.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterHostLibraryGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterHostLibraryGroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDevice_Connected_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcDevice_Connected_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RepositoryList_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\RepositoryList_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterJudgement" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterJudgement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendEquipmentStateSetList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendEquipmentStateSetList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeFunction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeFunction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataConversionSetList_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\DataConversionSetList_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendPrimaryOpcMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendPrimaryOpcMessage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvDataReceivedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OdvDataReceivedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendOpcMessages" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendOpcMessages.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterOpcEventItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcEventItem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostMessage_Unsolicited_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostMessage_Unsolicited_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FAbout_OpcModeler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Help\FAbout_OpcModeler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModelingScenarioModeler1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\ModelingScenarioModeler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Branch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Branch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Data_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Data_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HelpAbout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\HelpAbout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendHostLibrary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendHostLibrary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcTransmitter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcTransmitter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeHostLibraryGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostLibraryGroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostExpression_Comparison_Value_Environment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostExpression_Comparison_Value_Environment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TraceBinaryLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TraceBinaryLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostItemLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HostItemLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterJudgementExpression" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterJudgementExpression.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvStateChangedLog_Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OdvStateChangedLog_Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeDataConversionSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeDataConversionSet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendEquipmentState" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendEquipmentState.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendEnvironment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendEnvironment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeDataSetList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeDataSetList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileRecentLibrary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\FileRecentLibrary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcLibrary_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcLibrary_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupEnvironment_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupEnvironment_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolOpenAllDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TolOpenAllDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeDataSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeDataSet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupRepository" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupRepository.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostMessage_Command_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostMessage_Command_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeHostCondition" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostCondition.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Result_Warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\Result_Warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EquipmentStateSetAltererPerformedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\EquipmentStateSetAltererPerformedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendOpcSession" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendOpcSession.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeScenarioGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeScenarioGroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeMapper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeMapper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostCondition_Connection_Opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostCondition_Connection_Opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvStateChangedLog_Selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OdvStateChangedLog_Selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OmdParameterName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\OmdParameterName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterEnvironment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterEnvironment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcSession_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcSession_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeOpcTransmitter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcTransmitter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendOpcExpression" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendOpcExpression.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ApplicationWritedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\ApplicationWritedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendOmdObjectName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendOmdObjectName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeHostTransmitter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostTransmitter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeOmdFunctionNameList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeOmdFunctionNameList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostMessage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterOmdFunctionName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterOmdFunctionName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendOpcEventItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendOpcEventItem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcExpression_Bracket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcExpression_Bracket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendCallback" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendCallback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvDataMessageSentLog_Reply" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HdvDataMessageSentLog_Reply.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvStateChangedLog_Connected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OdvStateChangedLog_Connected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModelingEquipmentModeler_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\ModelingEquipmentModeler_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeOmdArgument" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeOmdArgument.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeOmdParameterName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeOmdParameterName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcCondition_Connection_Selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcCondition_Connection_Selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostMessages_Host_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostMessages_Host_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Bng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\File\File_Bng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostDevice_Connected_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostDevice_Connected_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Judgement" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Judgement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcMessages_Read_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcMessages_Read_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterOmdParameterName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterOmdParameterName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcItemList_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcItemList_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcCondition_Connection_Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcCondition_Connection_Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileExit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\FileExit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupDataConversionSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupDataConversionSet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeHostLibrary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostLibrary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JudgementExpression_Comparison_Length" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\JudgementExpression_Comparison_Length.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendOmdArgument" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendOmdArgument.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scenario_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Scenario_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataSet_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\DataSet_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Environment_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Environment_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcTransmitterRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OpcTransmitterRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterEnvironmentList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterEnvironmentList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterEquipmentState" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterEquipmentState.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendOpcTransfer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendOpcTransfer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupOmdFunctionName_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupOmdFunctionName_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcEventItemLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OpcEventItemLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OmdObjectNameList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\OmdObjectNameList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcMessageList_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcMessageList_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterDataConversionSetList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterDataConversionSetList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeStorage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeStorage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Relation_Reference" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\View\Relation_Reference.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupDataConversionSet_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupDataConversionSet_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostLibrary_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostLibrary_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EquipmentStateSetList_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\EquipmentStateSetList_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendJudgement" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendJudgement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_Osm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\File\File_Osm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostTriggerRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HostTriggerRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterHostMessageList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterHostMessageList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeComment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeComment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Result_Error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\Result_Error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mapper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Mapper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PauserRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\PauserRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendScenario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendScenario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeOpcExpression" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcExpression.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Equipment_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Equipment_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostMessage_Reply_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostMessage_Reply_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolCloseAllDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TolCloseAllDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PastePrimaryOpcMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\PastePrimaryOpcMessage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvDataMessageReceivedLog_Unsolicited" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HdvDataMessageReceivedLog_Unsolicited.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeEntryPoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeEntryPoint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupEquipmentStateSet_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\SetupEquipmentStateSet_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterHostLibrary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterHostLibrary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolFind" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolFind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CloseOpcDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\CloseOpcDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EquipmentStateSet_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\EquipmentStateSet_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeBranch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeBranch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDevice_Opened_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcDevice_Opened_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterCallback" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterCallback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendDataConversionSetList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendDataConversionSetList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoveAllValueFormula" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Remove\RemoveAllValueFormula.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendHostExpression" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendHostExpression.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Data_List_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Data_List_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScreenUnlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\ScreenUnlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostLibraryGroup_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostLibraryGroup_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendJudgementCondition" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendJudgementCondition.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeStateValue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeStateValue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterComment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterComment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeEquipmentStateSetList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeEquipmentStateSetList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModelingOpcDeviceModeler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ModelingOpcDeviceModeler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendValueFormula" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendValueFormula.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostMessages_Both_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostMessages_Both_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvDataMessageWrittenLog_Primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OdvDataMessageWrittenLog_Primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterRepositoryList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterRepositoryList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Repository_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Repository_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterData.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostDevice_Closed_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostDevice_Closed_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDevice_Selected_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcDevice_Selected_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon\FView.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TraceDisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\TraceDisabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcLibrary_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcLibrary_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Function" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Function.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterOmdArgument" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterOmdArgument.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeEquipment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeEquipment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvDataMessageReceivedLog_Reply" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HdvDataMessageReceivedLog_Reply.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeEquipmentStateSetAlterer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeEquipmentStateSetAlterer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostCondition_Connection_Connected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostCondition_Connection_Connected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostExpression_Comparison_Value_EquipmentState" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostExpression_Comparison_Value_EquipmentState.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvStateChangedLog_Opened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OdvStateChangedLog_Opened.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterHostDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterHostDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterOpcSession" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcSession.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterOpcItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcItem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAftereOpcLibraryGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAftereOpcLibraryGroup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvDataMessageWrittenLog_Secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OdvDataMessageWrittenLog_Secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModelingOpcLibraryModeler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ModelingOpcLibraryModeler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendSecondaryHostMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendSecondaryHostMessage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeJudgement" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeJudgement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolCut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolCut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterHostTransfer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterHostTransfer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendHostDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendHostDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RepositoryList_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\RepositoryList_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataConversionSetList_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\DataConversionSetList_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileExit_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\FileExit_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterDataConversion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterDataConversion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostCondition_Connection_Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostCondition_Connection_Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WinMoreWindows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\WinMoreWindows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcEventItemList_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcEventItemList_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcItem_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcItem_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WriteOpcMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\WriteOpcMessage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostLibraryGroup_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostLibraryGroup_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcTrigger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcTrigger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostDevice_Closed_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostDevice_Closed_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScreenLock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\ScreenLock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcCondition_Expression" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcCondition_Expression.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterOpcLibrary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcLibrary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendFunction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendFunction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolPasteSibling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolPasteSibling.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvDataMessageSentLog_Unsolicited" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HdvDataMessageSentLog_Unsolicited.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\ContentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcExpression_Comparison_Value_Environment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcExpression_Comparison_Value_Environment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EquipmentState_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\EquipmentState_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeRepositoryList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertBefore\InsertBeforeRepositoryList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterRepository" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterRepository.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterPauser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterPauser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDriver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcDriver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendEnvironmentList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendEnvironmentList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoveValue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Remove\RemoveValue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeHostDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostMessages_Host_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostMessages_Host_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeOpcEventItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcEventItem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcExpression_Comparison_Value_EquipmentState" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcExpression_Comparison_Value_EquipmentState.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostExpression_Comparison_Value_HostItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostExpression_Comparison_Value_HostItem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterOpcMessages" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcMessages.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostCondition_Timeout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostCondition_Timeout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModelingOpcDeviceModeler_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\ModelingOpcDeviceModeler_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OmdFunctionNameList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\OmdFunctionNameList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterHostTransmitter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterHostTransmitter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeHostItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeHostItem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendHostSession" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendHostSession.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterHostMessages" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterHostMessages.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataSetList_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\DataSetList_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SendHostMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\SendHostMessage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostTransfer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostTransfer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcMessages_Write_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcMessages_Write_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EntryPoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\EntryPoint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModelingHostDeviceModeler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ModelingHostDeviceModeler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModelingScenarioModeler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ModelingScenarioModeler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PasteSecondaryHostMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\PasteSecondaryHostMessage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HostDevice_Opened_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\HostDevice_Opened_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileNew_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\FileNew_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcMessages_Write_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcMessages_Write_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeOpcLibrary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcLibrary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeOpcTransfer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeOpcTransfer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendHostTransfer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendHostTransfer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterDataSetList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\InsertAfter\InsertAfterDataSetList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcItem_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcItem_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcSession_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcSession_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertBeforeCallback" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertBefore\InsertBeforeCallback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvDataMessageWrittenLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OdvDataMessageWrittenLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupDataSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupDataSet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolOpenAllDevice_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TolOpenAllDevice_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcMessages_Read_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcMessages_Read_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModelingEquipmentModeler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\ModelingEquipmentModeler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendColumn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendColumn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvErrorRaisedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OdvErrorRaisedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileRecentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\FileRecentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileSave_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\FileSave_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcLogFilter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OpcLogFilter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvDataMessageSentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HdvDataMessageSentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvDataMessageReadLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OdvDataMessageReadLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileOption" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\FileOption.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcExpression_Comparison_Length_Item" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcExpression_Comparison_Length_Item.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendDataConversion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Setup\Append\AppendDataConversion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendHostItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendHostItem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcMessage_Secondary_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcMessage_Secondary_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppendHostTransmitter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Append\AppendHostTransmitter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDevice_Opened_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcDevice_Opened_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterBranch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterBranch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetupOmdObjectName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\SetupOmdObjectName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterOpcTrigger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcTrigger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TraceVfeiLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TraceVfeiLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\DataLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TraceOpcLog_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainToolbar\TraceOpcLog_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Value" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Value.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterOpcDevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterOpcDevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WinCloseAllWindows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\WinCloseAllWindows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterMapper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterMapper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolCopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolCopy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvDataSentLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OdvDataSentLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterEquipment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterEquipment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertAfterStateValue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\InsertAfter\InsertAfterStateValue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdvStateChangedLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\HdvStateChangedLog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\FileClose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FOpmContainer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FOpmContainer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trn_Result_Cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Trn_Result_Cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trn_Result_Fail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Trn_Result_Fail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trn_Result_Skip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Trn_Result_Skip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trn_Result_Success" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Trn_Result_Success.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trn_Target" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Trn_Target.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AttacheOsmFile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\AttacheOsmFile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ClearOsmFile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\ClearOsmFile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DettachOsmFile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Tool\DettachOsmFile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plc_Address_New" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\Plc_Address_New.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDevice_Error_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcDevice_Error_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcDevice_Error_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcDevice_Error_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OdvStateChangedLog_Error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\OdvStateChangedLog_Error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpcCondition_Connection_Error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Modeling\OpcCondition_Connection_Error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlugInComponent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\PlugInComponent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReloadComponent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm\Trace\ReloadComponent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolExport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TolExport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TolImport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu\TolImport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

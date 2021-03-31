@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BA772CAD-0ED3-4889-ABD6-95F235721DDD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nexplant.MC.LanguageFileEditor</RootNamespace>
+    <AssemblyName>Nexplant.MC.LanguageFileEditor.v4.6</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\Nexplant.Mc.WorkspaceManager\Nexplant.MC.WorkspaceManager.v4.6.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Shared.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.AppStylistSupport.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.Misc.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGanttView.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinListView.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTree.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Nexplant.MC.Core.Design.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core.Design\bin\Nexplant.MC.Core.Design.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nexplant.MC.Core.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core\bin\Nexplant.MC.Core.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\c_FLfeCore.cs" />
+    <Compile Include="Common\c_FMenuKey.cs" />
+    <Compile Include="MainForm\Help\f_FAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Help\f_FAbout.Designer.cs">
+      <DependentUpon>f_FAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Window\c_FFormList.cs" />
+    <Compile Include="MainForm\Window\f_FFormSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Window\f_FFormSelector.Designer.cs">
+      <DependentUpon>f_FFormSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Option\c_FOption.cs" />
+    <Compile Include="Common\d_FDelegate.cs" />
+    <Compile Include="Common\f_FLfeContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\f_FLfeContainer.Designer.cs">
+      <DependentUpon>f_FLfeContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\c_FConstants.cs" />
+    <Compile Include="Common\c_FLfeFileInfo.cs" />
+    <Compile Include="MainForm\Edit\Prop\c_FPropCaption.cs" />
+    <Compile Include="Common\c_FLanguageFileModifiedEventArgs.cs" />
+    <Compile Include="MainForm\Edit\Prop\c_FPropMessage.cs" />
+    <Compile Include="MainForm\Edit\f_FMessageEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Edit\f_FMessageEditor.Designer.cs">
+      <DependentUpon>f_FMessageEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\Edit\f_FCaptionEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\Edit\f_FCaptionEditor.Designer.cs">
+      <DependentUpon>f_FCaptionEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="XmlTag\c_FXmlTagLFEOption.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\f_FLfeContainer.resx">
+      <DependentUpon>f_FLfeContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Edit\f_FMessageEditor.resx">
+      <DependentUpon>f_FMessageEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Edit\f_FCaptionEditor.resx">
+      <DependentUpon>f_FCaptionEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Help\f_FAbout.resx">
+      <DependentUpon>f_FAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\Window\f_FFormSelector.resx">
+      <DependentUpon>f_FFormSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\FileClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\FileNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\FileOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\FileSave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\FileSaveAs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\EditCaption.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\EditMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\FLfeContainer.png" />
+    <Content Include="Resources\Icon\FEdit.ico" />
+    <Content Include="Resources\MainForm\Help\FAbout_LanguageFileEditor.png" />
+    <Content Include="Resources\MainForm\Window\Form.png" />
+    <Content Include="Resources\MainMenu\WinCloseAllWindows.png" />
+    <Content Include="Resources\MainMenu\WinMoreWindows.png" />
+    <None Include="Resources\MainMenu\FileExit.png" />
+    <None Include="Resources\MainToolbar\TolImport_22.png" />
+    <None Include="Resources\MainToolbar\TolExport_22.png" />
+    <None Include="Resources\MainToolbar\FileNew_22.png" />
+    <None Include="Resources\MainToolbar\FileSave_22.png" />
+    <None Include="Resources\MainToolbar\FileClose_22.png" />
+    <None Include="Resources\MainToolbar\FileOpen_22.png" />
+    <None Include="Resources\MainToolbar\FileSaveAs_22.png" />
+    <None Include="Resources\MainToolbar\EditCaption_22.png" />
+    <None Include="Resources\MainToolbar\EditMessage_22.png" />
+    <Content Include="Resources\MainForm\Edit\Message.png" />
+    <None Include="Resources\MainMenu\TolImport.png" />
+    <None Include="Resources\MainMenu\TolExport.png" />
+    <None Include="Resources\MainMenu\HelpAbout.png" />
+    <Content Include="Resources\MainForm\Edit\Caption.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nexplant.Mc.WorkspaceInterface\Nexplant.MC.WorkspaceInterface.v4.6.csproj">
+      <Project>{37de8452-640c-4262-b631-6ec3e6cb0951}</Project>
+      <Name>Nexplant.MC.WorkspaceInterface.v4.6</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir).\..\..\nexplant.mc-dll\"
+
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Miracom, Inc.</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>http://project_url_here_or_delete_this_line/</projectUrl>
+    <iconUrl>http://icon_url_here_or_delete_this_line/</iconUrl>
+    <description>Nexplant MC Admin Manager Library</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>Tag1 Tag2</tags>
+  </metadata>
+  <files>
+      <file src="licenses\LICENSE.txt" target="" />
+  </files>
+</package>

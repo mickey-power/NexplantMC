@@ -1,0 +1,18 @@
+<!--
+	Remove this comment after the following reference information has been consumed:
+	
+	Available fields for the group object:
+	
+	noticeTitle
+	noticeTitleURL
+	noticeCopyrightStatements
+	noticeGeneralStatement
+	noticeLicenseText
+	noticeLicenseURL
+	noticeOtherFlowThroughNotices
+	isSourceDistributionRequired
+	thirdPartySourceURL
+	isModified
+	isShipped
+	includeInThirdPartyNotices (set to true, otherwise this item would not be included)
+-->

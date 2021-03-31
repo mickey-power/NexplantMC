@@ -1,0 +1,139 @@
+﻿/*----------------------------------------------------------------------------------------------------------
+--  상기 프로그램에 대한 저작권을 포함한 지적재산권은 (주)미라콤아이앤씨에 있으며, (주)미라콤아이앤씨가
+--  명시적으로 허용하지 않은 사용, 복사, 변경, 제3자에의 공개, 배포는 엄격히 금지되며, (주)미라콤아이앤씨의
+--  지적재산권 침해에 해당됩니다.
+--  (Copyright ⓒ 2011 Miracom Inc. All Rights Reserved | Confidential)
+--
+--  Program Id      : c_FFlowContainerInsertedEventArgs.cs
+--  Creator         : byjeon
+--  Create Date     : 2012.10.15
+--  Description     : FAMate Core FaUIs WPF Flow Container Inserted Event Arguments Class
+--  History         : Created by byjeon at 2012.10.15
+----------------------------------------------------------------------------------------------------------*/
+using System;
+using Nexplant.MC.Core.FaCommon;
+
+namespace Nexplant.MC.Core.FaUIs.WPF
+{
+    [Serializable]
+    public class FFlowCtrlDroppedEventArgs : EventArgs, IDisposable
+    {
+
+        //------------------------------------------------------------------------------------------------------------------------
+
+        private bool m_disposed = false;
+        // -- 
+        private FFlowCtrlType m_fFlowCtrlType = FFlowCtrlType.Branch;
+        private int m_insert = -1;
+
+        //------------------------------------------------------------------------------------------------------------------------
+
+        #region Class Construction and Destruction
+
+        internal FFlowCtrlDroppedEventArgs(
+            FFlowCtrlType fFlowCtrlType,
+            int insert
+            )
+        {
+            m_fFlowCtrlType = fFlowCtrlType;
+            m_insert = insert;
+        }
+
+        //------------------------------------------------------------------------------------------------------------------------
+
+        ~FFlowCtrlDroppedEventArgs(
+            )
+        {
+            myDispose(false);
+        }
+
+        //------------------------------------------------------------------------------------------------------------------------
+
+        protected void myDispose(
+            bool disposing
+            )
+        {
+            if (!m_disposed)
+            {
+                if (disposing)
+                {
+                    
+                }
+
+                m_disposed = true;
+            }
+        }
+
+        #endregion
+
+        //------------------------------------------------------------------------------------------------------------------------
+
+        #region IDisposable 멤버
+
+        public void Dispose(
+            )
+        {
+            myDispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        #endregion
+
+        //------------------------------------------------------------------------------------------------------------------------
+
+        #region Properties
+
+        public FFlowCtrlType fFlowCtrlType
+        {
+            get
+            {
+                try
+                {
+                    return m_fFlowCtrlType;
+                }
+                catch (Exception ex)
+                {
+                    FDebug.throwException(ex);
+                }
+                finally
+                {
+
+                }
+                return FFlowCtrlType.Branch;
+            }
+        }
+
+        //------------------------------------------------------------------------------------------------------------------------
+
+        public int index
+        {
+            get
+            {
+                try
+                {
+                    return m_insert;
+                }
+                catch (Exception ex)
+                {
+                    FDebug.throwException(ex);
+                }
+                finally
+                {
+
+                }
+                return -1;
+            }
+        }
+
+        #endregion
+
+        //------------------------------------------------------------------------------------------------------------------------
+
+        #region Methods
+        
+        #endregion
+
+        //------------------------------------------------------------------------------------------------------------------------
+
+    }   // Class end
+}   // Namespace end

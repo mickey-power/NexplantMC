@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87E1CD5D-13C7-4F9E-BE21-D7AE31DF80EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nexplant.MC.Core</RootNamespace>
+    <AssemblyName>Nexplant.MC.Core.v4.6</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\nexplant.mc-dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.0.12.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\nexplant.mc-dll\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\nexplant.mc-dll\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="Renci.SshNet">
+      <HintPath>..\..\..\nexplant.mc-dll\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="SevenZipSharp">
+      <HintPath>..\..\..\nexplant.mc-dll\SevenZipSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="transceiverxnet, Version=7.0.0.0, Culture=neutral, PublicKeyToken=d1edfc8a280ba121, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\nexplant.mc-dll\transceiverxnet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\e_FEnum.cs" />
+    <Compile Include="Comparer\c_FFileModifiedTimeDescComparer.cs" />
+    <Compile Include="Comparer\c_FFileCreatedTimeDescComparer.cs" />
+    <Compile Include="Comparer\c_FDoubleAscComparer.cs" />
+    <Compile Include="Comparer\c_FDoubleDescComparer.cs" />
+    <Compile Include="Comparer\c_FFileCreatedTimeAscComparer.cs" />
+    <Compile Include="Comparer\c_FFileModifiedTimeAscComparer.cs" />
+    <Compile Include="Comparer\c_FIntAscComparer.cs" />
+    <Compile Include="Comparer\c_FIntDescComparer.cs" />
+    <Compile Include="Comparer\c_FStringDescComparer.cs" />
+    <Compile Include="Comparer\c_FStringAscComparer.cs" />
+    <Compile Include="Database\c_FDbWizard.cs" />
+    <Compile Include="Database\c_FProcedure.cs" />
+    <Compile Include="Database\c_FProcParameter.cs" />
+    <Compile Include="Database\c_FProcParameterCollection.cs" />
+    <Compile Include="Database\c_FProcParameterCollectionEnumerator.cs" />
+    <Compile Include="Database\OracleEx\c_FOdpProcedureExecutor.cs" />
+    <Compile Include="Database\Output\c_FDbDataSet.cs" />
+    <Compile Include="Database\Output\c_FDbNumber.cs" />
+    <Compile Include="Database\Output\c_FDbOutputCollection.cs" />
+    <Compile Include="Database\Output\c_FDbOutputCollectionEnumerator.cs" />
+    <Compile Include="Database\Output\c_FDbString.cs" />
+    <Compile Include="Database\i_FIProcedureExecutor.cs" />
+    <Compile Include="Database\Output\i_FIDbOutput.cs" />
+    <Compile Include="Database\MariaDb\c_FMarQueryExecutor.cs" />
+    <Compile Include="Database\MariaDb\c_FMarTransactExecutor.cs" />
+    <Compile Include="Database\MySql\c_FMysQueryExecutor.cs" />
+    <Compile Include="Database\MySql\c_FMysTransactExecutor.cs" />
+    <Compile Include="Database\PostgreSql\c_FPgsQueryExecutor.cs" />
+    <Compile Include="Database\PostgreSql\c_FPgsTransactExecutor.cs" />
+    <Compile Include="Database\XmlTag\c_FXmlTagFAMate.cs" />
+    <Compile Include="Database\XmlTag\c_FXmlTagFunction.cs" />
+    <Compile Include="Database\XmlTag\c_FXmlTagModule.cs" />
+    <Compile Include="Database\XmlTag\c_FXmlTagSqlParameter.cs" />
+    <Compile Include="Database\XmlTag\c_FXmlTagSqlCode.cs" />
+    <Compile Include="Database\XmlTag\c_FXmlTagSystem.cs" />
+    <Compile Include="Database\XmlTag\c_FXmlTagSqlQuery.cs" />
+    <Compile Include="Database\c_FSqlError.cs" />
+    <Compile Include="Database\c_FSqlErrorCollection.cs" />
+    <Compile Include="Database\c_FSqlErrorCollectionEnumerator.cs" />
+    <Compile Include="Database\c_FLicChecker.cs" />
+    <Compile Include="Database\i_FILicCore.cs" />
+    <Compile Include="Event\c_FManualEvent.cs" />
+    <Compile Include="Ftp\c_FSftp.cs" />
+    <Compile Include="H101\c_FH101RequestReplyData.cs" />
+    <Compile Include="H101\c_FH101SessionEventListener.cs" />
+    <Compile Include="IniFile\c_FIniFile.cs" />
+    <Compile Include="Mail\c_FMail.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\c_FWinAuth.cs" />
+    <Compile Include="Security\c_FLicLicense.cs" />
+    <Compile Include="Security\c_FLicInfo.cs" />
+    <Compile Include="Security\c_FLic2License.cs" />
+    <Compile Include="Security\c_FLic2Info.cs" />
+    <Compile Include="Security\c_FLic2Common.cs" />
+    <Compile Include="Security\c_FLic2AdminService.cs" />
+    <Compile Include="Zip\c_F7Zip.cs" />
+    <Compile Include="File\c_FFileSystemWatcher.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="H101\c_FH101ErrorRaisedEventArgs.cs" />
+    <Compile Include="LogWriter\c_FEventLogWriter.cs" />
+    <Compile Include="LogWriter\c_FServiceLogData.cs" />
+    <Compile Include="Network\c_FNetworkDrive.cs" />
+    <Compile Include="Resource\c_FUserPCInfo.cs" />
+    <Compile Include="Resource\c_FProcessResource.cs" />
+    <Compile Include="Resource\c_FProcessResourceCollection.cs" />
+    <Compile Include="Resource\c_FProcessResourceCollectionEnumerator.cs" />
+    <Compile Include="Telnet\c_FTelnetClient.cs" />
+    <Compile Include="Telnet\c_FTelnetByteBuffer.cs" />
+    <Compile Include="Telnet\c_FTelnetCommandPacket.cs" />
+    <Compile Include="Telnet\c_FTelnetDataPacket.cs" />
+    <Compile Include="Telnet\c_FTelnetOptionPacket.cs" />
+    <Compile Include="Telnet\c_FTelnetPacketReceivedEventArgs.cs" />
+    <Compile Include="Telnet\c_FTelnetPacketSentEventArgs.cs" />
+    <Compile Include="Telnet\c_FTelnetEventArgsBase.cs" />
+    <Compile Include="Telnet\c_FTelnetEventPusher.cs" />
+    <Compile Include="Telnet\c_FTelnetParser.cs" />
+    <Compile Include="Telnet\c_FTelnetRecvBuffer.cs" />
+    <Compile Include="Telnet\c_FTelnetStateChangedEventArgs.cs" />
+    <Compile Include="Telnet\i_FITelnetPacket.cs" />
+    <Compile Include="Clipboard\c_FClipboard.cs" />
+    <Compile Include="Database\c_FDbErrorCode.cs" />
+    <Compile Include="Database\c_FBaseExecutor.cs" />
+    <Compile Include="Database\c_FDbAdapter.cs" />
+    <Compile Include="Database\c_FSqlParameter.cs" />
+    <Compile Include="Database\i_FIQueryExecutor.cs" />
+    <Compile Include="Database\i_FITransactExecutor.cs" />
+    <Compile Include="Database\MsSql\c_FMssQueryExecutor.cs" />
+    <Compile Include="Database\MsSql\c_FMssTransactExecutor.cs" />
+    <Compile Include="Database\OracleEx\c_FOdpQueryExecutor.cs" />
+    <Compile Include="Database\OracleEx\c_FOdpTransactExecutor.cs" />
+    <Compile Include="Database\Oracle\c_FOraQueryExecutor.cs" />
+    <Compile Include="Database\Oracle\c_FOraTransactExecutor.cs" />
+    <Compile Include="Debug\c_FDebugLogArgs.cs" />
+    <Compile Include="Debug\c_FException.cs" />
+    <Compile Include="CodeLock\c_FCodeLock.cs" />
+    <Compile Include="Debug\c_FDebug.cs" />
+    <Compile Include="Common\c_FConstants.cs" />
+    <Compile Include="Convert\FDataConvert.cs" />
+    <Compile Include="Database\c_FSqlParameterCollection.cs" />
+    <Compile Include="Database\c_FSqlParameterCollectionEnumerator.cs" />
+    <Compile Include="Database\c_FSqlCollection.cs" />
+    <Compile Include="Database\c_FSqlCollectionEnumerator.cs" />
+    <Compile Include="Database\c_FDbException.cs" />
+    <Compile Include="Ftp\c_FFtpDirectoryEntryCollection.cs" />
+    <Compile Include="Ftp\c_FFtpDirectoryEntryEnumerator.cs" />
+    <Compile Include="LogWriter\c_FServiceLogWriter.cs" />
+    <Compile Include="Pipe\c_FPipeFlag.cs" />
+    <Compile Include="Pipe\c_FPipeClient.cs" />
+    <Compile Include="Pipe\c_FPipeServer.cs" />
+    <Compile Include="Pipe\c_FPipeSendData.cs" />
+    <Compile Include="Pipe\c_FPipeEventArgsBase.cs" />
+    <Compile Include="Pipe\c_FPipeStateChangedEventArgs.cs" />
+    <Compile Include="Pipe\c_FPipeEventPusher.cs" />
+    <Compile Include="Pipe\c_FPipeDataReceivedEventArgs.cs" />
+    <Compile Include="Pipe\c_FPipeDataSentEventArgs.cs" />
+    <Compile Include="Pipe\c_FPipeErrorRaisedEventArgs.cs" />
+    <Compile Include="Pipe\c_FPipeDataSendFailedEventArgs.cs" />
+    <Compile Include="Pipe\i_FIPipe.cs" />
+    <Compile Include="Resource\c_FProcessResourceEventArgs.cs" />
+    <Compile Include="Resource\c_FLogicalDisk.cs" />
+    <Compile Include="Resource\c_FSystemResourceCollector.cs" />
+    <Compile Include="Ftp\c_FFtpDirectoryEntry.cs" />
+    <Compile Include="H101\c_FH101DataReceivedArgs.cs" />
+    <Compile Include="H101\c_FH101MessageConsumer.cs" />
+    <Compile Include="H101\i_FIH101Dispatcher.cs" />
+    <Compile Include="Network\c_FPing.cs" />
+    <Compile Include="Resource\c_FSystemResourceEventArgs.cs" />
+    <Compile Include="Resource\c_FLogicalDiskCollection.cs" />
+    <Compile Include="Resource\c_FLogicalDiskCollectionEnumerator.cs" />
+    <Compile Include="Security\c_FCrypt.cs" />
+    <Compile Include="Serial\c_FSerialSendData.cs" />
+    <Compile Include="Serial\c_FSerialDataReceivedEventArgs.cs" />
+    <Compile Include="Serial\c_FSerialDataSendFailedEventArgs.cs" />
+    <Compile Include="Serial\c_FSerialDataSentEventArgs.cs" />
+    <Compile Include="Serial\c_FSerialErrorRaisedEventArgs.cs" />
+    <Compile Include="Serial\c_FSerialStateChangedEventArgs.cs" />
+    <Compile Include="Serial\c_FSerial.cs" />
+    <Compile Include="Serial\c_FSerialEventArgsBase.cs" />
+    <Compile Include="Serial\c_FSerialEventPusher.cs" />
+    <Compile Include="Serial\c_FSerialFlag.cs" />
+    <Compile Include="Serial\i_FISerial.cs" />
+    <Compile Include="ServiceTrace\c_FServiceTraceErrorRaisedEventArgs.cs" />
+    <Compile Include="ServiceTrace\c_FServiceTraceMessageReceivedEventArgs.cs" />
+    <Compile Include="ServiceTrace\c_FServiceTraceServer.cs" />
+    <Compile Include="ServiceTrace\c_FServiceTraceClient.cs" />
+    <Compile Include="ServiceTrace\c_FServiceTraceMessage.cs" />
+    <Compile Include="ServiceTrace\c_FServiceTraceMessageList.cs" />
+    <Compile Include="Socket\c_FSocketEventArgsBase.cs" />
+    <Compile Include="Socket\c_FSocketEventPusher.cs" />
+    <Compile Include="Socket\c_FTcpClientDataSentEventArgs.cs" />
+    <Compile Include="Socket\c_FTcpListener.cs" />
+    <Compile Include="Ftp\c_FFtp.cs" />
+    <Compile Include="Socket\c_FTcpListenerAcceptCompletedEventArgs.cs" />
+    <Compile Include="Socket\c_FTcpListenerErrorRaisedEventArgs.cs" />
+    <Compile Include="Socket\i_FISocket.cs" />
+    <Compile Include="Socket\c_FTcpClientDataReceivedEventArgs.cs" />
+    <Compile Include="Socket\c_FTcpClientStateChangedEventArgs.cs" />
+    <Compile Include="Socket\c_FTcpClientErrorRaisedEventArgs.cs" />
+    <Compile Include="Socket\c_FSocketSendData.cs" />
+    <Compile Include="Socket\c_FTcpClient.cs" />
+    <Compile Include="Socket\c_FSocketFlag.cs" />
+    <Compile Include="Socket\c_FTcpClientDataSendFailedEventArgs.cs" />
+    <Compile Include="Xml\c_FXmlComment.cs" />
+    <Compile Include="Zip\c_FZipEntry.cs" />
+    <Compile Include="H101\c_FH101.cs" />
+    <Compile Include="Reflection\c_FReflection.cs" />
+    <Compile Include="Queue\c_FQueue.cs" />
+    <Compile Include="Xml\c_FXmlNodeModifiedEventArgs.cs" />
+    <Compile Include="IDPointer\c_FIDPointer32.cs" />
+    <Compile Include="IDPointer\c_FIDPointer64.cs" />
+    <Compile Include="Graphics\c_FGraphics.cs" />
+    <Compile Include="NativeAPIs\c_FNativeAPIs.cs" />
+    <Compile Include="Thread\c_FThreadEventArgs.cs" />
+    <Compile Include="MessageBox\c_FMessageBox.cs" />
+    <Compile Include="Thread\c_FThread.cs" />
+    <Compile Include="Common\d_FDelegate.cs" />
+    <Compile Include="Thread\c_FThreadErrorRaisedEventArgs.cs" />
+    <Compile Include="Time\c_FTickCount.cs" />
+    <Compile Include="Time\c_FTimer.cs" />
+    <Compile Include="Time\c_FStaticTimer.cs" />
+    <Compile Include="Time\c_FTimerElapsedEventArgs.cs" />
+    <Compile Include="Xml\c_FXmlCore.cs" />
+    <Compile Include="Xml\c_FXmlDocument.cs" />
+    <Compile Include="Xml\c_FXmlNode.cs" />
+    <Compile Include="Xml\c_FXmlAttribute.cs" />
+    <Compile Include="Xml\c_FXmlAttributeCollection.cs" />
+    <Compile Include="Xml\c_FXmlNodeList.cs" />
+    <Compile Include="Xml\c_FXmlAttributeCollectionEnumerator.cs" />
+    <Compile Include="Xml\c_FXmlNodeListEnumerator.cs" />
+    <Compile Include="Resource\c_FProcessResourceCollector.cs" />
+    <Compile Include="Zip\c_FZipEntryCollection.cs" />
+    <Compile Include="Zip\c_FZipEntryCollectionEnumerator.cs" />
+    <Compile Include="Comparer\c_FDescendingOrderComparer.cs" />
+    <Compile Include="Database\c_FSql.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>copy "$(SolutionDir)..\..\nexplant.mc-dll\Mono.Security.dll" "$(TargetDir)"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)..\..\nexplant.mc-dll\"
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

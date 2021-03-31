@@ -1,0 +1,3141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDEFCE52-5123-42AC-A4A4-788EAE1F67B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nexplant.MC.AdminManager</RootNamespace>
+    <AssemblyName>Nexplant.MC.AdminManager.v4.6</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>..\Nexplant.Mc.WorkspaceManager\Nexplant.MC.WorkspaceManager.v4.6.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Documents.Excel.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Shared.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.Misc.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.SupportDialogs.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinDock.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinListView.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinMaskedEdit.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTree.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Documents.Core.v12.1, Version=12.1.20121.2135, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files\Infragistics\NetAdvantage 2012.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Core.v12.1.dll</HintPath>
+      <Name>Infragistics4.Documents.Core.v12.1</Name>
+    </Reference>
+    <Reference Include="Nexplant.MC.Core.Design.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core.Design\bin\Nexplant.MC.Core.Design.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nexplant.MC.Core.OpcDriver.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core.OpcDriver\bin\Nexplant.MC.Core.OpcDriver.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nexplant.MC.Core.SecsDriver.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core.SecsDriver\bin\Nexplant.MC.Core.SecsDriver.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nexplant.MC.Core.TcpDriver.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core.TcpDriver\bin\Nexplant.MC.Core.TcpDriver.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nexplant.MC.Core.v4.6, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\001_McCore.v4.6\Nexplant.MC.Core\bin\Nexplant.MC.Core.v4.6.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\c_FUserAuthorityData.cs" />
+    <Compile Include="Common\MonitoringEventArgs\c_FMonitoringServerDataReceivedEventArgs.cs" />
+    <Compile Include="Common\c_FSqlParams.cs" />
+    <Compile Include="Common\c_FSqlParam.cs" />
+    <Compile Include="Common\d_FDelegate.cs" />
+    <Compile Include="Common\MonitoringEventArgs\c_FMonitoringEquipmentTypeDataReceivedEventArgs.cs" />
+    <Compile Include="Common\MonitoringEventArgs\c_FMonitoringEquipmentAreaDataReceivedEventArgs.cs" />
+    <Compile Include="Common\MonitoringEventArgs\c_FMonitoringEquipmentLineDataReceivedEventArgs.cs" />
+    <Compile Include="Common\MonitoringEventArgs\c_FMonitoringEquipmentDataReceivedEventArgs.cs" />
+    <Compile Include="Common\MonitoringEventArgs\c_FMonitoringDeviceDataReceivedEventArgs.cs" />
+    <Compile Include="Common\MonitoringEventArgs\c_FMonitoringSecs1ToHsmsConverterDataReceivedEventArgs.cs" />
+    <Compile Include="Common\MonitoringEventArgs\c_FMonitoringSecs1ToHsmsConverterDisconnectDataReceivedEventArgs.cs" />
+    <Compile Include="Common\PropEapSchema\c_FPropEshHdo.cs" />
+    <Compile Include="Common\PropEapSchema\c_FPropEshScd.cs" />
+    <Compile Include="Common\PropEapSchema\c_FPropEshSdv.cs" />
+    <Compile Include="Common\PropEapSchema\c_FPropEshSsn.cs" />
+    <Compile Include="Common\PropEapSchema\c_FPropEshHdv.cs" />
+    <Compile Include="Common\PropEapSchema\c_FPropEshHsn.cs" />
+    <Compile Include="Common\PropEapSchema\c_FPropEshEqp.cs" />
+    <Compile Include="Common\MonitoringEventArgs\c_FMonitoringPackageDataReceivedEventArgs.cs" />
+    <Compile Include="Common\MonitoringEventArgs\c_FMonitoringPackageVerDataReceivedEventArgs.cs" />
+    <Compile Include="Common\MonitoringEventArgs\c_FMonitoringModelDataReceivedEventArgs.cs" />
+    <Compile Include="Common\MonitoringEventArgs\c_FMonitoringModelVerDataReceivedEventArgs.cs" />
+    <Compile Include="Common\MonitoringEventArgs\c_FMonitoringComponentDataReceivedEventArgs.cs" />
+    <Compile Include="Common\MonitoringEventArgs\c_FMonitoringComponentVerDataReceivedEventArgs.cs" />
+    <Compile Include="Common\MonitoringEventArgs\c_FMonitoringEapDataReceivedEventArgs.cs" />
+    <Compile Include="Common\PropEapSchema\c_FPropEshEnl.cs" />
+    <Compile Include="Common\PropEapSchema\c_FPropEshEnv.cs" />
+    <Compile Include="Dialog\EapWizard\f_FChdEapWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\EapWizard\f_FChdEapWizard.Designer.cs">
+      <DependentUpon>f_FChdEapWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\EapWizard\f_FEapTypeSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\EapWizard\f_FEapTypeSelector.Designer.cs">
+      <DependentUpon>f_FEapTypeSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdChdEnl.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdChdEnv.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdChdEqp.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdFieHdv.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdChdHdv.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdChdHsn.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdChdOcd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdFieFcd .cs" />
+    <Compile Include="Dialog\EapWizard\Prop\PropAttr\c_FPropAttrEwdChdHdvDriverOptionUITypeEditor.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\PropAttr\c_FPropAttrEwdChdHdvDriverUITypeEditor.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\PropAttr\c_FPropAttrEwdSecsHdvDriverOptionUITypeEditor.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdSecsEnl.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdSecsEnv.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\PropAttr\c_FPropAttrEwdSecsHdvDriverUITypeEditor.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\PropAttr\c_FPropAttrEwdEqpSelectUITypeEditor.cs" />
+    <Compile Include="Dialog\EapWizard\f_FOpcEapWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\EapWizard\f_FOpcEapWizard.Designer.cs">
+      <DependentUpon>f_FOpcEapWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdOpcOcd.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdOpcOdv.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdOpcOsn.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdOpcHdv.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdOpcHsn.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdOpcEqp.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdOpcEnl.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdOpcEnv.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\PropAttr\c_FPropAttrEwdOpcHdvDriverUITypeEditor.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\PropAttr\c_FPropAttrEwdOpcHdvDriverOptionUITypeEditor.cs" />
+    <Compile Include="Dialog\EapWizard\f_FProcessEapWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\EapWizard\f_FProcessEapWizard.Designer.cs">
+      <DependentUpon>f_FProcessEapWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\EapWizard\f_FEapTypeSelector2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\EapWizard\f_FEapTypeSelector2.Designer.cs">
+      <DependentUpon>f_FEapTypeSelector2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\EapWizard\f_FTcpEapWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\EapWizard\f_FTcpEapWizard.Designer.cs">
+      <DependentUpon>f_FTcpEapWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdTcpEnl.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdTcpEnv.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdTcpEqp.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdTcpHdv.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdTcpHsn.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdTcpTcd.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdTcpTdv.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdTcpTsn.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\PropAttr\c_FPropAttrEwdTcpHdvDriverOptionUITypeEditor.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\PropAttr\c_FPropAttrEwdTcpHdvDriverUITypeEditor.cs" />
+    <Compile Include="Dialog\EapWizard\f_FFileEapWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\EapWizard\f_FFileEapWizard.Designer.cs">
+      <DependentUpon>f_FFileEapWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FHdvOptionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FHdvOptionView.Designer.cs">
+      <DependentUpon>f_FHdvOptionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FDepartmentClassSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FDepartmentClassSelector.designer.cs">
+      <DependentUpon>f_FDepartmentClassSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FDepartmentSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FDepartmentSelector.designer.cs">
+      <DependentUpon>f_FDepartmentSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FEapNameSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FEapNameSelector.designer.cs">
+      <DependentUpon>f_FEapNameSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FTcpHostMessageSender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FTcpHostMessageSender.designer.cs">
+      <DependentUpon>f_FTcpHostMessageSender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FOpcHostMessageSender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FOpcHostMessageSender.designer.cs">
+      <DependentUpon>f_FOpcHostMessageSender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FSecsHostMessageSender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FSecsHostMessageSender.designer.cs">
+      <DependentUpon>f_FSecsHostMessageSender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FEventSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FEventSelector.Designer.cs">
+      <DependentUpon>f_FEventSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FGeneralCodeDataSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FGeneralCodeDataSelector.Designer.cs">
+      <DependentUpon>f_FGeneralCodeDataSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FInquiryProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FInquiryProgress.designer.cs">
+      <DependentUpon>f_FInquiryProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FMakerSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FMakerSelector.designer.cs">
+      <DependentUpon>f_FMakerSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FMesEquipmentSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FMesEquipmentSelector.designer.cs">
+      <DependentUpon>f_FMesEquipmentSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FPasswordReset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FPasswordReset.Designer.cs">
+      <DependentUpon>f_FPasswordReset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FRemoteCommandProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FRemoteCommandProgress.Designer.cs">
+      <DependentUpon>f_FRemoteCommandProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FSubEquipmentSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FSubEquipmentSelector.designer.cs">
+      <DependentUpon>f_FSubEquipmentSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FTcpProtocolSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FTcpProtocolSelector.designer.cs">
+      <DependentUpon>f_FTcpProtocolSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FTransactionCertification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FTransactionCertification.Designer.cs">
+      <DependentUpon>f_FTransactionCertification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FUserGroupAlertSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FUserGroupAlertSelector.Designer.cs">
+      <DependentUpon>f_FUserGroupAlertSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FUserGroupAuthoritySelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FUserGroupAuthoritySelector.Designer.cs">
+      <DependentUpon>f_FUserGroupAuthoritySelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FUserGroupFunctionSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FUserGroupFunctionSelector.Designer.cs">
+      <DependentUpon>f_FUserGroupFunctionSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\EapWizard\c_FEapWizardData.cs" />
+    <Compile Include="Dialog\EapWizard\f_FSecsEapWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\EapWizard\f_FSecsEapWizard.Designer.cs">
+      <DependentUpon>f_FSecsEapWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdSecsScd.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdSecsSdv.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdSecsSsn.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdSecsHdv.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdSecsHsn.cs" />
+    <Compile Include="Dialog\EapWizard\Prop\c_FPropEwdSecsEqp.cs" />
+    <Compile Include="Dialog\f_FPackageVersionFileViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FPackageVersionFileViewer.Designer.cs">
+      <DependentUpon>f_FPackageVersionFileViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FPackageVersionSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FPackageVersionSelector.Designer.cs">
+      <DependentUpon>f_FPackageVersionSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FModelVersionSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FModelVersionSelector.Designer.cs">
+      <DependentUpon>f_FModelVersionSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FComponentVersionSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FComponentVersionSelector.Designer.cs">
+      <DependentUpon>f_FComponentVersionSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FCommentViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FCommentViewer.Designer.cs">
+      <DependentUpon>f_FCommentViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FEapClassSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FEapClassSelector.Designer.cs">
+      <DependentUpon>f_FEapClassSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FPreconditionViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FPreconditionViewer.Designer.cs">
+      <DependentUpon>f_FPreconditionViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FTransactionProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FTransactionProgress.Designer.cs">
+      <DependentUpon>f_FTransactionProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FValueTransformationViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FValueTransformationViewer.Designer.cs">
+      <DependentUpon>f_FValueTransformationViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FValueViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FValueViewer.Designer.cs">
+      <DependentUpon>f_FValueViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FSecsHostDriverSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FSecsHostDriverSelector.Designer.cs">
+      <DependentUpon>f_FSecsHostDriverSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentTypeSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentTypeSelector.designer.cs">
+      <DependentUpon>f_FEquipmentTypeSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentAreaSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentAreaSelector.designer.cs">
+      <DependentUpon>f_FEquipmentAreaSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentLineSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentLineSelector.designer.cs">
+      <DependentUpon>f_FEquipmentLineSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentClassSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentClassSelector.Designer.cs">
+      <DependentUpon>f_FEquipmentClassSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FServerResourceHistoryViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FServerResourceHistoryViewer.Designer.cs">
+      <DependentUpon>f_FServerResourceHistoryViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FOpcHostDriverSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FOpcHostDriverSelector.Designer.cs">
+      <DependentUpon>f_FOpcHostDriverSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FEquipmentSelector.designer.cs">
+      <DependentUpon>f_FEquipmentSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FEapSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FEapSelector.designer.cs">
+      <DependentUpon>f_FEapSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FUserSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FUserSelector.designer.cs">
+      <DependentUpon>f_FUserSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FPackageSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FPackageSelector.designer.cs">
+      <DependentUpon>f_FPackageSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FModelSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FModelSelector.designer.cs">
+      <DependentUpon>f_FModelSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FComponentSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FComponentSelector.designer.cs">
+      <DependentUpon>f_FComponentSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Structure\c_FFileDriver_Out.cs" />
+    <Compile Include="Dialog\Structure\c_FStructureEquipment.cs" />
+    <Compile Include="Dialog\f_FTcpHostDriverSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FTcpHostDriverSelector.Designer.cs">
+      <DependentUpon>f_FTcpHostDriverSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FSecs1ToHsmsConverterSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FSecs1ToHsmsConverterSelector.designer.cs">
+      <DependentUpon>f_FSecs1ToHsmsConverterSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H101\ADMADS\ADMADSCallback\Inquiry\Parameters\c_FADMADS_InqEquipmentGemStatus_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Inquiry\Parameters\c_FADMADS_InqEquipmentGemStatus_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Inquiry\Parameters\c_FADMADS_InqModelManualDownload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Inquiry\Parameters\c_FADMADS_InqModelManualDownload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Secs1ToHsms\Parameters\c_FADMADS_SetSecs1ToHsmsConverterUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Secs1ToHsms\Parameters\c_FADMADS_SetSecs1ToHsmsConverterUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Secs1ToHsms\Parameters\c_FADMADS_SetSecs1ToHsmsEventUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Secs1ToHsms\Parameters\c_FADMADS_SetSecs1ToHsmsEventUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Secs1ToHsms\Parameters\c_FADMADS_TolSecs1ToHsmsConverterBackupLogContinue_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Secs1ToHsms\Parameters\c_FADMADS_TolSecs1ToHsmsConverterBackupLogContinue_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Secs1ToHsms\Parameters\c_FADMADS_TolSecs1ToHsmsConverterBackupLogDownload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Secs1ToHsms\Parameters\c_FADMADS_TolSecs1ToHsmsConverterBackupLogDownload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Secs1ToHsms\Parameters\c_FADMADS_TolSecs1ToHsmsConverterBackupLogList_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Secs1ToHsms\Parameters\c_FADMADS_TolSecs1ToHsmsConverterBackupLogList_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Secs1ToHsms\Parameters\c_FADMADS_TolSecs1ToHsmsConverterBackupLogSearch_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Secs1ToHsms\Parameters\c_FADMADS_TolSecs1ToHsmsConverterBackupLogSearch_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Secs1ToHsms\Parameters\c_FADMADS_TolSecs1ToHsmsConverterLogContinue_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Secs1ToHsms\Parameters\c_FADMADS_TolSecs1ToHsmsConverterLogContinue_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Secs1ToHsms\Parameters\c_FADMADS_TolSecs1ToHsmsConverterLogDownload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Secs1ToHsms\Parameters\c_FADMADS_TolSecs1ToHsmsConverterLogDownload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Secs1ToHsms\Parameters\c_FADMADS_TolSecs1ToHsmsConverterLogList_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Secs1ToHsms\Parameters\c_FADMADS_TolSecs1ToHsmsConverterLogList_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetInlineEquipmentUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetInlineEquipmentUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelManualDownload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelManualDownload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelManualUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelManualUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelSheetUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelSheetUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetNoticeUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetNoticeUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetProcessEapUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetProcessEapUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\System\Parameters\c_FADMADS_SysPasswordReset_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\System\Parameters\c_FADMADS_SysPasswordReset_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\System\Parameters\c_FADMADS_SysUserNoticeUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\System\Parameters\c_FADMADS_SysUserNoticeUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\c_FADMADS_TolDeviceDataPush_Nrp.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\c_FADMADS_TolEapIssueEventRefresh_Nrp.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\c_FADMADS_TolEquipmentAreaDataPush_Nrp.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\c_FADMADS_TolEquipmentIssueEventRefresh_Nrp.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\c_FADMADS_TolEquipmentLineDataPush_Nrp.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\c_FADMADS_TolEquipmentDataPush_Nrp.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\c_FADMADS_TolEquipmentTypeDataPush_Nrp.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\c_FADMADS_TolSecs1ToHsmsConverterDataPush_Nrp.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\c_FADMADS_TolSecs1ToHsmsConverterDisconnectDataPush_Nrp.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\c_FADMADS_TolServerIssueEventRefresh_Nrp.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminAgentBackupLogContinue_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminAgentBackupLogContinue_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminAgentLogContinue_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminAgentLogContinue_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminServiceBackupLogContinue_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminServiceBackupLogContinue_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminServiceLogContinue_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminServiceLogContinue_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolDeviceDataPush_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapBackupLogContinue_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapBackupLogContinue_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapIssueEventRefresh_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapLogContinue_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapLogContinue_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapModelDownload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapModelDownload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEquipmentAreaDataPush_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEquipmentDataPush_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEquipmentIssueEventRefresh_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEquipmentLineDataPush_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEquipmentTypeDataPush_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\RemoteCommand\Parameters\c_FADMADS_RcmEquipmentCustomRequest_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\RemoteCommand\Parameters\c_FADMADS_RcmEquipmentCustomRequest_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetEquipmentAreaUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetEquipmentAreaUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetEquipmentLineUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetEquipmentLineUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetEquipmentTypeUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetEquipmentTypeUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetEquipmentUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetEquipmentUpdate_Out.cs" />
+    <Compile Include="Common\PropEapSchema\PropAttr\c_FPropAttrEshHdvDriverOptionUITypeEditor.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\c_FADMADS_TolComponentDataPush_Nrp.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\c_FADMADS_TolComponentVerDataPush_Nrp.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\c_FADMADS_TolEapDataPush_Nrp.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\c_FADMADS_TolModelDataPush_Nrp.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\c_FADMADS_TolModelVerDataPush_Nrp.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\c_FADMADS_TolPackageVerDataPush_Nrp.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\c_FADMADS_TolServerDataPush_Nrp.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolComponentDataPush_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolComponentVerDataPush_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapDataPush_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolModelDataPush_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolModelVerDataPush_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolPackageDataPush_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\c_FADMADS_TolPackageDataPush_Nrp.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolPackageVerDataPush_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolSecs1ToHsmsConverterDataPush_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolSecs1ToHsmsConverterDisconnectDataPush_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolServerDataPush_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\RemoteCommand\Parameters\c_FADMADS_RcmEquipmentControlModeRequest_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\RemoteCommand\Parameters\c_FADMADS_RcmEquipmentControlModeRequest_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\RemoteCommand\Parameters\c_FADMADS_RcmEquipmentEventDefineRequest_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\RemoteCommand\Parameters\c_FADMADS_RcmEquipmentEventDefineRequest_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\RemoteCommand\Parameters\c_FADMADS_RcmEquipmentVersionRequest_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\RemoteCommand\Parameters\c_FADMADS_RcmEquipmentVersionRequest_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\RemoteCommand\Parameters\c_FADMADS_RcmRemotePingTest_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\RemoteCommand\Parameters\c_FADMADS_RcmRemotePingTest_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetCustomRemoteCommandUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetCustomRemoteCommandUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetEquipmentEventUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetEquipmentEventUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetMakerUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetMakerUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelAlarmGroupUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelAlarmGroupUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelAlarmUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelAlarmUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelArgumentNameUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelArgumentNameUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelFunctionNameListUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelFunctionNameListUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelFunctionNameUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelFunctionNameUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelObjectNameUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelObjectNameUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelParameterNameUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelParameterNameUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelStateUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelStateUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelUserTagNameUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelUserTagNameUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetUserGroupAlertUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetUserGroupAlertUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetUserGroupApplicationUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetUserGroupApplicationUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetUserGroupAuthorityUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetUserGroupAuthorityUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetUserGroupFunctionUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetUserGroupFunctionUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\System\Parameters\c_FADMADS_SysHostDriverDownload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\System\Parameters\c_FADMADS_SysHostDriverDownload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminAgentOptionSearch_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminAgentOptionSearch_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminAgentOptionUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminAgentOptionUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolServerIssueEventRefresh_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapBackupSwitch_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapBackupSwitch_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapBatchModification_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapBatchModification_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapLogLevelSetup_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapLogLevelSetup_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapMainSwitch_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapMainSwitch_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapMove_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapMove_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapReload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapReload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapRepositoryClear_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapRepositoryClear_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapRepositoryRemove_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapRepositoryRemove_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnServerBackupSwitch_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnServerBackupSwitch_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnServerMainSwitch_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnServerMainSwitch_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminAgentBackupLogDownload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminAgentBackupLogDownload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminAgentBackupLogList_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminAgentBackupLogList_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminAgentBackupLogSearch_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminAgentBackupLogSearch_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminServiceBackupLogDownload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminServiceBackupLogDownload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminServiceBackupLogList_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminServiceBackupLogList_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminServiceBackupLogSearch_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminServiceBackupLogSearch_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAlertServiceBackupLogDownload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAlertServiceBackupLogDownload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAlertServiceBackupLogList_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAlertServiceBackupLogList_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAlertServiceBackupLogSearch_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAlertServiceBackupLogSearch_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAlertServiceLogDownload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAlertServiceLogDownload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAlertServiceLogList_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAlertServiceLogList_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapBackupLogDownload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapBackupLogDownload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapBackupLogList_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapBackupLogList_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapBackupLogSearch_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapBackupLogSearch_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapLogDownload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapLogDownload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapLogList_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapLogList_Out.cs" />
+    <Compile Include="Common\c_FUserFunctionData.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapSchemaSearch_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolEapSchemaSearch_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Common\Parameters\c_FADMADS_ComEapSchemaSearch_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Common\Parameters\c_FADMADS_ComEapSchemaSearch_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Common\Parameters\c_FADMADS_ComSqlQuery_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Common\Parameters\c_FADMADS_ComSqlQuery_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Dialog\Parameters\c_FADMADS_DlgEapWizardEapSchemaSearch_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Dialog\Parameters\c_FADMADS_DlgEapWizardEapSchemaSearch_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetEapEventUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetEapEventUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetServerEventUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetServerEventUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetUserEventUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetUserEventUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapAbort_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapAbort_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapRestart_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapRestart_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapStart_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapStart_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapStop_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapStop_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Inquiry\Parameters\c_FADMADS_InqModelVerSchemaSearch_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Inquiry\Parameters\c_FADMADS_InqModelVerSchemaSearch_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapRelease_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnEapRelease_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetEapUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetEapUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetHostDriverDownload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetHostDriverDownload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetHostDriverUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetHostDriverUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminAgentLogDownload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminAgentLogDownload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminAgentLogList_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminAgentLogList_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminServiceLogDownload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminServiceLogDownload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminServiceLogList_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Tool\Parameters\c_FADMADS_TolAdminServiceLogList_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetComponentVerDownload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetComponentVerDownload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetComponentVerUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetComponentVerUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelVerDownload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelVerDownload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelVerFileSearch_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelVerFileSearch_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelVerUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelVerUpdate_Out.cs" />
+    <Compile Include="Common\c_FCommon.cs" />
+    <Compile Include="Common\c_FConstants.cs" />
+    <Compile Include="Common\c_FAdmCore.cs" />
+    <Compile Include="Common\c_FMenuKey.cs" />
+    <Compile Include="Common\e_FEnum.cs" />
+    <Compile Include="Common\f_FAdmContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\f_FAdmContainer.Designer.cs">
+      <DependentUpon>f_FAdmContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FCommentEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FCommentEditor.Designer.cs">
+      <DependentUpon>f_FCommentEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FServerSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FServerSelector.Designer.cs">
+      <DependentUpon>f_FServerSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FPackageVersionFileSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FPackageVersionFileSelector.Designer.cs">
+      <DependentUpon>f_FPackageVersionFileSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\f_FUserGroupSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\f_FUserGroupSelector.Designer.cs">
+      <DependentUpon>f_FUserGroupSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetComponentUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetComponentUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetFactoryUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetFactoryUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetGcmDataUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetGcmDataUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetGcmTableUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetGcmTableUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetModelUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetPackageUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetPackageUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetPackageVerDownload_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetPackageVerDownload_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetPackageVerUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetPackageVerUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetServerUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetServerUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetUserGroupUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetUserGroupUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetUserUpdate_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Setup\Parameters\c_FADMADS_SetUserUpdate_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\System\Parameters\c_FADMADS_SysUserLogIn_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\System\Parameters\c_FADMADS_SysUserLogIn_Out.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnTransactionCertification_In.cs" />
+    <Compile Include="H101\ADMADS\ADMADSCallback\Transaction\Parameters\c_FADMADS_TrnTransactionCertification_Out.cs" />
+    <Compile Include="MenuForm\Help\f_FAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Help\f_FAbout.Designer.cs">
+      <DependentUpon>f_FAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FComponentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FComponentList.Designer.cs">
+      <DependentUpon>f_FComponentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FComponentStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FComponentStatus.Designer.cs">
+      <DependentUpon>f_FComponentStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapHistory.Designer.cs">
+      <DependentUpon>f_FEapHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapList.Designer.cs">
+      <DependentUpon>f_FEapList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapNeedActionList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapNeedActionList.Designer.cs">
+      <DependentUpon>f_FEapNeedActionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEquipmentGemStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEquipmentGemStatus.Designer.cs">
+      <DependentUpon>f_FEquipmentGemStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapResourceComparison.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapResourceComparison.Designer.cs">
+      <DependentUpon>f_FEapResourceComparison.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapResourceHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapResourceHistory.Designer.cs">
+      <DependentUpon>f_FEapResourceHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapResourceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapResourceList.Designer.cs">
+      <DependentUpon>f_FEapResourceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapStatus.Designer.cs">
+      <DependentUpon>f_FEapStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FAlarmStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FAlarmStatus.Designer.cs">
+      <DependentUpon>f_FAlarmStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEquipmentHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEquipmentHistory.Designer.cs">
+      <DependentUpon>f_FEquipmentHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEquipmentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEquipmentList.Designer.cs">
+      <DependentUpon>f_FEquipmentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEquipmentStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEquipmentStatus.Designer.cs">
+      <DependentUpon>f_FEquipmentStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FModelList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FModelList.Designer.cs">
+      <DependentUpon>f_FModelList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FModelStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FModelStatus.Designer.cs">
+      <DependentUpon>f_FModelStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FNoticeHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FNoticeHistory.Designer.cs">
+      <DependentUpon>f_FNoticeHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FPackageList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FPackageList.Designer.cs">
+      <DependentUpon>f_FPackageList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FPackageStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FPackageStatus.Designer.cs">
+      <DependentUpon>f_FPackageStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FRecentNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FRecentNotice.Designer.cs">
+      <DependentUpon>f_FRecentNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapReferenceSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapReferenceSheet.Designer.cs">
+      <DependentUpon>f_FEapReferenceSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerHistory.Designer.cs">
+      <DependentUpon>f_FServerHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerList.Designer.cs">
+      <DependentUpon>f_FServerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerResourceAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerResourceAnalysis.Designer.cs">
+      <DependentUpon>f_FServerResourceAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerResourceComparison.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerResourceComparison.Designer.cs">
+      <DependentUpon>f_FServerResourceComparison.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerResourceHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerResourceHistory.Designer.cs">
+      <DependentUpon>f_FServerResourceHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerResourceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerResourceList.Designer.cs">
+      <DependentUpon>f_FServerResourceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerResourceStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerResourceStatus.Designer.cs">
+      <DependentUpon>f_FServerResourceStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerStatus.Designer.cs">
+      <DependentUpon>f_FServerStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FSystemCheckList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FSystemCheckList.Designer.cs">
+      <DependentUpon>f_FSystemCheckList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FUserHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FUserHistory.Designer.cs">
+      <DependentUpon>f_FUserHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\i_FIInquiry.cs" />
+    <Compile Include="MenuForm\Inquiry\Prop\c_FPropEapHistory.cs" />
+    <Compile Include="MenuForm\Inquiry\Prop\c_FPropEquipmentHistory.cs" />
+    <Compile Include="MenuForm\Inquiry\Prop\c_FPropServerHistory.cs" />
+    <Compile Include="MenuForm\Inquiry\Prop\c_FPropUserHistory.cs" />
+    <Compile Include="MenuForm\Inquiry\Prop\PropAttr\c_FPropAttrCommentViewUITypeEditor.cs" />
+    <Compile Include="MenuForm\Inquiry\f_FEapRepositoryStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapRepositoryStatus.Designer.cs">
+      <DependentUpon>f_FEapRepositoryStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FIssueEventSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FIssueEventSummary.Designer.cs">
+      <DependentUpon>f_FIssueEventSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerIssueEventSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerIssueEventSummary.Designer.cs">
+      <DependentUpon>f_FServerIssueEventSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapIssueEventSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapIssueEventSummary.Designer.cs">
+      <DependentUpon>f_FEapIssueEventSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEquipmentIssueEventSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEquipmentIssueEventSummary.Designer.cs">
+      <DependentUpon>f_FEquipmentIssueEventSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerIssueEventHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerIssueEventHistory.Designer.cs">
+      <DependentUpon>f_FServerIssueEventHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapIssueEventHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapIssueEventHistory.Designer.cs">
+      <DependentUpon>f_FEapIssueEventHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEquipmentIssueEventHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEquipmentIssueEventHistory.Designer.cs">
+      <DependentUpon>f_FEquipmentIssueEventHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerIssueEventTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FServerIssueEventTotal.Designer.cs">
+      <DependentUpon>f_FServerIssueEventTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapIssueEventTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEapIssueEventTotal.Designer.cs">
+      <DependentUpon>f_FEapIssueEventTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEquipmentIssueEventTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FEquipmentIssueEventTotal.Designer.cs">
+      <DependentUpon>f_FEquipmentIssueEventTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FOverallIssueEventReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FOverallIssueEventReport.Designer.cs">
+      <DependentUpon>f_FOverallIssueEventReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\RemoteCommand\f_FRemotePingTestByEquipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\RemoteCommand\f_FRemotePingTestByEquipment.Designer.cs">
+      <DependentUpon>f_FRemotePingTestByEquipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\RemoteCommand\f_FCustomRemoteCommandRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\RemoteCommand\f_FCustomRemoteCommandRequest.Designer.cs">
+      <DependentUpon>f_FCustomRemoteCommandRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\RemoteCommand\f_FEquipmentControlModeRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\RemoteCommand\f_FEquipmentControlModeRequest.Designer.cs">
+      <DependentUpon>f_FEquipmentControlModeRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\RemoteCommand\f_FEquipmentEventDefineRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\RemoteCommand\f_FEquipmentEventDefineRequest.Designer.cs">
+      <DependentUpon>f_FEquipmentEventDefineRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\RemoteCommand\f_FEquipmentVersionRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\RemoteCommand\f_FEquipmentVersionRequest.Designer.cs">
+      <DependentUpon>f_FEquipmentVersionRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\RemoteCommand\f_FRemotePingTestByServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\RemoteCommand\f_FRemotePingTestByServer.Designer.cs">
+      <DependentUpon>f_FRemotePingTestByServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\RemoteCommand\i_FIRemoteCommand.cs" />
+    <Compile Include="MenuForm\RemoteCommand\Prop\c_FPropCustomRemoteCommandParameter.cs" />
+    <Compile Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterBackupLogList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterBackupLogList.Designer.cs">
+      <DependentUpon>f_FSecs1ToHsmsConverterBackupLogList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterLogList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterLogList.Designer.cs">
+      <DependentUpon>f_FSecs1ToHsmsConverterLogList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterHistory.Designer.cs">
+      <DependentUpon>f_FSecs1ToHsmsConverterHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterStatus.Designer.cs">
+      <DependentUpon>f_FSecs1ToHsmsConverterStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsEvent.Designer.cs">
+      <DependentUpon>f_FSecs1ToHsmsEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterList.Designer.cs">
+      <DependentUpon>f_FSecs1ToHsmsConverterList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterMonitor.Designer.cs">
+      <DependentUpon>f_FSecs1ToHsmsConverterMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterLogViewer.Designer.cs">
+      <DependentUpon>f_FSecs1ToHsmsConverterLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Secs1ToHsms\Prop\c_FPropSecs1ToHsmsConverterHistory.cs" />
+    <Compile Include="MenuForm\Secs1ToHsms\Prop\c_FPropSecs1ToHsmsEvent.cs" />
+    <Compile Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverter.Designer.cs">
+      <DependentUpon>f_FSecs1ToHsmsConverter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Secs1ToHsms\Prop\c_FPropSecs1ToHsmsConverter.cs" />
+    <Compile Include="MenuForm\Secs1ToHsms\Prop\PropAttr\c_FPropAttrSecs1ToHsmsConverterSEcs1BaudConverter.cs" />
+    <Compile Include="MenuForm\Secs1ToHsms\Prop\PropAttr\c_FPropAttrSecs1ToHsmsConverterSecs1SerialPortStringConverter.cs" />
+    <Compile Include="MenuForm\Setup\f_FOpcModelUserTagName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FOpcModelUserTagName.Designer.cs">
+      <DependentUpon>f_FOpcModelUserTagName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FOpcModelObjectName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FOpcModelObjectName.Designer.cs">
+      <DependentUpon>f_FOpcModelObjectName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FOpcModelFunctionName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FOpcModelFunctionName.Designer.cs">
+      <DependentUpon>f_FOpcModelFunctionName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\c_FGeneralCodeColumn.cs" />
+    <Compile Include="MenuForm\Setup\c_FPackageVersionFile.cs" />
+    <Compile Include="MenuForm\Setup\f_FComponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FComponent.Designer.cs">
+      <DependentUpon>f_FComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FCustomRemoteCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FCustomRemoteCommand.Designer.cs">
+      <DependentUpon>f_FCustomRemoteCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FEap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FEap.Designer.cs">
+      <DependentUpon>f_FEap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FEquipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FEquipment.designer.cs">
+      <DependentUpon>f_FEquipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FEquipmentArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FEquipmentArea.Designer.cs">
+      <DependentUpon>f_FEquipmentArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FEquipmentLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FEquipmentLine.Designer.cs">
+      <DependentUpon>f_FEquipmentLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FEquipmentType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FEquipmentType.Designer.cs">
+      <DependentUpon>f_FEquipmentType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FEvent.Designer.cs">
+      <DependentUpon>f_FEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FFactory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FFactory.Designer.cs">
+      <DependentUpon>f_FFactory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FGeneralCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FGeneralCode.Designer.cs">
+      <DependentUpon>f_FGeneralCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FHostDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FHostDriver.Designer.cs">
+      <DependentUpon>f_FHostDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FInlineEquipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FInlineEquipment.designer.cs">
+      <DependentUpon>f_FInlineEquipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FMaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FMaker.Designer.cs">
+      <DependentUpon>f_FMaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FModel.Designer.cs">
+      <DependentUpon>f_FModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FModelSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FModelSheet.Designer.cs">
+      <DependentUpon>f_FModelSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FNotice.Designer.cs">
+      <DependentUpon>f_FNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FPackage.Designer.cs">
+      <DependentUpon>f_FPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FSecsModelFunctionName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FSecsModelFunctionName.Designer.cs">
+      <DependentUpon>f_FSecsModelFunctionName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FSecsModelObjectName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FSecsModelObjectName.Designer.cs">
+      <DependentUpon>f_FSecsModelObjectName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FSecsModelUserTagName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FSecsModelUserTagName.Designer.cs">
+      <DependentUpon>f_FSecsModelUserTagName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FServer.Designer.cs">
+      <DependentUpon>f_FServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FUser.Designer.cs">
+      <DependentUpon>f_FUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FUserGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FUserGroup.Designer.cs">
+      <DependentUpon>f_FUserGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FUserGroupApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FUserGroupApplication.Designer.cs">
+      <DependentUpon>f_FUserGroupApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\Prop\c_FPropEquipmentCommand.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropComponent.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropComponentVersion.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropCustomRemoteCommand.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropEapEvent.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropEapProtocol.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropEquipment.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropEquipmentArea.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropEquipmentEvent.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropEquipmentLine.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropEquipmentType.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropEquipmentTypeAlarm.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropEquipmentTypeState.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropFactory.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropGeneralCodeData.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropGeneralCodeTable.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropHostDriver.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropMainEquipment.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropMaker.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropModel.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropModelAlarm.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropModelAlarmGroup.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropModelArgument.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropModelFunctionName.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropModelFunctionNameList.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropModelManual.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropModelObejctName.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropModelParameterName.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropModelSheet.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropModelUserTagName.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropModelVersion.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropPackage.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropPackageVersion.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropServer.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropServerEvent.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropTypeAlarm.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropTypeAlarmGroup.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropUser.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropUserEvent.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropUserGroup.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropUserGroupApplication.cs" />
+    <Compile Include="MenuForm\Setup\Prop\c_FPropUserGroupFunction.cs" />
+    <Compile Include="MenuForm\Setup\Prop\PropAttr\c_FPropAttrBackupServerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Setup\Prop\PropAttr\c_FPropAttrCommentEditUITypeEditor.cs" />
+    <Compile Include="MenuForm\Setup\Prop\PropAttr\c_FPropAttrEquipmentAreaUITypeEditor.cs" />
+    <Compile Include="MenuForm\Setup\Prop\PropAttr\c_FPropAttrEquipmentLineUITypeEditor.cs" />
+    <Compile Include="MenuForm\Setup\Prop\PropAttr\c_FPropAttrEquipmentTypeMakerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Setup\Prop\PropAttr\c_FPropAttrEquipmentTypeUITypeEditor.cs" />
+    <Compile Include="MenuForm\Setup\Prop\PropAttr\c_FPropAttrFileBrowserUITypeEditor.cs" />
+    <Compile Include="MenuForm\Setup\Prop\PropAttr\c_FPropAttrGeneralCodeDataUITypeEditor.cs" />
+    <Compile Include="MenuForm\Setup\Prop\PropAttr\c_FPropAttrMakerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Setup\Prop\PropAttr\c_FPropAttrMesEquipmentUITypeEditor.cs" />
+    <Compile Include="MenuForm\Setup\Prop\PropAttr\c_FPropAttrPackageVersionFileUITypeEditor.cs" />
+    <Compile Include="MenuForm\Setup\Prop\PropAttr\c_FPropAttrUserGroupUITypeEditor.cs" />
+    <Compile Include="MenuForm\Setup\f_FTcpModelFunctionName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FTcpModelFunctionName.Designer.cs">
+      <DependentUpon>f_FTcpModelFunctionName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FTcpModelObjectName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FTcpModelObjectName.Designer.cs">
+      <DependentUpon>f_FTcpModelObjectName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FTcpModelUserTagName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Setup\f_FTcpModelUserTagName.Designer.cs">
+      <DependentUpon>f_FTcpModelUserTagName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\System\f_FNotification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\System\f_FNotification.Designer.cs">
+      <DependentUpon>f_FNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\FileLogViewer\f_FFileLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\FileLogViewer\f_FFileLogViewer.Designer.cs">
+      <DependentUpon>f_FFileLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FIssueEventMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FIssueEventMonitor.Designer.cs">
+      <DependentUpon>f_FIssueEventMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\OpcLogViewer\f_FOpcTotalLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\OpcLogViewer\f_FOpcTotalLogViewer.Designer.cs">
+      <DependentUpon>f_FOpcTotalLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\SecsLogViewer\f_FSecsInterfaceObjectLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\SecsLogViewer\f_FSecsInterfaceObjectLogViewer.Designer.cs">
+      <DependentUpon>f_FSecsInterfaceObjectLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\SecsLogViewer\f_FSecsTotalLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\SecsLogViewer\f_FSecsTotalLogViewer.Designer.cs">
+      <DependentUpon>f_FSecsTotalLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\TcpLogViewer\f_FTcpTotalLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\TcpLogViewer\f_FTcpTotalLogViewer.Designer.cs">
+      <DependentUpon>f_FTcpTotalLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FEapLogLevelSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FEapLogLevelSetup.Designer.cs">
+      <DependentUpon>f_FEapLogLevelSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FTrsLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FTrsLogViewer.Designer.cs">
+      <DependentUpon>f_FTrsLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FAdminAgentOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FAdminAgentOption.Designer.cs">
+      <DependentUpon>f_FAdminAgentOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\OpcLogViewer\f_FOpcLogObjectViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\OpcLogViewer\f_FOpcLogObjectViewer.Designer.cs">
+      <DependentUpon>f_FOpcLogObjectViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropOpcLogFilter.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\XmlTag\c_FXmlTagOpcLogFilter.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\c_FOpcLogFilter.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\f_FOpcLogFilterSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\OpcLogViewer\f_FOpcLogFilterSelector.Designer.cs">
+      <DependentUpon>f_FOpcLogFilterSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\Prop\c_FPropAdaDetectionPolicy.cs" />
+    <Compile Include="MenuForm\Tool\Prop\c_FPropAdaGeneral.cs" />
+    <Compile Include="MenuForm\Tool\Prop\c_FPropAdaHighway101.cs" />
+    <Compile Include="MenuForm\Tool\Prop\c_FPropAdaLogPolicy.cs" />
+    <Compile Include="MenuForm\Tool\Prop\c_FPropAdaResourceCollection.cs" />
+    <Compile Include="MenuForm\Inquiry\Prop\c_FPropMshEnl.cs" />
+    <Compile Include="MenuForm\Inquiry\Prop\c_FPropMshEnv.cs" />
+    <Compile Include="MenuForm\Inquiry\Prop\c_FPropMshEqp.cs" />
+    <Compile Include="MenuForm\Inquiry\Prop\c_FPropMshHdv.cs" />
+    <Compile Include="MenuForm\Inquiry\Prop\c_FPropMshHsn.cs" />
+    <Compile Include="MenuForm\Inquiry\Prop\c_FPropMshScd.cs" />
+    <Compile Include="MenuForm\Inquiry\Prop\c_FPropMshSdv.cs" />
+    <Compile Include="MenuForm\Inquiry\Prop\c_FPropMshSsn.cs" />
+    <Compile Include="MenuForm\Tool\c_FADAOption.cs" />
+    <Compile Include="MenuForm\Tool\f_FAdminAgentBackupLogList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FAdminAgentBackupLogList.Designer.cs">
+      <DependentUpon>f_FAdminAgentBackupLogList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FAdminAgentLogList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FAdminAgentLogList.Designer.cs">
+      <DependentUpon>f_FAdminAgentLogList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FAdminServiceBackupLogList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FAdminServiceBackupLogList.Designer.cs">
+      <DependentUpon>f_FAdminServiceBackupLogList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FAdminServiceLogList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FAdminServiceLogList.Designer.cs">
+      <DependentUpon>f_FAdminServiceLogList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FAlertServiceBackupLogList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FAlertServiceBackupLogList.Designer.cs">
+      <DependentUpon>f_FAlertServiceBackupLogList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FAlertServiceLogList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FAlertServiceLogList.Designer.cs">
+      <DependentUpon>f_FAlertServiceLogList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FApplicationLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FApplicationLogViewer.Designer.cs">
+      <DependentUpon>f_FApplicationLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FBinaryLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FBinaryLogViewer.Designer.cs">
+      <DependentUpon>f_FBinaryLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FDebugLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FDebugLogViewer.Designer.cs">
+      <DependentUpon>f_FDebugLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FEapBackupLogList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FEapBackupLogList.Designer.cs">
+      <DependentUpon>f_FEapBackupLogList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FEapLogList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FEapLogList.Designer.cs">
+      <DependentUpon>f_FEapLogList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FEapMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FEapMonitor.Designer.cs">
+      <DependentUpon>f_FEapMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FEquipmentMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FEquipmentMonitor.Designer.cs">
+      <DependentUpon>f_FEquipmentMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FModelVersionSchema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Inquiry\f_FModelVersionSchema.Designer.cs">
+      <DependentUpon>f_FModelVersionSchema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FSmlLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FSmlLogViewer.Designer.cs">
+      <DependentUpon>f_FSmlLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FVfeiLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FVfeiLogViewer.Designer.cs">
+      <DependentUpon>f_FVfeiLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropAppl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropBrnl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropCbkl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropCmtl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropColl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropCttl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropDatl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropDtsl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropEsal.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropEtpl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropFunl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropHdcl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropHdel.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropHdmrl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropHdmsl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropHitl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropHtnl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropHtrl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropHvrl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropHvsl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropJdml.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropMapl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropOcdl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropOdcl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropOdel.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropOdmrl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropOdmwl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropOdtl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropOeil.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropOell.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropOill.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropOitl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropOtnl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropOtrl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropPaul.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropRpsl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\c_FPropStgl.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\PropAttr\c_FPropAttrCollValueTransformerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\PropAttr\c_FPropAttrDatlValueTransformerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\PropAttr\c_FPropAttrHitlPreconditlionUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\PropAttr\c_FPropAttrHitlValueTransformerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\PropAttr\c_FPropAttrOeilValueTransformerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\PropAttr\c_FPropAttrOitlValueTransformerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\PropAttr\c_FPropAttrValueViewerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\PropViewer\f_FPreconditionViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\PropViewer\f_FPreconditionViewer.Designer.cs">
+      <DependentUpon>f_FPreconditionViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\PropViewer\f_FValueTransformationViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\OpcLogViewer\Prop\PropViewer\f_FValueTransformationViewer.Designer.cs">
+      <DependentUpon>f_FValueTransformationViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\Prop\c_FPropEapLogLevelSetup.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\c_FSecsLogFilter.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\f_FSecsLogFilterSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\SecsLogViewer\f_FSecsLogFilterSelector.Designer.cs">
+      <DependentUpon>f_FSecsLogFilterSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropAppl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropBrnl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropCbkl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropCmrl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropCmsl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropCmtl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropColl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropCttl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropDatl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropDtsl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropEsal.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropEtpl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropSecsLogFilter.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropFunl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropHdcl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropHdel.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropHdmrl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropHdmsl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropHitl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropHtnl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropHtrl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropHvrl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropHvsl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropJdml.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropMapl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropPaul.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropRpsl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropScdl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropSdbrl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropSdbsl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropSdcl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropSdel.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropSdhrl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropSdhsl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropSdmrl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropSdmsl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropSdrl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropSdsl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropSdtl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropSdtprl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropSdtpsl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropSdtscl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropSitl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropSmrl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropSmsl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropStgl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropStnl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\c_FPropStrl.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\PropAttr\c_FPropAttrCollValueTransformerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\PropAttr\c_FPropAttrDatlValueTransformerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\PropAttr\c_FPropAttrHitlPreconditlionUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\PropAttr\c_FPropAttrHitlValueTransformerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\PropAttr\c_FPropAttrSitlPreconditionUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\PropAttr\c_FPropAttrSitlValueTransformerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\SecsLogViewer\Prop\PropAttr\c_FPropAttrValueViewerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\f_FEapLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FEapLogViewer.Designer.cs">
+      <DependentUpon>f_FEapLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\TcpLogViewer\c_FTcpLogFilter.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\f_FTcpLogFilterSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\TcpLogViewer\f_FTcpLogFilterSelector.Designer.cs">
+      <DependentUpon>f_FTcpLogFilterSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropAppl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropBrnl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropCbkl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropCmtl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropColl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropCttl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropDatl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropDtsl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropEsal.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropEtpl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropTcpLogFilter.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropFunl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropHdcl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropHdel.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropHdmrl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropHdmsl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropHitl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropHtnl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropHtrl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropHvrl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropHvsl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropJdml.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropMapl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropPaul.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropRpsl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropTdrl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropTdsl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropTcdl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropTdcl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropTdel.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropTdmrl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropTdmsl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropTdtl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropTitl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropTtgl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropTtnl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropTtrl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropXmrl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\c_FPropXmsl.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\PropAttr\c_FPropAttrCollValueTransformerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\PropAttr\c_FPropAttrDatlValueTransformerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\PropAttr\c_FPropAttrHitlPreconditlionUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\PropAttr\c_FPropAttrHitlValueTransformerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\PropAttr\c_FPropAttrTitlPreconditionUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\PropAttr\c_FPropAttrTitlValueTransformerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\PropAttr\c_FPropAttrValueViewerUITypeEditor.cs" />
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\PropAttr\PropViewer\f_FPreconditionViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\PropAttr\PropViewer\f_FPreconditionViewer.Designer.cs">
+      <DependentUpon>f_FPreconditionViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\PropAttr\PropViewer\f_FValueTransformationViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\TcpLogViewer\Prop\PropAttr\PropViewer\f_FValueTransformationViewer.Designer.cs">
+      <DependentUpon>f_FValueTransformationViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FXlgLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Tool\f_FXlgLogViewer.Designer.cs">
+      <DependentUpon>f_FXlgLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FEapAbort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FEapAbort.Designer.cs">
+      <DependentUpon>f_FEapAbort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FEapBatchModification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FEapBatchModification.Designer.cs">
+      <DependentUpon>f_FEapBatchModification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FEapMove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FEapMove.Designer.cs">
+      <DependentUpon>f_FEapMove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FEapRelease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FEapRelease.Designer.cs">
+      <DependentUpon>f_FEapRelease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FEapReload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FEapReload.Designer.cs">
+      <DependentUpon>f_FEapReload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FEapRestart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FEapRestart.Designer.cs">
+      <DependentUpon>f_FEapRestart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FEapStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FEapStart.Designer.cs">
+      <DependentUpon>f_FEapStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FEapStop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FEapStop.Designer.cs">
+      <DependentUpon>f_FEapStop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FServerBackupSwitch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FServerBackupSwitch.Designer.cs">
+      <DependentUpon>f_FServerBackupSwitch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FServerMainSwitch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\f_FServerMainSwitch.Designer.cs">
+      <DependentUpon>f_FServerMainSwitch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm\Transaction\i_FITransaction.cs" />
+    <Compile Include="MenuForm\Window\c_FFormList.cs" />
+    <Compile Include="MenuForm\Window\f_FFormSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm\Window\f_FFormSelector.Designer.cs">
+      <DependentUpon>f_FFormSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Option\c_FOption.cs" />
+    <Compile Include="H101\ADMADS\c_FADMADSCallback.cs" />
+    <Compile Include="H101\ADMADS\c_FADMADSCaster.cs" />
+    <Compile Include="H101\ADMADS\c_FADMADSSkeleton.cs" />
+    <Compile Include="H101\ADMADS\c_FADMADSTuner.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialog\EapWizard\f_FChdEapWizard.resx">
+      <DependentUpon>f_FChdEapWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\EapWizard\f_FEapTypeSelector.resx">
+      <DependentUpon>f_FEapTypeSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\EapWizard\f_FOpcEapWizard.resx">
+      <DependentUpon>f_FOpcEapWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\EapWizard\f_FProcessEapWizard.resx">
+      <DependentUpon>f_FProcessEapWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\EapWizard\f_FEapTypeSelector2.resx">
+      <DependentUpon>f_FEapTypeSelector2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\EapWizard\f_FTcpEapWizard.resx">
+      <DependentUpon>f_FTcpEapWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\EapWizard\f_FFileEapWizard.resx">
+      <DependentUpon>f_FFileEapWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FDepartmentClassSelector.resx">
+      <DependentUpon>f_FDepartmentClassSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FDepartmentSelector.resx">
+      <DependentUpon>f_FDepartmentSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FEapNameSelector.resx">
+      <DependentUpon>f_FEapNameSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FHdvOptionView.resx">
+      <DependentUpon>f_FHdvOptionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FTcpHostMessageSender.resx">
+      <DependentUpon>f_FTcpHostMessageSender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FOpcHostMessageSender.resx">
+      <DependentUpon>f_FOpcHostMessageSender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FSecsHostMessageSender.resx">
+      <DependentUpon>f_FSecsHostMessageSender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FEventSelector.resx">
+      <DependentUpon>f_FEventSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FGeneralCodeDataSelector.resx">
+      <DependentUpon>f_FGeneralCodeDataSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FInquiryProgress.resx">
+      <DependentUpon>f_FInquiryProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FMesEquipmentSelector.resx">
+      <DependentUpon>f_FMesEquipmentSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FPasswordReset.resx">
+      <DependentUpon>f_FPasswordReset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FSecsHostDriverSelector.resx">
+      <DependentUpon>f_FSecsHostDriverSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FMakerSelector.resx">
+      <DependentUpon>f_FMakerSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FRemoteCommandProgress.resx">
+      <DependentUpon>f_FRemoteCommandProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FSubEquipmentSelector.resx">
+      <DependentUpon>f_FSubEquipmentSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FTcpProtocolSelector.resx">
+      <DependentUpon>f_FTcpProtocolSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FTransactionCertification.resx">
+      <DependentUpon>f_FTransactionCertification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FUserGroupAlertSelector.resx">
+      <DependentUpon>f_FUserGroupAlertSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FUserGroupAuthoritySelector.resx">
+      <DependentUpon>f_FUserGroupAuthoritySelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FUserGroupFunctionSelector.resx">
+      <DependentUpon>f_FUserGroupFunctionSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\EapWizard\f_FSecsEapWizard.resx">
+      <DependentUpon>f_FSecsEapWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FPackageVersionFileViewer.resx">
+      <DependentUpon>f_FPackageVersionFileViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FPackageVersionSelector.resx">
+      <DependentUpon>f_FPackageVersionSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FModelVersionSelector.resx">
+      <DependentUpon>f_FModelVersionSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FComponentVersionSelector.resx">
+      <DependentUpon>f_FComponentVersionSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FCommentViewer.resx">
+      <DependentUpon>f_FCommentViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FEapClassSelector.resx">
+      <DependentUpon>f_FEapClassSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FPreconditionViewer.resx">
+      <DependentUpon>f_FPreconditionViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FTransactionProgress.resx">
+      <DependentUpon>f_FTransactionProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FValueTransformationViewer.resx">
+      <DependentUpon>f_FValueTransformationViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FValueViewer.resx">
+      <DependentUpon>f_FValueViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FEquipmentTypeSelector.resx">
+      <DependentUpon>f_FEquipmentTypeSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FEquipmentAreaSelector.resx">
+      <DependentUpon>f_FEquipmentAreaSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FEquipmentLineSelector.resx">
+      <DependentUpon>f_FEquipmentLineSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FEquipmentClassSelector.resx">
+      <DependentUpon>f_FEquipmentClassSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FServerResourceHistoryViewer.resx">
+      <DependentUpon>f_FServerResourceHistoryViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FOpcHostDriverSelector.resx">
+      <DependentUpon>f_FOpcHostDriverSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FEquipmentSelector.resx">
+      <DependentUpon>f_FEquipmentSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FEapSelector.resx">
+      <DependentUpon>f_FEapSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FUserSelector.resx">
+      <DependentUpon>f_FUserSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FPackageSelector.resx">
+      <DependentUpon>f_FPackageSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FModelSelector.resx">
+      <DependentUpon>f_FModelSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FComponentSelector.resx">
+      <DependentUpon>f_FComponentSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FTcpHostDriverSelector.resx">
+      <DependentUpon>f_FTcpHostDriverSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FSecs1ToHsmsConverterSelector.resx">
+      <DependentUpon>f_FSecs1ToHsmsConverterSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Help\f_FAbout.resx">
+      <DependentUpon>f_FAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FComponentList.resx">
+      <DependentUpon>f_FComponentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FComponentStatus.resx">
+      <DependentUpon>f_FComponentStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEapHistory.resx">
+      <DependentUpon>f_FEapHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEapList.resx">
+      <DependentUpon>f_FEapList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEapNeedActionList.resx">
+      <DependentUpon>f_FEapNeedActionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEquipmentGemStatus.resx">
+      <DependentUpon>f_FEquipmentGemStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEapResourceComparison.resx">
+      <DependentUpon>f_FEapResourceComparison.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEapResourceHistory.resx">
+      <DependentUpon>f_FEapResourceHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEapResourceList.resx">
+      <DependentUpon>f_FEapResourceList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEapStatus.resx">
+      <DependentUpon>f_FEapStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FAlarmStatus.resx">
+      <DependentUpon>f_FAlarmStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEquipmentHistory.resx">
+      <DependentUpon>f_FEquipmentHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEquipmentList.resx">
+      <DependentUpon>f_FEquipmentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEquipmentStatus.resx">
+      <DependentUpon>f_FEquipmentStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FModelList.resx">
+      <DependentUpon>f_FModelList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FModelStatus.resx">
+      <DependentUpon>f_FModelStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FNoticeHistory.resx">
+      <DependentUpon>f_FNoticeHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FPackageList.resx">
+      <DependentUpon>f_FPackageList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FPackageStatus.resx">
+      <DependentUpon>f_FPackageStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FRecentNotice.resx">
+      <DependentUpon>f_FRecentNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEapReferenceSheet.resx">
+      <DependentUpon>f_FEapReferenceSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FServerHistory.resx">
+      <DependentUpon>f_FServerHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FServerList.resx">
+      <DependentUpon>f_FServerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FServerResourceAnalysis.resx">
+      <DependentUpon>f_FServerResourceAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FServerResourceComparison.resx">
+      <DependentUpon>f_FServerResourceComparison.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FServerResourceHistory.resx">
+      <DependentUpon>f_FServerResourceHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FServerResourceList.resx">
+      <DependentUpon>f_FServerResourceList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FServerResourceStatus.resx">
+      <DependentUpon>f_FServerResourceStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FServerStatus.resx">
+      <DependentUpon>f_FServerStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FSystemCheckList.resx">
+      <DependentUpon>f_FSystemCheckList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FUserHistory.resx">
+      <DependentUpon>f_FUserHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEapRepositoryStatus.resx">
+      <DependentUpon>f_FEapRepositoryStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FIssueEventSummary.resx">
+      <DependentUpon>f_FIssueEventSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FServerIssueEventSummary.resx">
+      <DependentUpon>f_FServerIssueEventSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEapIssueEventSummary.resx">
+      <DependentUpon>f_FEapIssueEventSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEquipmentIssueEventSummary.resx">
+      <DependentUpon>f_FEquipmentIssueEventSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FServerIssueEventHistory.resx">
+      <DependentUpon>f_FServerIssueEventHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEapIssueEventHistory.resx">
+      <DependentUpon>f_FEapIssueEventHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEquipmentIssueEventHistory.resx">
+      <DependentUpon>f_FEquipmentIssueEventHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FServerIssueEventTotal.resx">
+      <DependentUpon>f_FServerIssueEventTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEapIssueEventTotal.resx">
+      <DependentUpon>f_FEapIssueEventTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FEquipmentIssueEventTotal.resx">
+      <DependentUpon>f_FEquipmentIssueEventTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FOverallIssueEventReport.resx">
+      <DependentUpon>f_FOverallIssueEventReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\RemoteCommand\f_FRemotePingTestByEquipment.resx">
+      <DependentUpon>f_FRemotePingTestByEquipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\RemoteCommand\f_FCustomRemoteCommandRequest.resx">
+      <DependentUpon>f_FCustomRemoteCommandRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\RemoteCommand\f_FEquipmentControlModeRequest.resx">
+      <DependentUpon>f_FEquipmentControlModeRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\RemoteCommand\f_FEquipmentEventDefineRequest.resx">
+      <DependentUpon>f_FEquipmentEventDefineRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\RemoteCommand\f_FEquipmentVersionRequest.resx">
+      <DependentUpon>f_FEquipmentVersionRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\RemoteCommand\f_FRemotePingTestByServer.resx">
+      <DependentUpon>f_FRemotePingTestByServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterBackupLogList.resx">
+      <DependentUpon>f_FSecs1ToHsmsConverterBackupLogList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterLogList.resx">
+      <DependentUpon>f_FSecs1ToHsmsConverterLogList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterHistory.resx">
+      <DependentUpon>f_FSecs1ToHsmsConverterHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterStatus.resx">
+      <DependentUpon>f_FSecs1ToHsmsConverterStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsEvent.resx">
+      <DependentUpon>f_FSecs1ToHsmsEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverter.resx">
+      <DependentUpon>f_FSecs1ToHsmsConverter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterList.resx">
+      <DependentUpon>f_FSecs1ToHsmsConverterList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterMonitor.resx">
+      <DependentUpon>f_FSecs1ToHsmsConverterMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Secs1ToHsms\f_FSecs1ToHsmsConverterLogViewer.resx">
+      <DependentUpon>f_FSecs1ToHsmsConverterLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FOpcModelUserTagName.resx">
+      <DependentUpon>f_FOpcModelUserTagName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FOpcModelObjectName.resx">
+      <DependentUpon>f_FOpcModelObjectName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FOpcModelFunctionName.resx">
+      <DependentUpon>f_FOpcModelFunctionName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FComponent.resx">
+      <DependentUpon>f_FComponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FCustomRemoteCommand.resx">
+      <DependentUpon>f_FCustomRemoteCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FEap.resx">
+      <DependentUpon>f_FEap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FEquipment.resx">
+      <DependentUpon>f_FEquipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FEquipmentArea.resx">
+      <DependentUpon>f_FEquipmentArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FEquipmentLine.resx">
+      <DependentUpon>f_FEquipmentLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FEquipmentType.resx">
+      <DependentUpon>f_FEquipmentType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FEvent.resx">
+      <DependentUpon>f_FEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FFactory.resx">
+      <DependentUpon>f_FFactory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FGeneralCode.resx">
+      <DependentUpon>f_FGeneralCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FHostDriver.resx">
+      <DependentUpon>f_FHostDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FInlineEquipment.resx">
+      <DependentUpon>f_FInlineEquipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FMaker.resx">
+      <DependentUpon>f_FMaker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FModel.resx">
+      <DependentUpon>f_FModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FModelSheet.resx">
+      <DependentUpon>f_FModelSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FNotice.resx">
+      <DependentUpon>f_FNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FPackage.resx">
+      <DependentUpon>f_FPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FSecsModelFunctionName.resx">
+      <DependentUpon>f_FSecsModelFunctionName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FSecsModelObjectName.resx">
+      <DependentUpon>f_FSecsModelObjectName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FSecsModelUserTagName.resx">
+      <DependentUpon>f_FSecsModelUserTagName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FServer.resx">
+      <DependentUpon>f_FServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FUser.resx">
+      <DependentUpon>f_FUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FUserGroup.resx">
+      <DependentUpon>f_FUserGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FUserGroupApplication.resx">
+      <DependentUpon>f_FUserGroupApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FTcpModelFunctionName.resx">
+      <DependentUpon>f_FTcpModelFunctionName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FTcpModelObjectName.resx">
+      <DependentUpon>f_FTcpModelObjectName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Setup\f_FTcpModelUserTagName.resx">
+      <DependentUpon>f_FTcpModelUserTagName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\System\f_FNotification.resx">
+      <DependentUpon>f_FNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\FileLogViewer\f_FFileLogViewer.resx">
+      <DependentUpon>f_FFileLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FIssueEventMonitor.resx">
+      <DependentUpon>f_FIssueEventMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\OpcLogViewer\f_FOpcTotalLogViewer.resx">
+      <DependentUpon>f_FOpcTotalLogViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\SecsLogViewer\f_FSecsInterfaceObjectLogViewer.resx">
+      <DependentUpon>f_FSecsInterfaceObjectLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\SecsLogViewer\f_FSecsTotalLogViewer.resx">
+      <DependentUpon>f_FSecsTotalLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\TcpLogViewer\f_FTcpTotalLogViewer.resx">
+      <DependentUpon>f_FTcpTotalLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Transaction\f_FEapLogLevelSetup.resx">
+      <DependentUpon>f_FEapLogLevelSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FTrsLogViewer.resx">
+      <DependentUpon>f_FTrsLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FAdminAgentOption.resx">
+      <DependentUpon>f_FAdminAgentOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FAdminAgentBackupLogList.resx">
+      <DependentUpon>f_FAdminAgentBackupLogList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FAdminAgentLogList.resx">
+      <DependentUpon>f_FAdminAgentLogList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FAdminServiceBackupLogList.resx">
+      <DependentUpon>f_FAdminServiceBackupLogList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FAdminServiceLogList.resx">
+      <DependentUpon>f_FAdminServiceLogList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FAlertServiceBackupLogList.resx">
+      <DependentUpon>f_FAlertServiceBackupLogList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FAlertServiceLogList.resx">
+      <DependentUpon>f_FAlertServiceLogList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FApplicationLogViewer.resx">
+      <DependentUpon>f_FApplicationLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FBinaryLogViewer.resx">
+      <DependentUpon>f_FBinaryLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FDebugLogViewer.resx">
+      <DependentUpon>f_FDebugLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FEapBackupLogList.resx">
+      <DependentUpon>f_FEapBackupLogList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FEapLogList.resx">
+      <DependentUpon>f_FEapLogList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FEapMonitor.resx">
+      <DependentUpon>f_FEapMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FEquipmentMonitor.resx">
+      <DependentUpon>f_FEquipmentMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Inquiry\f_FModelVersionSchema.resx">
+      <DependentUpon>f_FModelVersionSchema.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FSmlLogViewer.resx">
+      <DependentUpon>f_FSmlLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FVfeiLogViewer.resx">
+      <DependentUpon>f_FVfeiLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\OpcLogViewer\f_FOpcLogObjectViewer.resx">
+      <DependentUpon>f_FOpcLogObjectViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\OpcLogViewer\Prop\PropViewer\f_FPreconditionViewer.resx">
+      <DependentUpon>f_FPreconditionViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\OpcLogViewer\Prop\PropViewer\f_FValueTransformationViewer.resx">
+      <DependentUpon>f_FValueTransformationViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\OpcLogViewer\f_FOpcLogFilterSelector.resx">
+      <DependentUpon>f_FOpcLogFilterSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\SecsLogViewer\f_FSecsLogFilterSelector.resx">
+      <DependentUpon>f_FSecsLogFilterSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FEapLogViewer.resx">
+      <DependentUpon>f_FEapLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\TcpLogViewer\f_FTcpLogFilterSelector.resx">
+      <DependentUpon>f_FTcpLogFilterSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\TcpLogViewer\Prop\PropAttr\PropViewer\f_FPreconditionViewer.resx">
+      <DependentUpon>f_FPreconditionViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\TcpLogViewer\Prop\PropAttr\PropViewer\f_FValueTransformationViewer.resx">
+      <DependentUpon>f_FValueTransformationViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Tool\f_FXlgLogViewer.resx">
+      <DependentUpon>f_FXlgLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Transaction\f_FEapAbort.resx">
+      <DependentUpon>f_FEapAbort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Transaction\f_FEapBatchModification.resx">
+      <DependentUpon>f_FEapBatchModification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Transaction\f_FEapMove.resx">
+      <DependentUpon>f_FEapMove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Transaction\f_FEapRelease.resx">
+      <DependentUpon>f_FEapRelease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Transaction\f_FEapReload.resx">
+      <DependentUpon>f_FEapReload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Transaction\f_FEapRestart.resx">
+      <DependentUpon>f_FEapRestart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Transaction\f_FEapStart.resx">
+      <DependentUpon>f_FEapStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Transaction\f_FEapStop.resx">
+      <DependentUpon>f_FEapStop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Transaction\f_FServerBackupSwitch.resx">
+      <DependentUpon>f_FServerBackupSwitch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Transaction\f_FServerMainSwitch.resx">
+      <DependentUpon>f_FServerMainSwitch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm\Window\f_FFormSelector.resx">
+      <DependentUpon>f_FFormSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\f_FAdmContainer.resx">
+      <DependentUpon>f_FAdmContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FCommentEditor.resx">
+      <DependentUpon>f_FCommentEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FServerSelector.resx">
+      <DependentUpon>f_FServerSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FPackageVersionFileSelector.resx">
+      <DependentUpon>f_FPackageVersionFileSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\f_FUserGroupSelector.resx">
+      <DependentUpon>f_FUserGroupSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\FileAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainForm\Setup\FileDelete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu\ViewAdminServiceLogList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolCheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolExport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIForm_TitleMaximizeHotTrack.png" />
+    <None Include="Resources\MainForm\Setup\UserGroupApplication.png" />
+    <None Include="Resources\MainForm\Setup\UserGroupFunction.png" />
+    <None Include="Resources\MainForm\Setup\AppendFunction.png" />
+    <None Include="Resources\MainForm\Tool\SecsLogView\EquipmentStateSetAltererPerformedLog.png" />
+    <None Include="Resources\MainForm\Tool\SecsLogView\PauserRaisedLog.png" />
+    <None Include="Resources\MainForm\Setup\EquipmentEvent.png" />
+    <None Include="Resources\MainForm\Setup\SmdUserTagNameList.png" />
+    <None Include="Resources\MainForm\RemoteCommand\RemoveEquipment.png" />
+    <None Include="Resources\MainForm\RemoteCommand\RemoveAllEquipment.png" />
+    <None Include="Resources\MainForm\Setup\EquipmentType.png" />
+    <None Include="Resources\MainForm\RemoteCommand\AppendServer.png" />
+    <None Include="Resources\MainForm\RemoteCommand\RemoveAllServer.png" />
+    <None Include="Resources\MainForm\RemoteCommand\RemoveServer.png" />
+    <None Include="Resources\MainForm\Inquiry\Eap_Plc_Backup_Alarm.png" />
+    <None Include="Resources\MainForm\Inquiry\Eap_Plc_Backup_Down.png" />
+    <None Include="Resources\MainForm\Inquiry\Eap_Plc_Backup_Up.png" />
+    <None Include="Resources\MainForm\Inquiry\Eap_Plc_Main_Alarm.png" />
+    <None Include="Resources\MainForm\Inquiry\Eap_Plc_Main_Down.png" />
+    <None Include="Resources\MainForm\Inquiry\Eap_Plc_Main_Up.png" />
+    <None Include="Resources\HostDeviceLog.png" />
+    <None Include="Resources\HdvStateChangedLog.png" />
+    <None Include="Resources\MainForm\Inquiry\Eap_Opc_Backup_Alarm.png" />
+    <None Include="Resources\MainForm\Inquiry\Eap_Opc_Backup_Down.png" />
+    <None Include="Resources\MainForm\Inquiry\Eap_Opc_Backup_Up.png" />
+    <None Include="Resources\MainForm\Inquiry\Eap_Opc_Main_Alarm.png" />
+    <None Include="Resources\MainForm\Inquiry\Eap_Opc_Main_Down.png" />
+    <None Include="Resources\MainForm\Inquiry\Eap_Opc_Main_Up.png" />
+    <None Include="Resources\MainForm\Inquiry\Eap_Tcp_Backup_Alarm.png" />
+    <None Include="Resources\MainForm\Inquiry\Eap_Tcp_Backup_Down.png" />
+    <None Include="Resources\MainForm\Inquiry\Eap_Tcp_Backup_Up.png" />
+    <None Include="Resources\MainForm\Inquiry\Eap_Tcp_Main_Alarm.png" />
+    <None Include="Resources\MainForm\Inquiry\Eap_Tcp_Main_Down.png" />
+    <None Include="Resources\MainForm\Inquiry\Eap_Tcp_Main_Up.png" />
+    <Content Include="Resources\MainForm\Inquiry\OpcDevice.png" />
+    <Content Include="Resources\MainForm\Inquiry\OpcDevice_Closed.png" />
+    <Content Include="Resources\MainForm\Inquiry\OpcDevice_Connected.png" />
+    <None Include="Resources\MainForm\Inquiry\OpcDevice_Error.png" />
+    <Content Include="Resources\MainForm\Inquiry\OpcDevice_Opened.png" />
+    <Content Include="Resources\MainForm\Inquiry\OpcDevice_Selected.png" />
+    <Content Include="Resources\MainForm\Inquiry\OpcDevice_Unknown.png" />
+    <None Include="Resources\MainForm\Inquiry\OpcDriver.png" />
+    <Content Include="Resources\MainForm\Inquiry\OpcSession.png" />
+    <Content Include="Resources\MainForm\Inquiry\PlcDevice_Unknown.png" />
+    <Content Include="Resources\MainForm\Inquiry\PlcDevice.png" />
+    <Content Include="Resources\MainForm\Inquiry\PlcDevice_Closed.png" />
+    <Content Include="Resources\MainForm\Inquiry\PlcDevice_Connected.png" />
+    <Content Include="Resources\MainForm\Inquiry\PlcDevice_Opened.png" />
+    <Content Include="Resources\MainForm\Inquiry\PlcDevice_Selected.png" />
+    <None Include="Resources\MainForm\Inquiry\PlcDriver.png" />
+    <Content Include="Resources\MainForm\Inquiry\PlcSession.png" />
+    <Content Include="Resources\MainForm\Inquiry\Eap_Process_Backup_Alarm.png" />
+    <Content Include="Resources\MainForm\Inquiry\Eap_Process_Backup_Down.png" />
+    <Content Include="Resources\MainForm\Inquiry\Eap_Process_Backup_Up.png" />
+    <Content Include="Resources\MainForm\Inquiry\Eap_Process_Main_Alarm.png" />
+    <Content Include="Resources\MainForm\Inquiry\Eap_Process_Main_Down.png" />
+    <Content Include="Resources\MainForm\Inquiry\Eap_Process_Main_Up.png" />
+    <None Include="Resources\MainForm\Inquiry\TcpDevice.png" />
+    <None Include="Resources\MainForm\Inquiry\TcpDevice_Closed.png" />
+    <None Include="Resources\MainForm\Inquiry\TcpDevice_Connected.png" />
+    <None Include="Resources\MainForm\Inquiry\TcpDevice_Opened.png" />
+    <None Include="Resources\MainForm\Inquiry\TcpDevice_Selected.png" />
+    <None Include="Resources\MainForm\Inquiry\TcpDevice_Unknown.png" />
+    <None Include="Resources\MainForm\Inquiry\TcpDriver.png" />
+    <None Include="Resources\MainForm\Inquiry\TcpSession.png" />
+    <Content Include="Resources\MainForm\Setup\AppendEvent.png" />
+    <None Include="Resources\MainForm\Setup\EquipmentArea.png" />
+    <None Include="Resources\MainForm\Setup\EquipmentLine.png" />
+    <None Include="Resources\MainForm\Setup\PmdFunctionName.png" />
+    <None Include="Resources\MainForm\Setup\PmdFunctionNameList.png" />
+    <None Include="Resources\MainForm\Setup\PmdObjectName.png" />
+    <None Include="Resources\MainForm\Setup\PmdObjectNameList.png" />
+    <None Include="Resources\MainForm\Setup\PmdParameterName.png" />
+    <None Include="Resources\MainForm\Setup\PmdUserTagName.png" />
+    <None Include="Resources\MainForm\Setup\PmdUserTagNameList.png" />
+    <None Include="Resources\MainForm\Setup\PmdArgument.png" />
+    <None Include="Resources\MainForm\Setup\Component_Plc.png" />
+    <None Include="Resources\MainForm\Setup\Component_Secs.png" />
+    <None Include="Resources\MainForm\Setup\ComponentVersion_Secs.png" />
+    <None Include="Resources\MainForm\Setup\ComponentVersion_Plc.png" />
+    <None Include="Resources\MainForm\Setup\Model_Opc.png" />
+    <None Include="Resources\MainForm\Setup\ModelVersion_Opc.png" />
+    <None Include="Resources\MainForm\Setup\Eap_Opc.png" />
+    <None Include="Resources\MainForm\Setup\ComponentVersion_Opc.png" />
+    <None Include="Resources\MainForm\Setup\Component_Opc.png" />
+    <None Include="Resources\MainForm\Setup\Package_Opc.png" />
+    <None Include="Resources\MainForm\Setup\PackageVersion_Opc.png" />
+    <None Include="Resources\MainForm\Setup\OmdArgument.png" />
+    <None Include="Resources\MainForm\Setup\OmdFunctionName.png" />
+    <None Include="Resources\MainForm\Setup\OmdFunctionNameList.png" />
+    <None Include="Resources\MainForm\Setup\OmdObjectName.png" />
+    <None Include="Resources\MainForm\Setup\OmdObjectNameList.png" />
+    <None Include="Resources\MainForm\Setup\OmdParameterName.png" />
+    <None Include="Resources\MainForm\Setup\OmdUserTagName.png" />
+    <None Include="Resources\MainForm\Setup\OmdUserTagNameList.png" />
+    <None Include="Resources\MainForm\Setup\Component_Tcp.png" />
+    <None Include="Resources\MainForm\Setup\ComponentVersion_Tcp.png" />
+    <Content Include="Resources\MainForm\Setup\CopyUserGroup.png" />
+    <None Include="Resources\MainForm\Setup\Package_Plc.png" />
+    <None Include="Resources\MainForm\Setup\Package_Secs.png" />
+    <None Include="Resources\MainForm\Setup\PackageVersion_Plc.png" />
+    <None Include="Resources\MainForm\Setup\PackageVersion_Secs.png" />
+    <None Include="Resources\MainForm\Setup\Eap_Plc.png" />
+    <None Include="Resources\MainForm\Setup\Eap_Secs.png" />
+    <None Include="Resources\MainForm\Setup\Model_Plc.png" />
+    <None Include="Resources\MainForm\Setup\Model_Secs.png" />
+    <None Include="Resources\MainForm\Setup\ModelVersion_Plc.png" />
+    <None Include="Resources\MainForm\Setup\ModelVersion_Secs.png" />
+    <None Include="Resources\MainForm\Setup\EquipmentCommand.png" />
+    <None Include="Resources\MainForm\Setup\Eap_Tcp.png" />
+    <Content Include="Resources\MainForm\Setup\FunctionName_Plc.png" />
+    <Content Include="Resources\MainForm\Setup\FunctionName_Secs.png" />
+    <None Include="Resources\MainForm\Setup\ModelManual.png" />
+    <None Include="Resources\MainForm\Setup\Model_Tcp.png" />
+    <None Include="Resources\MainForm\Setup\ModelVersion_Tcp.png" />
+    <None Include="Resources\MainForm\Setup\Package_Tcp.png" />
+    <None Include="Resources\MainForm\Setup\PackageVersion_Tcp.png" />
+    <Content Include="Resources\MainForm\Setup\RemoveEvent.png" />
+    <Content Include="Resources\MainForm\Setup\RemoveFunction.png" />
+    <Content Include="Resources\MainForm\RemoteCommand\AppendEquipment.png" />
+    <None Include="Resources\MainForm\Setup\System.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PdvStateChangedLog_Selected.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PdvStateChangedLog_Closed.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PdvStateChangedLog_Connected.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PdvStateChangedLog_Opened.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PdvDataMessageWrittenLog_Primary.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PdvDataMessageWrittenLog_Secondary.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PdvErrorRaisedLog.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PdvTimeoutRaisedLog.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PlcBitListLog.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PlcBitLog.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PlcDriverLog.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PdvDataMessageReadLog_Primary.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PdvDataMessageReadLog_Secondary.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PlcWordListLog.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PlcWordLog.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PdvDataReceivedLog.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PdvDataSentLog.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PlcTransmitterRaisedLog.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PlcTriggerRaisedLog.png" />
+    <None Include="Resources\MainForm\Setup\Eap_Process.png" />
+    <None Include="Resources\MainForm\Setup\TmdArgument.png" />
+    <None Include="Resources\MainForm\Setup\TmdFunctionName.png" />
+    <None Include="Resources\MainForm\Setup\TmdFunctionNameList.png" />
+    <None Include="Resources\MainForm\Setup\TmdObjectName.png" />
+    <None Include="Resources\MainForm\Setup\TmdObjectNameList.png" />
+    <None Include="Resources\MainForm\Setup\TmdParameterName.png" />
+    <None Include="Resources\MainForm\Setup\TmdUserTagName.png" />
+    <None Include="Resources\MainForm\Setup\TmdUserTagNameList.png" />
+    <Content Include="Resources\MainForm\Tool\File_Dll.png" />
+    <None Include="Resources\MainMenu\SetupMaker.png" />
+    <None Include="Resources\MainMenu\SetupCustomRemoteCommand.png" />
+    <None Include="Resources\MainMenu\TrnEapBatchModification.png" />
+    <None Include="Resources\MainForm\Tool\File_Psl.png" />
+    <None Include="Resources\MainForm\Tool\SecsLogView\EntryPointCalledLog.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OpcLogFilter.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OdvDataMessageReadLog.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OdvDataMessageReadLog_Primary.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OdvDataMessageReadLog_Secondary.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OdvDataMessageWrittenLog.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OdvDataMessageWrittenLog_Primary.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OdvDataMessageWrittenLog_Secondary.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OdvErrorRaisedLog.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OdvStateChangedLog.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OdvStateChangedLog_Closed.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OdvStateChangedLog_Connected.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OdvStateChangedLog_Opened.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OdvStateChangedLog_Selected.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OdvTimeoutRaisedLog.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OpcEventItemListLog.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OpcEventItemLog.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OpcDeviceLog.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OpcDriverLog.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OpcTransmitterRaisedLog.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OpcTriggerRaisedLog.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OpcItemListLog.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OpcItemLog.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\Log_host_disable_16.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\Log_host_enable_16.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\Log_scenario_disable_16.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\Log_scenario_enable_16.png" />
+    <None Include="Resources\MainForm\Tool\SecsLogView\ApplicationLogDisable.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\Log_object_view.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\HashTag_16.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\Log_opc_enable_16.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\Log_uncheck_all_16.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\Log_check_all_16.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\Log_opc_disable_16.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\Log_export_trs_16.png" />
+    <None Include="Resources\MainForm\Tool\OpcLogViewer\OdvStateChangedLog_Error.png" />
+    <None Include="Resources\MainForm\Tool\File_Tsl.png" />
+    <None Include="Resources\MainForm\Tool\File_Xlg.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\EquipmentStateAltererLog.png" />
+    <None Include="Resources\MainMenu\RcmdCustomRemoteCommandRequest.png" />
+    <None Include="Resources\MainMenu\TolAlertServiceOption.png" />
+    <None Include="Resources\MainMenu\SetupEquipmentType.png" />
+    <None Include="Resources\MainForm\Tool\File_Osl.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TcpDeviceLog.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TcpDriverLog.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TcpItemLog.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TcpItemLog_List.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TcpLogAll.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TcpLogFilter.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TcpTransmitterRaisedLog.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TcpTriggerRaisedLog.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvDataMessageReceivedLog.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvDataMessageReceivedLog_Command.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvDataMessageReceivedLog_Reply.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvDataMessageReceivedLog_Unsolicited.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvDataMessageSentLog.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvDataMessageSentLog_Command.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvDataMessageSentLog_Reply.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvDataMessageSentLog_Unsolicited.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvErrorRaisedLog.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvSmlReceivedLog.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvSmlSentLog.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvStateChangedLog.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvStateChangedLog_Closed.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvStateChangedLog_Connected.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvStateChangedLog_Opened.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvStateChangedLog_Selected.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvTimeoutRaisedLog.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvDataReceivedLog.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\TdvDataSentLog.png" />
+    <None Include="Resources\MainForm\Tool\TcpLogView\ConvertToXlg.png" />
+    <None Include="Resources\MainForm\Tool\ToolNext.png" />
+    <None Include="Resources\MainForm\Tool\ToolPrevious.png" />
+    <None Include="Resources\MainMenu\FileOpen.png" />
+    <Content Include="Resources\MainMenu\SetupOmdFunctionName.png" />
+    <Content Include="Resources\MainMenu\SetupOmdObjectName.png" />
+    <Content Include="Resources\MainMenu\SetupOmdUserTagName.png" />
+    <Content Include="Resources\MainMenu\InqNoticeHistory.png" />
+    <Content Include="Resources\MainMenu\InqRecentNotice.png" />
+    <Content Include="Resources\MainMenu\SetupNotice.png" />
+    <Content Include="Resources\MainMenu\SetupPmdFunctionName.png" />
+    <Content Include="Resources\MainMenu\SetupPmdObjectName.png" />
+    <Content Include="Resources\MainMenu\SetupPmdUserTagName.png" />
+    <Content Include="Resources\MainMenu\InqEapResourceComparison.png" />
+    <Content Include="Resources\MainMenu\InqEapResourceHistory.png" />
+    <Content Include="Resources\MainMenu\InqEapResourceList.png" />
+    <Content Include="Resources\MainMenu\InqServerResourceAnalysis.png" />
+    <Content Include="Resources\MainMenu\InqServerResourceComparison.png" />
+    <Content Include="Resources\MainMenu\InqServerResourceHistory.png" />
+    <Content Include="Resources\MainMenu\InqServerResourceList.png" />
+    <Content Include="Resources\MainMenu\InqServerResourceStatus.png" />
+    <Content Include="Resources\MainMenu\InqSystemCheckList.png" />
+    <Content Include="Resources\MainMenu\MonEquipment.png" />
+    <Content Include="Resources\MainMenu\MonEap.png" />
+    <Content Include="Resources\MainMenu\SetupEquipment.png" />
+    <Content Include="Resources\MainMenu\SetupEquipmentArea.png" />
+    <Content Include="Resources\MainMenu\SetupEquipmentLine.png" />
+    <Content Include="Resources\MainMenu\SetupEvent.png" />
+    <None Include="Resources\MainMenu\TrnAlarmClear.png" />
+    <None Include="Resources\MainMenu\SetupTmdFunctionName.png" />
+    <None Include="Resources\MainMenu\SetupTmdObjectName.png" />
+    <None Include="Resources\MainMenu\SetupTmdUserTagName.png" />
+    <Content Include="Resources\MainMenu\TrnEapReload.png" />
+    <Content Include="Resources\MainMenu\TrnEapMove.png" />
+    <None Include="Resources\MainMenu\TrnServerBackupSwitch.png" />
+    <None Include="Resources\MainMenu\TrnServerMainSwitch.png" />
+    <None Include="Resources\MainMenu\ViewAlertServiceBackupLogList.png" />
+    <None Include="Resources\MainMenu\ViewAlertServiceLogList.png" />
+    <None Include="Resources\MainToolbar\SetupPmdFunctionName_22.png" />
+    <None Include="Resources\MainToolbar\SetupPmdObjectName_22.png" />
+    <None Include="Resources\MainToolbar\SetupPmdUserTagName_22.png" />
+    <None Include="Resources\MainToolbar\SetupOmdFunctionName_22.png" />
+    <None Include="Resources\MainToolbar\SetupOmdObjectName_22.png" />
+    <None Include="Resources\MainToolbar\SetupOmdUserTagName_22.png" />
+    <Content Include="Resources\MainToolbar\InqEapResourceComparison_22.png" />
+    <Content Include="Resources\MainToolbar\InqEapResourceHistory_22.png" />
+    <Content Include="Resources\MainToolbar\InqEapResourceList_22.png" />
+    <Content Include="Resources\MainToolbar\InqEquipmentAlarmHistory_22.png" />
+    <Content Include="Resources\MainToolbar\InqEquipmentAlarmStatus_22.png" />
+    <Content Include="Resources\MainToolbar\InqEquipmentHistory_22.png" />
+    <Content Include="Resources\MainToolbar\InqEquipmentList_22.png" />
+    <Content Include="Resources\MainToolbar\InqEquipmentStatus_22.png" />
+    <Content Include="Resources\MainToolbar\InqNoticeHistory_22.png" />
+    <Content Include="Resources\MainToolbar\InqRecentNotice_22.png" />
+    <Content Include="Resources\MainToolbar\InqServerResourceAnalysis_22.png" />
+    <Content Include="Resources\MainToolbar\InqServerResourceComparison_22.png" />
+    <Content Include="Resources\MainToolbar\InqServerResourceHistory_22.png" />
+    <Content Include="Resources\MainToolbar\InqServerResourceList_22.png" />
+    <Content Include="Resources\MainToolbar\InqServerResourceStatus_22.png" />
+    <Content Include="Resources\MainToolbar\InqSystemCheckList_22.png" />
+    <None Include="Resources\MainToolbar\log_host_disable_24.png" />
+    <None Include="Resources\MainToolbar\log_host_enable_24.png" />
+    <None Include="Resources\MainToolbar\log_scenario_disable_24.png" />
+    <None Include="Resources\MainToolbar\log_scenario_enable_24.png" />
+    <Content Include="Resources\MainToolbar\MonEap_22.png" />
+    <Content Include="Resources\MainToolbar\MonEquipment_22.png" />
+    <None Include="Resources\MainToolbar\SetupEquipmentTypeState_22.png" />
+    <None Include="Resources\MainToolbar\SetupEquipmentTypeAlarm_22.png" />
+    <None Include="Resources\MainToolbar\SetupCustomRemoteCommand_22.png" />
+    <None Include="Resources\MainToolbar\SetupEquipmentType_22.png" />
+    <None Include="Resources\MainToolbar\SetupEquipmentArea_22.png" />
+    <None Include="Resources\MainToolbar\SetupEquipmentLine_22.png" />
+    <None Include="Resources\MainToolbar\SetupEquipmentTypeSensor_22.png" />
+    <Content Include="Resources\MainToolbar\RcmdCustomRemoteCommandRequest_22.png" />
+    <Content Include="Resources\MainToolbar\RcmdEquipmentControlModeRequest_22.png" />
+    <Content Include="Resources\MainToolbar\RcmdEquipmentEventDefineRequest_22.png" />
+    <Content Include="Resources\MainToolbar\RcmdEquipmentVersionRequest_22.png" />
+    <Content Include="Resources\MainToolbar\RcmdRemotePingTest_22.png" />
+    <Content Include="Resources\MainToolbar\SetupEquipment_22.png" />
+    <None Include="Resources\MainToolbar\SetupMaker_22.png" />
+    <None Include="Resources\MainToolbar\TrnEapBatchModification_22.png" />
+    <None Include="Resources\MainToolbar\TolAlertServiceOption_22.png" />
+    <Content Include="Resources\MainToolbar\SetupEvent_22.png" />
+    <Content Include="Resources\MainToolbar\SetupNotice_22.png" />
+    <None Include="Resources\MainToolbar\TrnAlarmClear_22.png" />
+    <None Include="Resources\MainToolbar\SetupTmdFunctionName_22.png" />
+    <None Include="Resources\MainToolbar\SetupTmdObjectName_22.png" />
+    <None Include="Resources\MainToolbar\SetupTmdUserTagName_22.png" />
+    <Content Include="Resources\MainToolbar\TrnEapMove_22.png" />
+    <None Include="Resources\MainToolbar\TrnEapReload_22.png" />
+    <None Include="Resources\MainToolbar\TrnServerMainSwitch_22.png" />
+    <None Include="Resources\MainToolbar\TrnServerBackupSwitch_22.png" />
+    <None Include="Resources\MainToolbar\ViewAlertServiceLogList_22.png" />
+    <None Include="Resources\MainToolbar\ViewAlertServiceBackupLogList_22.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PlcDeviceLog.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PdvStateChangedLog.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PdvDataMessageReadLog.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PdvDataMessageWrittenLog.png" />
+    <None Include="Resources\MainForm\Tool\PlcLogViewer\PlcLogFilter.png" />
+    <None Include="Resources\ToolMoveDown.png" />
+    <None Include="Resources\ToolMoveUp.png" />
+    <None Include="Resources\S2HCvt2.png" />
+    <None Include="Resources\S2HCvt1.png" />
+    <None Include="Resources\S2HCvt.png" />
+    <None Include="Resources\S2HEvent.png" />
+    <None Include="Resources\S2HCvtList.png" />
+    <None Include="Resources\S2HCvtHistory.png" />
+    <None Include="Resources\S2HCvtStatus.png" />
+    <None Include="Resources\S2HCvt_Down.png" />
+    <None Include="Resources\S2HCvt_Up.png" />
+    <None Include="Resources\S2HCvt_Alarm.png" />
+    <None Include="Resources\S2HCvtMonitor.png" />
+    <None Include="Resources\S2HCvtLogList.png" />
+    <None Include="Resources\S2HCvtBackupLogList.png" />
+    <None Include="Resources\ToolClear.png" />
+    <None Include="Resources\ScreenLock.png" />
+    <Content Include="Resources\ToolRefreshAll.png" />
+    <Content Include="Resources\ToolRefreshTimer.png" />
+    <Content Include="Resources\FAdmContainer.png" />
+    <Content Include="Resources\Icon\FSetup.ico" />
+    <Content Include="Resources\Icon\FRemoteCommand.ico" />
+    <Content Include="Resources\MainForm\Help\FAbout_AdminManager.png" />
+    <None Include="Resources\MainForm\Setup\SmdObjectName.png" />
+    <None Include="Resources\MainForm\Setup\SmdObjectNameList.png" />
+    <None Include="Resources\MainForm\Setup\SmdArgument.png" />
+    <None Include="Resources\MainForm\Setup\SmdFunctionName.png" />
+    <None Include="Resources\MainForm\Setup\SmdFunctionNameList.png" />
+    <None Include="Resources\MainForm\Setup\SmdParameterName.png" />
+    <None Include="Resources\MainForm\Setup\Event.png" />
+    <None Include="Resources\MainForm\Setup\Maker.png" />
+    <None Include="Resources\MainForm\Setup\Command.png" />
+    <None Include="Resources\MainForm\Setup\SmdUserTagName.png" />
+    <Content Include="Resources\MainForm\Transaction\Trn_Result_Skip.png" />
+    <Content Include="Resources\MainForm\Transaction\Trn_Target.png" />
+    <Content Include="Resources\MainForm\Transaction\Trn_Result_Cancel.png" />
+    <Content Include="Resources\MainForm\Transaction\Trn_Result_Success.png" />
+    <Content Include="Resources\MainForm\RemoteCommand\RemoveAllEap.png" />
+    <None Include="Resources\MainForm\Transaction\Trn_Result_Fail.png" />
+    <Content Include="Resources\MainForm\Inquiry\EnvironmentList.png" />
+    <Content Include="Resources\MainForm\Inquiry\Environment_List.png" />
+    <Content Include="Resources\MainForm\Inquiry\Environment.png" />
+    <Content Include="Resources\MainForm\Tool\History.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\ColumnLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\ColumnLog_List.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\RepositoryLog.png" />
+    <Content Include="Resources\MainMenu\InqEapHistory.png" />
+    <Content Include="Resources\MainMenu\InqEquipmentAlarmHistory.png" />
+    <Content Include="Resources\MainMenu\InqEquipmentAlarmStatus.png" />
+    <Content Include="Resources\MainMenu\InqEquipmentHistory.png" />
+    <Content Include="Resources\MainMenu\InqEquipmentList.png" />
+    <Content Include="Resources\MainMenu\InqEquipmentStatus.png" />
+    <Content Include="Resources\MainMenu\RcmdRemotePingTest.png" />
+    <Content Include="Resources\MainMenu\RcmdEquipmentControlModeRequest.png" />
+    <Content Include="Resources\MainMenu\RcmdEquipmentVersionRequest.png" />
+    <Content Include="Resources\MainMenu\RcmdEquipmentEventDefineRequest.png" />
+    <Content Include="Resources\MainMenu\SetupSmdFunctionName.png" />
+    <Content Include="Resources\MainMenu\SetupSmdObjectName.png" />
+    <Content Include="Resources\MainMenu\SetupUserGroupApplication.png" />
+    <Content Include="Resources\MainMenu\SetupSmdUserTagName.png" />
+    <Content Include="Resources\MainToolbar\InqEapHistory_22.png" />
+    <None Include="Resources\MainToolbar\SetupSmdFunctionName_22.png" />
+    <None Include="Resources\MainToolbar\SetupSmdObjectName_22.png" />
+    <None Include="Resources\MainToolbar\SetupSmdUserTagName_22.png" />
+    <Content Include="Resources\MainToolbar\SetupUserGroupApplication_22.png" />
+    <Content Include="Resources\ToolRemoveAll.png" />
+    <None Include="Resources\MainMenu\ViewLog.png" />
+    <None Include="Resources\ToolRefresh.png" />
+    <None Include="Resources\MainForm\Tool\FExplorerbar_Item.png" />
+    <None Include="Resources\MainForm\Tool\FExplorerbar_Item_Checked.png" />
+    <Content Include="Resources\MainForm\Inquiry\Eap_Secs_Backup_Alarm.png" />
+    <Content Include="Resources\MainForm\Inquiry\Eap_Secs_Main_Alarm.png" />
+    <Content Include="Resources\MainForm\Inquiry\Equipment_Offline.png" />
+    <Content Include="Resources\MainForm\Inquiry\Equipment_OnlineLocal.png" />
+    <Content Include="Resources\MainForm\Inquiry\Equipment_OnlineRemote.png" />
+    <Content Include="Resources\MainForm\Inquiry\Equipment_Unknown.png" />
+    <Content Include="Resources\MainForm\Inquiry\HostDevice_Unknown.png" />
+    <Content Include="Resources\MainForm\Inquiry\SecsDevice_Unknown.png" />
+    <Content Include="Resources\MainForm\Inquiry\Server_Backup_Alarm.png" />
+    <Content Include="Resources\MainForm\Inquiry\Server_Main_Alarm.png" />
+    <Content Include="Resources\MainForm\Setup\ComponentVersion.png" />
+    <Content Include="Resources\MainForm\Inquiry\EapAttrCategory.png" />
+    <Content Include="Resources\MainForm\Setup\Component.png" />
+    <Content Include="Resources\MainForm\Setup\Eap.png" />
+    <None Include="Resources\MainForm\Setup\EapGroup.png" />
+    <None Include="Resources\MainForm\Setup\EapLine.png" />
+    <Content Include="Resources\MainForm\Inquiry\Eap_Secs_Backup_Down.png" />
+    <Content Include="Resources\MainForm\Inquiry\Eap_Secs_Backup_Up.png" />
+    <Content Include="Resources\MainForm\Inquiry\Eap_Secs_Main_Down.png" />
+    <Content Include="Resources\MainForm\Inquiry\Eap_Secs_Main_Up.png" />
+    <Content Include="Resources\MainForm\Setup\EapEvent.png" />
+    <Content Include="Resources\MainForm\Setup\Factory.png" />
+    <Content Include="Resources\MainForm\Setup\HostDriver.png" />
+    <Content Include="Resources\MainForm\Setup\ServerEvent.png" />
+    <None Include="Resources\MainMenu\HelpAbout.png" />
+    <None Include="Resources\MainForm\Tool\SecsLogView\ApplicationLog.png" />
+    <Content Include="Resources\MainForm\RemoteCommand\AppendEap.png" />
+    <Content Include="Resources\MainForm\RemoteCommand\RemoveEap.png" />
+    <Content Include="Resources\MainForm\Tool\File_Bng.png" />
+    <Content Include="Resources\MainForm\Tool\File_Sml.png" />
+    <Content Include="Resources\MainForm\Tool\File_Ssl.png" />
+    <Content Include="Resources\MainForm\Tool\File_Vfe.png" />
+    <Content Include="Resources\MainForm\Tool\File_Zip.png" />
+    <Content Include="Resources\MainForm\Tool\Log.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\ApplicationWritedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\BranchRaisedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\CallbackRaisedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\CommentWritedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\ContentLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\ContentLog_List.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\ConvertToSml.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\ConvertToVfei.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\DataLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\DataLog_List.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\DataSetLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\FunctionCalledLog.png" />
+    <None Include="Resources\MainForm\Tool\HdvDataMessageReceivedLog.png" />
+    <Content Include="Resources\MainForm\Tool\HdvDataMessageReceivedLog_Command.png" />
+    <Content Include="Resources\MainForm\Tool\HdvDataMessageReceivedLog_Reply.png" />
+    <Content Include="Resources\MainForm\Tool\HdvDataMessageReceivedLog_Unsolicited.png" />
+    <None Include="Resources\MainForm\Tool\HdvDataMessageSentLog.png" />
+    <Content Include="Resources\MainForm\Tool\HdvDataMessageSentLog_Command.png" />
+    <Content Include="Resources\MainForm\Tool\HdvDataMessageSentLog_Reply.png" />
+    <Content Include="Resources\MainForm\Tool\HdvDataMessageSentLog_Unsolicited.png" />
+    <Content Include="Resources\MainForm\Tool\HdvErrorRaisedLog.png" />
+    <None Include="Resources\MainForm\Tool\HdvStateChangedLog.png" />
+    <Content Include="Resources\MainForm\Tool\HdvStateChangedLog_Closed.png" />
+    <Content Include="Resources\MainForm\Tool\HdvStateChangedLog_Connected.png" />
+    <Content Include="Resources\MainForm\Tool\HdvStateChangedLog_Opened.png" />
+    <Content Include="Resources\MainForm\Tool\HdvStateChangedLog_Selected.png" />
+    <Content Include="Resources\MainForm\Tool\HdvVfeiReceivedLog.png" />
+    <Content Include="Resources\MainForm\Tool\HdvVfeiSentLog.png" />
+    <None Include="Resources\MainForm\Tool\HostDeviceLog.png" />
+    <Content Include="Resources\MainForm\Tool\HostItemLog.png" />
+    <Content Include="Resources\MainForm\Tool\HostItemLog_List.png" />
+    <Content Include="Resources\MainForm\Tool\HostTransmitterRaisedLog.png" />
+    <Content Include="Resources\MainForm\Tool\HostTriggerRaisedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\JudgementPerformedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\MapperPerformedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\Result_Error.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\Result_Warning.png" />
+    <None Include="Resources\MainForm\Tool\SecsLogView\ScenarioLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvBlockReceivedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvBlockSentLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvControlMessageReceivedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvControlMessageSentLog.png" />
+    <None Include="Resources\MainForm\Tool\SecsLogView\SdvDataMessageReceivedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvDataMessageReceivedLog_Primary.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvDataMessageReceivedLog_Secondary.png" />
+    <None Include="Resources\MainForm\Tool\SecsLogView\SdvDataMessageSentLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvDataMessageSentLog_Primary.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvDataMessageSentLog_Secondary.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvDataReceivedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvDataSentLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvErrorRaisedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvHandshakeReceivedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvHandshakeSentLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvSmlReceivedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvSmlSentLog.png" />
+    <None Include="Resources\MainForm\Tool\SecsLogView\SdvStateChangedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvStateChangedLog_Closed.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvStateChangedLog_Connected.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvStateChangedLog_Opened.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvStateChangedLog_Selected.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvTelnetPacketReceivedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvTelnetPacketSentLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvTelnetStateChangedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SdvTimeoutRaisedLog.png" />
+    <None Include="Resources\MainForm\Tool\SecsLogView\SecsDeviceLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SecsDriverLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SecsItemLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SecsItemLog_List.png" />
+    <None Include="Resources\MainForm\Tool\SecsLogView\SecsLogFilter.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SecsTransmitterRaisedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\SecsTriggerRaisedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\StoragePerformedLog.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\Value.png" />
+    <Content Include="Resources\MainForm\Tool\SecsLogView\ValueFormula.png" />
+    <Content Include="Resources\MainMenu\InqComponentHistory.png" />
+    <Content Include="Resources\MainMenu\InqModelHistory.png" />
+    <Content Include="Resources\MainMenu\InqPackageHistory.png" />
+    <Content Include="Resources\MainMenu\InqServerHistory.png" />
+    <Content Include="Resources\MainMenu\InqUserHistory.png" />
+    <Content Include="Resources\MainMenu\SetupGeneralCodeData.png" />
+    <Content Include="Resources\MainMenu\SetupGeneralCodeTable.png" />
+    <Content Include="Resources\MainForm\Setup\UserEvent.png" />
+    <Content Include="Resources\MainForm\Window\Form.png" />
+    <Content Include="Resources\MainForm\Tool\File_Dlg.png" />
+    <Content Include="Resources\MainForm\Tool\File_Etc.png" />
+    <Content Include="Resources\MainForm\Tool\File_Exe.png" />
+    <Content Include="Resources\MainForm\Tool\File_Log.png" />
+    <Content Include="Resources\MainForm\Setup\GeneralCodeData.png" />
+    <Content Include="Resources\MainForm\Setup\GeneralCodeTable.png" />
+    <None Include="Resources\MainMenu\InqServerList.png" />
+    <None Include="Resources\MainMenu\InqServerStatus.png" />
+    <None Include="Resources\MainMenu\InqPackageList.png" />
+    <None Include="Resources\MainMenu\InqPackageStatus.png" />
+    <None Include="Resources\MainMenu\InqModelList.png" />
+    <None Include="Resources\MainMenu\InqModelStatus.png" />
+    <None Include="Resources\MainMenu\InqComponentList.png" />
+    <None Include="Resources\MainMenu\InqComponentStatus.png" />
+    <None Include="Resources\MainMenu\InqEapList.png" />
+    <None Include="Resources\MainMenu\InqEapStatus.png" />
+    <Content Include="Resources\MainForm\Setup\Model.png" />
+    <None Include="Resources\MainForm\Setup\ModelVersion.png" />
+    <Content Include="Resources\MainForm\Setup\Package.png" />
+    <None Include="Resources\MainForm\Setup\PackageVersion.png" />
+    <None Include="Resources\MainMenu\SetupUserGroup.png" />
+    <Content Include="Resources\MainMenu\SetupHostDriver.png" />
+    <Content Include="Resources\MainMenu\SystemChangePassword.png" />
+    <Content Include="Resources\MainForm\Setup\Server.png" />
+    <None Include="Resources\MainMenu\SystemLogOut.png" />
+    <None Include="Resources\MainMenu\SetupFactory.png" />
+    <None Include="Resources\MainMenu\SetupUser.png" />
+    <None Include="Resources\MainMenu\SetupServer.png" />
+    <None Include="Resources\MainMenu\SetupPackage.png" />
+    <None Include="Resources\MainMenu\SetupModel.png" />
+    <None Include="Resources\MainMenu\SetupComponent.png" />
+    <None Include="Resources\MainMenu\SetupPackageVersion.png" />
+    <None Include="Resources\MainMenu\SetupModelVersion.png" />
+    <None Include="Resources\MainMenu\SetupComponentVersion.png" />
+    <None Include="Resources\MainMenu\SetupEap.png" />
+    <None Include="Resources\MainForm\Inquiry\Server_Backup_Down.png" />
+    <None Include="Resources\MainForm\Inquiry\Server_Backup_Up.png" />
+    <None Include="Resources\MainForm\Inquiry\Server_Main_Down.png" />
+    <None Include="Resources\MainForm\Inquiry\Server_Main_Up.png" />
+    <Content Include="Resources\MainMenu\SystemClose.png" />
+    <None Include="Resources\MainToolbar\SystemClose_22.png" />
+    <None Include="Resources\ToolDownload.png" />
+    <Content Include="Resources\MainMenu\TolAdminAgentOption.png" />
+    <None Include="Resources\MainMenu\ViewAdminAgentLogList.png" />
+    <Content Include="Resources\MainMenu\TolAdminServiceOption.png" />
+    <Content Include="Resources\MainMenu\ViewAdminAgentBackupLogList.png" />
+    <Content Include="Resources\MainMenu\ViewAdminServiceBackupLogList.png" />
+    <Content Include="Resources\MainMenu\ViewEapLogList.png" />
+    <Content Include="Resources\MainMenu\ViewModelVersionSchema.png" />
+    <Content Include="Resources\MainMenu\ViewEapBackupLogList.png" />
+    <Content Include="Resources\MainMenu\WinCloseAllWindows.png" />
+    <Content Include="Resources\MainMenu\WinMoreWindows.png" />
+    <Content Include="Resources\MainToolbar\InqComponentHistory_22.png" />
+    <Content Include="Resources\MainToolbar\InqComponentList_22.png" />
+    <Content Include="Resources\MainToolbar\InqComponentStatus_22.png" />
+    <Content Include="Resources\MainToolbar\InqEapList_22.png" />
+    <Content Include="Resources\MainToolbar\InqEapStatus_22.png" />
+    <Content Include="Resources\MainToolbar\InqModelHistory_22.png" />
+    <Content Include="Resources\MainToolbar\InqModelList_22.png" />
+    <Content Include="Resources\MainToolbar\InqModelStatus_22.png" />
+    <Content Include="Resources\MainToolbar\InqPackageHistory_22.png" />
+    <Content Include="Resources\MainToolbar\InqPackageList_22.png" />
+    <Content Include="Resources\MainToolbar\InqPackageStatus_22.png" />
+    <Content Include="Resources\MainToolbar\InqServerHistory_22.png" />
+    <Content Include="Resources\MainToolbar\InqServerList_22.png" />
+    <Content Include="Resources\MainToolbar\InqServerStatus_22.png" />
+    <Content Include="Resources\MainToolbar\InqUserHistory_22.png" />
+    <Content Include="Resources\MainToolbar\SetupComponentVersion_22.png" />
+    <Content Include="Resources\MainToolbar\SetupComponent_22.png" />
+    <Content Include="Resources\MainToolbar\SetupEap_22.png" />
+    <Content Include="Resources\MainToolbar\SetupFactory_22.png" />
+    <Content Include="Resources\MainToolbar\SetupGeneralCodeData_22.png" />
+    <Content Include="Resources\MainToolbar\SetupGeneralCodeTable_22.png" />
+    <Content Include="Resources\MainToolbar\SetupHostDriver_22.png" />
+    <Content Include="Resources\MainToolbar\SetupModelVersion_22.png" />
+    <Content Include="Resources\MainToolbar\SetupModel_22.png" />
+    <Content Include="Resources\MainToolbar\SetupPackageVersion_22.png" />
+    <Content Include="Resources\MainToolbar\SetupPackage_22.png" />
+    <Content Include="Resources\MainToolbar\SetupServer_22.png" />
+    <Content Include="Resources\MainToolbar\SetupUserGroup_22.png" />
+    <Content Include="Resources\MainToolbar\SetupUser_22.png" />
+    <Content Include="Resources\MainToolbar\SystemLogout_22.png" />
+    <Content Include="Resources\MainToolbar\TolAdminAgentOption_22.png" />
+    <Content Include="Resources\MainToolbar\TolAdminServiceOption_22.png" />
+    <Content Include="Resources\MainToolbar\TrnEapAbort_22.png" />
+    <Content Include="Resources\MainToolbar\TrnEapRelease_22.png" />
+    <Content Include="Resources\MainToolbar\TrnEapRestart_22.png" />
+    <Content Include="Resources\MainToolbar\TrnEapStart_22.png" />
+    <Content Include="Resources\MainToolbar\TrnEapStop_22.png" />
+    <Content Include="Resources\MainToolbar\ViewAdminAgentBackupLogList_22.png" />
+    <Content Include="Resources\MainToolbar\ViewAdminAgentLogList_22.png" />
+    <Content Include="Resources\MainToolbar\ViewAdminServiceBackupLogList_22.png" />
+    <Content Include="Resources\MainToolbar\ViewAdminServiceLogList_22.png" />
+    <Content Include="Resources\MainToolbar\ViewEapBackupLogList_22.png" />
+    <Content Include="Resources\MainToolbar\ViewEapLogList_22.png" />
+    <Content Include="Resources\MainToolbar\ViewModelVersionSchema_22.png" />
+    <None Include="Resources\ToolCollapse.png" />
+    <None Include="Resources\ToolCopy.png" />
+    <None Include="Resources\ToolExpand.png" />
+    <Content Include="Resources\ToolFind.png" />
+    <None Include="Resources\MainMenu\TrnEapRelease.png" />
+    <None Include="Resources\MainMenu\TrnEapStart.png" />
+    <None Include="Resources\MainMenu\TrnEapStop.png" />
+    <None Include="Resources\MainMenu\TrnEapRestart.png" />
+    <None Include="Resources\MainMenu\TrnEapAbort.png" />
+    <Content Include="Resources\MainForm\Inquiry\Equipment.png" />
+    <Content Include="Resources\MainForm\Inquiry\HostDevice.png" />
+    <Content Include="Resources\MainForm\Inquiry\HostDevice_Closed.png" />
+    <Content Include="Resources\MainForm\Inquiry\HostDevice_Connected.png" />
+    <Content Include="Resources\MainForm\Inquiry\HostDevice_Opened.png" />
+    <Content Include="Resources\MainForm\Inquiry\HostDevice_Selected.png" />
+    <Content Include="Resources\MainForm\Inquiry\HostSession.png" />
+    <Content Include="Resources\MainForm\Inquiry\SecsDevice.png" />
+    <Content Include="Resources\MainForm\Inquiry\SecsDevice_Closed.png" />
+    <Content Include="Resources\MainForm\Inquiry\SecsDevice_Connected.png" />
+    <Content Include="Resources\MainForm\Inquiry\SecsDevice_Opened.png" />
+    <Content Include="Resources\MainForm\Inquiry\SecsDevice_Selected.png" />
+    <Content Include="Resources\MainForm\Inquiry\SecsDriver.png" />
+    <Content Include="Resources\MainForm\Inquiry\SecsSession.png" />
+    <Content Include="Resources\MainForm\Setup\User.png" />
+    <Content Include="Resources\MainForm\Setup\UserGroup.png" />
+    <Content Include="Resources\MainForm\Setup\More.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nexplant.Mc.WorkspaceInterface\Nexplant.MC.WorkspaceInterface.v4.6.csproj">
+      <Project>{37de8452-640c-4262-b631-6ec3e6cb0951}</Project>
+      <Name>Nexplant.MC.WorkspaceInterface.v4.6</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir).\..\..\nexplant.mc-dll\"
+
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
